@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  background-color: #373537;
+  width: 100vw;
+  height: 35px;
+}
+.header_left{
+  display: flex;
+}
+.header_right{
+  display: flex;
+  position: absolute;
+
+  top: 7px;
+  right: 10px;
+}
+
+.real_time {
+  color: white;
+  font-size: 14px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.dicon_2021 {
+  width: 100px;
+  height: 25px;
+  background-color: aqua;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.info {
+  width: 40px;
+  height: 25px;
+  background-color: yellow;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.insta_header {
+  width: 25px;
+  height: 25px;
+  background-color: deeppink;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.youtube_header {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  bottom: 15px;
+
+  text-align: center;
+}
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
