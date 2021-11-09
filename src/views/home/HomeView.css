@@ -1,0 +1,13 @@
+.hommeWrap {
+    height: 92vh;
+    margin: 0;
+    position: relative;
+    /*top: 5vh;*/
+    width: 100%;
+    overflow: hidden;
+}
+
+.items {
+    position: absolute;
+    top: 0;
+}

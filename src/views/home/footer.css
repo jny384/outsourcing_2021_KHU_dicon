@@ -1,0 +1,16 @@
+.footer {
+    width: 100vw;
+    /*height: 60px;*/
+    position: absolute;
+    height: 8vh;
+    /*top:10vh;*/
+    bottom: 0;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_text {
+    font-size: 18px;
+}

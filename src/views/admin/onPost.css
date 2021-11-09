@@ -1,0 +1,111 @@
+.works {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    background-color: #686868;
+}
+.student_info {
+    position: relative;
+    /*top: -10px;*/
+    justify-content: left;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 15px;
+    display: inline-block;
+
+    background-color: white;
+    padding: 20px;
+    width: 80vw;
+}
+
+.student_picture {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.student_name {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.student_email {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.student_link {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.student_work {
+    display: inline-block;
+    position: relative;
+    justify-content: left;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 15px;
+    /*right: 0;*/
+    background-color: white;
+    padding: 20px;
+    width: 80vw;
+}
+
+.work_title {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.work_detail {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+    white-space: pre-wrap;
+}
+#workInfo {
+    width: 500px;
+    height: 200px;
+}
+.work_link {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.work_image {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.select_url {
+    margin-bottom: 10px;
+    border: black solid 1px;
+    padding: 0 10px 10px;
+}
+
+.post_btn {
+    /*margin-top: 20px;*/
+    display: flex;
+    justify-content: center;
+    /*position: relative;*/
+    /*bottom: 70px;*/
+}
+
+#btn_toPost {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #373537;
+    color: white;
+}
+
+.none {
+    opacity: 0;
+}

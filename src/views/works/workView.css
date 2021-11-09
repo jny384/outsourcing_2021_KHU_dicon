@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+    /*overflow: hidden;*/
+    /*top: 47px;*/
+}
+
+.student_area {
+    display: flex;
+    position: relative;
+    height: fit-content;
+}
+
+.left_workview {
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    height: 100%;
+    background-color: #686868;
+}
+#student_pic{
+    width: 394px;
+    height: 534px;
+    background-color: deeppink;
+    margin: 37px 39px 10px;
+}
+
+#worker_name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 39px;
+}
+
+.left_detail {
+    font-size: 18px;
+
+    margin: 10px 39px;
+}
+.right_workview {
+    display: inline-block;
+    position: absolute;
+    left: 472px;
+    right: 0;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#workTitle {
+    font-size: 36px;
+}
+
+.work_info {
+    text-align: center;
+    background-color: #E4E4E4;
+    height: 256px;
+    margin: 24px 25px;
+}
+
+#workInfo_title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#workInfo {
+    font-size: 18px;
+}
+
+.work_youtube {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: 24px 25px;
+    height: fit-content;
+}
+
+#youtubeLink {
+    width: 920px;
+    height: 518px;
+}

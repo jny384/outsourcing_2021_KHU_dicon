@@ -1,39 +1,30 @@
-import './App.css';
-import React, {useState} from "react";
-import Clock from "react-live-clock";
-import OutLink from "./outLink";
-import DecoIMG from "./decoIMG";
+import React from "react";
+import './App.css'
 
-
-
+import { Route, BrowserRouter } from "react-router-dom";
+import Header from "./views/home/header";
+import Footer from "./views/home/footer";
+import HomeView from "./views/home/HomeView";
+import OnPost from "./views/admin/onPost";
+import GuestBook from "./views/guest/guestBook";
+import WorksView from "./views/works/worksView";
+import UploadWorkImages from "./components/works/uploadWorkImages";
 function App() {
     return (
-        <>
-            <div className="header">
-                <div className="header_left">
-                    <div className="icon"></div>
-                    <div className="dicon_2021"></div>
-                    <div className="info"></div>
+            <div className="mainBody">
+                <Header/>
+                <div className="mainContent">
+                    <BrowserRouter>
+                        <Route exact path="/" component={HomeView}/>
+                        {/*<Route path="/test" component={AppTest}/>*/}
+                        <Route path='/write' component={OnPost}/>
+                        <Route path='/guest' component={GuestBook}/>
+                        <Route exact path="/works/:urlId" component={WorksView}/>
+                        <Route path='/upload' component={UploadWorkImages}/>
+                    </BrowserRouter>
                 </div>
-
-                <div className="header_right">
-                    <div className="insta_header"></div>
-                    <div className="youtube_header"></div>
-                    <Clock className="real_time" format={'HH:mm:ss'} ticking={true}/>
-                </div>
+                <Footer/>
             </div>
-
-            <div className="items">
-                <OutLink/>
-                <OutLink/>
-                <DecoIMG/>
-                <DecoIMG/>
-            </div>
-
-          <div className="footer">
-            KyungHee Univ. Dicon 2021 Degree Show
-          </div>
-      </>
   );
 }
 
