@@ -78,6 +78,31 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/home/items/instaLink.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/home/items/youtubeLink.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/works/getProfileImage.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/works/getWorkImage.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/works/getWorkImages.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/components/works/uploadProfile.js">
           <value>
             <PaintGroupHighlightMap />
@@ -163,6 +188,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/views/home/decoIMG.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/views/home/footer.css">
           <value>
             <PaintGroupHighlightMap />
@@ -179,6 +209,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/views/home/header.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/views/works/getProfileInfo.js">
           <value>
             <PaintGroupHighlightMap />
           </value>

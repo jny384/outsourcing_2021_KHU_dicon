@@ -1,9 +1,11 @@
+import './onPost.css'
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
+
 import {postWorks} from "../../components/firebase/postWorks";
-import './onPost.css'
 import UploadWorkImages from "../../components/works/uploadWorkImages";
 import UploadProfile from "../../components/works/uploadProfile";
+// import GetWorkImage from "../../components/works/getWorkImage";
 
 export default function OnPost() {
 
@@ -16,12 +18,15 @@ export default function OnPost() {
         workTitle : '',
         workInfo : '',
         youtubeLink : '',
-
+        profileUrl: '',
+        worksUrl : [],
+        team: ''
     });
 
-    const { name, email, workLink, workTitle, workInfo, youtubeLink } = inputs; // 비구조화 할당을 통해 값 추출
+    const { name, email, workLink, workTitle, workInfo, youtubeLink, team } = inputs; // 비구조화 할당을 통해 값 추출
 
     const [url, setUrl] = useState('')
+    // const [team, setTeam] = useState('')
     const onChange = (e) => {
         const { value, name } = e.target; // 우선 e.target 에서 name 과 value 를 추출
         setInputs({
@@ -35,6 +40,9 @@ export default function OnPost() {
       // console.log(setUrl)
     }
 
+    // const getTeam = (e) => {
+    //     setTeam(e.target.value);
+    // }
     const onPost = async () => {
         history.push(`/works/${url}`);
         await postWorks(url, inputs).then(() => {
@@ -45,18 +53,27 @@ export default function OnPost() {
         // console.log(url);
     };
 
+    // const [profileUrl, setProfileUrl] = useState()
+    const getImgUrl = (text) => {
+        inputs.profileUrl = text;
+    }
+
+    const getWorksUrl = (text) => {
+        inputs.worksUrl = text;
+    }
 
     return (
         <>
             <div className="works">
                 <div className="student_info">
                     <div className="select_url">
-                        <p>이 작품의 주소</p>
-                        <input name="url" onChange={getUrl} value={url}/>
+                        <p>이 작품의 주소와 팀 이름</p>
+                        <input name="url" onChange={getUrl} value={url} placeholder="주소"/>
+                        <input name="team" onChange={onChange} value={team} placeholder="팀 이름"/>
                     </div>
                     <div className="student_picture">
                         <p>학생 사진</p>
-                        <UploadProfile directory={url}/>
+                        <UploadProfile getImgUrl={getImgUrl} teamName={team} directory={url}/>
                     </div>
                     <div className="student_name">
                         <p> 학생 이름</p>
@@ -86,7 +103,7 @@ export default function OnPost() {
                     </div>
                     <div className="work_image">
                         <p>작품 사진들</p>
-                        <UploadWorkImages directory={url}/>
+                        <UploadWorkImages getWorksUrl={getWorksUrl} teamName={team} directory={url}/>
                     </div>
                 </div>
                 <div>

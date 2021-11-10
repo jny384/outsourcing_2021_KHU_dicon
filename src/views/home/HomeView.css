@@ -1,13 +1,41 @@
 .hommeWrap {
-    height: 92vh;
+    height: 95vh;
     margin: 0;
     position: relative;
     /*top: 5vh;*/
     width: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .items {
     position: absolute;
-    top: 0;
+    /*top: 10vh;*/
+    /*left:5vw;*/
+}
+
+.footer {
+    height: 8vh;
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.four_deco_image {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+
+#deco_1 {
+    display: flex;
+}
+
+#deco_3 {
+    display: flex;
 }

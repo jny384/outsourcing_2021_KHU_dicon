@@ -9,8 +9,8 @@ export default function Header() {
                 <div className="icon">
                     <a id="homeIcon" href="/">sss</a>
                 </div>
-                <div className="dicon_2021"></div>
-                <div className="info"></div>
+                <div className="dicon_2021">Dicon 2021</div>
+                <div className="info">Info</div>
             </div>
 
             <div className="header_right">

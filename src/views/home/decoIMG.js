@@ -49,7 +49,8 @@ const style = {
         width: '120px',
         height: '120px',
         backgroundColor: "red",
-        margin:'0'
+        margin:'0',
+        borderRadius:"100%"
     },
     set_box: {
         width: '70vw',
@@ -65,7 +66,8 @@ const style = {
         display: 'flex',
     },
     p: {
-        margin: '0'
+        margin: '0',
+        color:"white"
     },
     deco_image: {
         position: 'relative',

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import storage from "../firebase/firebase-manager";
+// import GetWorkImages from "./getWorkImages";
 
 export default function UploadWorkImages(props) {
     const [images, setImages] = useState([]);
@@ -7,6 +8,7 @@ export default function UploadWorkImages(props) {
     const [progress, setProgress] = useState(0);
     // const [directory, setDirectory] = useState("");
     const directory = props.directory;
+    const teamName = props.teamName;
     
     const handleChange = (e) => {
         for (let i = 0; i < e.target.files.length; i++) {
@@ -23,7 +25,7 @@ export default function UploadWorkImages(props) {
     const handleUpload = () => {
         const promises = []
         images.map((image) => {
-            const uploadTask = storage.ref(`images/${directory}/${image.name}`).put(image);
+            const uploadTask = storage.ref(`images/${teamName}/${directory}/works/${image.name}`).put(image);
             promises.push(uploadTask);
             uploadTask.on(
                 "state_changed",
@@ -38,24 +40,29 @@ export default function UploadWorkImages(props) {
                 },
                 async () => {
                     await storage
-                        .ref("images")
+                        .ref(`images/${teamName}/${directory}/works/`)
                         .child(image.name)
                         .getDownloadURL()
                         .then((urls) => {
                             setUrls((prevState) => [...prevState, urls]);
+                            // console.log(urls)
                         })
                 }
             );
         });
 
         Promise.all(promises)
-            // .then(() => {alert("all images uploaded")})
+            // .then(() => { GetWorkImages(urls); })
             .catch((err)=> console.log(err))
     };
 
     // console.log("image : ", images);
     // console.log("urls : ", urls);
 
+    const sendText = () => {
+        props.getWorksUrl(urls);
+        console.log(urls)
+    }
 
     return(
         <>
@@ -74,6 +81,9 @@ export default function UploadWorkImages(props) {
                      style={{width: "100px"}}
                 />
             ))}
+            <br/>
+            <a onClick={sendText}>send</a>
+            {/*<GetWorkImages urls={urls}/>*/}
         </>
     )
 }
