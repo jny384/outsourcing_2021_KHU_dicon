@@ -44,8 +44,8 @@ export default function OnPost() {
     //     setTeam(e.target.value);
     // }
     const onPost = async () => {
-        history.push(`/works/${url}`);
-        await postWorks(url, inputs).then(() => {
+        history.push(`/works/${team}/${url}`);
+        await postWorks(team, url, inputs).then(() => {
 
         })
         // await GetData(url);

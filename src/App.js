@@ -20,7 +20,7 @@ function App() {
                     <Route exact path="/" component={HomeView}/>
                     <Route path='/write' component={OnPost}/>
                     <Route path='/guest' component={GuestBook}/>
-                    <Route exact path="/works/:urlId" component={WorksView}/>
+                    <Route exact path="/works/:teamName/:urlId" component={WorksView}/>
 
                     <Route exact path="/upload/:urlId" component={UploadProfile}/>
                     <Route path='/upload' component={UploadWorkImages}/>

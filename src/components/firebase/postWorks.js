@@ -1,8 +1,9 @@
 // import firebase from "./firebase-manager";
 import {firebase} from "./firebase-manager";
+const db = firebase.firestore();
 
-export async function postWorks(url, input) {
-    await firebase.firestore().collection('writing').doc(`${url}`).set({
+export async function postWorks(team, url, input) {
+    await db.collection('admin').doc('post').collection(`${team}`).doc(`${url}`).set({
         input
     })
 }

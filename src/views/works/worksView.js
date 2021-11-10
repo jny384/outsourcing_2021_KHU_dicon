@@ -16,10 +16,15 @@ const Split = ({text}) => {
 }
 
 export default function WorksView({match}) {
+    // console.log()
 
     const [inputData, setInputData] = useState('');
     useEffect(() => {
-        console.log("start")
+        // console.log("start")
+        // const present = match.url;
+        // console.log(match);
+        // const urlId = [];
+        // present.split("/").map((txt) => (urlId.push(txt)))
         exec();
     }, [])
     // const [name, setName] = useState('');
@@ -30,8 +35,10 @@ export default function WorksView({match}) {
     // const [youtubeLink, setYoutubeLink] = useState('');
     // const [profileUrl, setProfileUrl] = useState('');
     // const [worksUrl, setWorksUrl] = useState([]);
+
+
     async function exec(){
-        const data =  await GetPostingInfo(match.params.urlId);
+        const data =  await GetPostingInfo(match.params.teamName, match.params.urlId);
         await setInputData(data);
         // setName(inputData.name);
         // setEmail(inputData.email);
@@ -41,7 +48,7 @@ export default function WorksView({match}) {
         // setYoutubeLink(inputData.youtubeLink);
         // setProfileUrl(inputData.profileUrl);
         // setWorksUrl(inputData.worksUrl);
-        console.log(data);
+        // console.log(data);
     }
 
     console.log(inputData)
@@ -54,16 +61,16 @@ export default function WorksView({match}) {
     const profileUrl = inputData.profileUrl;
     const worksUrl = inputData.worksUrl;
     const teamName = inputData.teamName;
-    console.log(worksUrl)
+    // console.log(worksUrl)
     // const directory = match.params.urlId;
 
     const imageList =  () => {
         const imageUrls = [];
         for (let i in worksUrl) {
             imageUrls.push(<img className="works_images" key={i} src={worksUrl[i]} alt="works_image"/>);
-            console.log("for")
+            // console.log("for")
         }
-        console.log("return")
+        // console.log("return")
         return imageUrls;
     };
 
