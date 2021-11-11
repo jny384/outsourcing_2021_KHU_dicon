@@ -5,6 +5,8 @@ import {useHistory} from "react-router-dom";
 import {postWorks} from "../../components/firebase/postWorks";
 import UploadWorkImages from "../../components/works/uploadWorkImages";
 import UploadProfile from "../../components/works/uploadProfile";
+import UploadThumNail from "../../components/works/uploadThumNail";
+import PostThumbNail from "../../components/firebase/postThumbNail";
 // import GetWorkImage from "../../components/works/getWorkImage";
 
 export default function OnPost() {
@@ -20,10 +22,11 @@ export default function OnPost() {
         youtubeLink : '',
         profileUrl: '',
         worksUrl : [],
+        thumbUrl:'',
         team: ''
     });
 
-    const { name, email, workLink, workTitle, workInfo, youtubeLink, team } = inputs; // 비구조화 할당을 통해 값 추출
+    const { name, email, workLink, workTitle, workInfo, youtubeLink, thumbUrl, team } = inputs; // 비구조화 할당을 통해 값 추출
 
     const [url, setUrl] = useState('')
     // const [team, setTeam] = useState('')
@@ -33,6 +36,7 @@ export default function OnPost() {
             ...inputs, // 기존의 input 객체를 복사한 뒤
             [name]: value // name 키를 가진 값을 value 로 설정
         });
+        // console.log(value, name)
     };
 
     const getUrl = (e) => {
@@ -45,9 +49,8 @@ export default function OnPost() {
     // }
     const onPost = async () => {
         history.push(`/works/${team}/${url}`);
-        await postWorks(team, url, inputs).then(() => {
-
-        })
+        await postWorks(team, url, inputs);
+        await PostThumbNail(team, url, thumbUrl, workTitle, name);
         // await GetData(url);
         // localStorage.setItem('url',url);
         // console.log(url);
@@ -62,6 +65,25 @@ export default function OnPost() {
         inputs.worksUrl = text;
     }
 
+    const getThumbUrl = (text) => {
+        inputs.thumbUrl = text;
+    }
+
+    const handleChange = () => {
+        const target = document.getElementById("selectBox");
+        const value = target.options[target.selectedIndex].value;
+        const name = 'team';
+        // console.log(target)
+        // console.log(value)
+        setInputs({
+                ...inputs,
+                [name]: value
+        })
+        // console.log(value, name)
+    }
+    // console.log(name)
+    // console.log(team)
+
     return (
         <>
             <div className="works">
@@ -69,7 +91,19 @@ export default function OnPost() {
                     <div className="select_url">
                         <p>이 작품의 주소와 팀 이름</p>
                         <input name="url" onChange={getUrl} value={url} placeholder="주소"/>
-                        <input name="team" onChange={onChange} value={team} placeholder="팀 이름"/>
+                        {/*<input name="team" onChange={onChange} value={team} placeholder="팀 이름"/>*/}
+                        <select id="selectBox" onChange={handleChange}>
+                            <option name="team" value="MotionGraphics">Motion Graphics</option>
+                            <option name="team" value="Animation">Animation</option>
+                            <option name="team" value="VFX_SFX">VFX / SFX</option>
+                            <option name="team" value="Game">Game</option>
+                            <option name="team" value="InteractionDesign">Interaction Design</option>
+                            <option name="team" value="WebtoonConceptArt">Webtoon Concept Art </option>
+                        </select>
+                    </div>
+                    <div className="post_thumbNail">
+                        <p>썸네일</p>
+                        <UploadThumNail getThumbUrl={getThumbUrl} teamName={team} directory={url}/>
                     </div>
                     <div className="student_picture">
                         <p>학생 사진</p>

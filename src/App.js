@@ -11,6 +11,7 @@ import WorksView from "./views/works/worksView";
 import UploadWorkImages from "./components/works/uploadWorkImages";
 // import GetProfileImage from "./components/works/getProfileImage";
 import UploadProfile from "./components/works/uploadProfile";
+import WorksList from "./views/works/worksList";
 
 function App() {
     return (
@@ -24,6 +25,8 @@ function App() {
 
                     <Route exact path="/upload/:urlId" component={UploadProfile}/>
                     <Route path='/upload' component={UploadWorkImages}/>
+
+                    <Route exact path='/works/:teamName' component={WorksList}/>
                 </BrowserRouter>
                 <Footer/>
             </div>

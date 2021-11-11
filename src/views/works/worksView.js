@@ -16,39 +16,14 @@ const Split = ({text}) => {
 }
 
 export default function WorksView({match}) {
-    // console.log()
-
     const [inputData, setInputData] = useState('');
     useEffect(() => {
-        // console.log("start")
-        // const present = match.url;
-        // console.log(match);
-        // const urlId = [];
-        // present.split("/").map((txt) => (urlId.push(txt)))
         exec();
     }, [])
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [workInfo, setWorkInfo] = useState('');
-    // const [workLink, setWorkLink] = useState('');
-    // const [workTitle, setWorkTitle] = useState('');
-    // const [youtubeLink, setYoutubeLink] = useState('');
-    // const [profileUrl, setProfileUrl] = useState('');
-    // const [worksUrl, setWorksUrl] = useState([]);
-
 
     async function exec(){
         const data =  await GetPostingInfo(match.params.teamName, match.params.urlId);
         await setInputData(data);
-        // setName(inputData.name);
-        // setEmail(inputData.email);
-        // setWorkInfo(inputData.workInfo);
-        // setWorkLink(inputData.workLink);
-        // setWorkTitle(inputData.workTitle);
-        // setYoutubeLink(inputData.youtubeLink);
-        // setProfileUrl(inputData.profileUrl);
-        // setWorksUrl(inputData.worksUrl);
-        // console.log(data);
     }
 
     console.log(inputData)
@@ -62,7 +37,6 @@ export default function WorksView({match}) {
     const worksUrl = inputData.worksUrl;
     const teamName = inputData.teamName;
     // console.log(worksUrl)
-    // const directory = match.params.urlId;
 
     const imageList =  () => {
         const imageUrls = [];

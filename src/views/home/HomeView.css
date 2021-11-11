@@ -9,7 +9,13 @@
 }
 
 .items {
-    position: absolute;
+    /*position: absolute;*/
+    display: flex;
+    position: relative;
+    overflow:auto;
+    height: auto;
+    /*overflow:auto;*/
+    background-color: black ;
     /*top: 10vh;*/
     /*left:5vw;*/
 }
@@ -38,4 +44,37 @@
 
 #deco_3 {
     display: flex;
+}
+
+.left_items{
+
+    display: block;
+    /*position: absolute;*/
+    flex-direction: column;
+    width: 472px;
+    height: 500vh;
+    /*width: 30vw;*/
+    overflow: hidden;
+    /*background-color: #686868;*/
+}
+
+.right_items{
+    display: inline-block;
+    position: absolute;
+    left: 472px;
+    right: 0;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.team {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    left: 30vw;
 }

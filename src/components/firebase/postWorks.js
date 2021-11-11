@@ -1,4 +1,3 @@
-// import firebase from "./firebase-manager";
 import {firebase} from "./firebase-manager";
 const db = firebase.firestore();
 

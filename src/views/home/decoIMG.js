@@ -1,6 +1,8 @@
 import Draggable from "react-draggable";
 import React, {useState} from "react";
 
+//상위 컴포넌트에서 clicked state를 관리해야 되나? 데코 이미지가 차지하는 범위가 작아서 closeModal이 안 먹네
+
 export default function DecoIMG() {
     //draggable 요소를 위한 position 값 관히
     const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -72,6 +74,7 @@ const style = {
     deco_image: {
         position: 'relative',
         left: '50%',
-        zIndex:'1'
+        zIndex:'1',
+        // width: '100%'
     }
 }
