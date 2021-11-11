@@ -68,7 +68,6 @@ export default function WorksView({match}) {
                 <div className="right_workview">
                     <div className="work_info">
                         <p id="workTitle">{workTitle}</p>
-                        {/*<p id="workInfo_title"> 작품 소개</p>*/}
                         <Split text={workInfo||''}/>
                     </div>
                     <div className="work_youtube">

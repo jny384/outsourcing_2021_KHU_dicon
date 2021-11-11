@@ -3,6 +3,14 @@ import Clock from "react-live-clock";
 import './header.css'
 
 export default function Header() {
+    const handleInstaClick = (e) => {
+        window.location.href = 'https://www.instagram.com'; //이동할 링크
+    };
+
+    const handleYoutubeClick = (e) => {
+        window.location.href = 'https://www.youtube.com'; //이동할 링크
+    };
+
     return(
         <div className="header">
             <div className="header_left">
@@ -14,8 +22,8 @@ export default function Header() {
             </div>
 
             <div className="header_right">
-                <div className="insta_header"></div>
-                <div className="youtube_header"></div>
+                <div className="insta_header" onClick={handleInstaClick}></div>
+                <div className="youtube_header" onClick={handleInstaClick}></div>
                 <Clock className="real_time" format={'HH:mm:ss'} ticking={true}/>
             </div>
         </div>

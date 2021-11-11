@@ -77,8 +77,8 @@ export default function UploadWorkImages(props) {
             {urls.map((url, i) => (
                 <img key={i}
                      src={url || "http://via.placeholde.com/300"}
-                     alt="firebase-image"
-                     style={{width: "100px"}}
+                     alt="works"
+                     style={{height: "50px"}}
                 />
             ))}
             <br/>

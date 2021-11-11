@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {GetPostingInfo} from "../../components/firebase/getPostingInfo";
 import GetThumbNail from "../../components/firebase/getThumbNail";
 
 
@@ -25,7 +24,7 @@ export default function WorksList({match}) {
                         inputData.map((item, index) => {
                             return(
                                 <div key={index} style={style.component}>
-                                    <div className="thumbNail" >
+                                    <div className="thumbNail">
                                         <a href={item.url}>
                                             <img
                                                 src={item.thumbUrl}

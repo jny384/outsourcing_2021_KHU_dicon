@@ -1,17 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
+import Draggable from "react-draggable";
 
 export default function Animation() {
     const history = useHistory();
+
+    const [position, setPosition] = useState({ x: 0, y: 0 }); // box의 포지션 값
+    // 업데이트 되는 값을 set 해줌
+    const trackPos = (data) => {
+        setPosition({ x: data.x, y: data.y });
+    };
+
     const onClick = () => {
         history.push(`/works/Animation`);
     }
 
     return(
         <div>
-            <div style={style.main_body} onClick={onClick}>
-                <div style={style.box}>team</div>
-                <p style={style.p}>Animation</p>
+            <div style={style.main_body} onDoubleClick={onClick}>
+                <Draggable onDrag={(e, data) => trackPos(data)}>
+                    <div className="box" >
+                        <div style={style.box}>team</div>
+                        <p style={style.p}>Animation</p>
+                    </div>
+                </Draggable>
             </div>
         </div>
     )

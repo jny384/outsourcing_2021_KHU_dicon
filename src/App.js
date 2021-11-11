@@ -9,7 +9,6 @@ import OnPost from "./views/admin/onPost";
 import GuestBook from "./views/guest/guestBook";
 import WorksView from "./views/works/worksView";
 import UploadWorkImages from "./components/works/uploadWorkImages";
-// import GetProfileImage from "./components/works/getProfileImage";
 import UploadProfile from "./components/works/uploadProfile";
 import WorksList from "./views/works/worksList";
 

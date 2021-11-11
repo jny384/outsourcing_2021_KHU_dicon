@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import storage from "../firebase/firebase-manager";
 
-export default function UploadThumNail(props) {
+export default function UploadThumbNail(props) {
     const [image, setImage] = useState();
     const [url, setUrl] = useState();
     const [progress, setProgress] = useState(0);
@@ -59,8 +59,8 @@ export default function UploadThumNail(props) {
             <br/>
             <img
                 src={url || "http://via.placeholde.com/300"}
-                alt="firebase-image"
-                style={{width: "100px"}}
+                alt="thumbNail"
+                style={{height: "50px"}}
             />
             <br/>
         </>

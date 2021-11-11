@@ -14,8 +14,9 @@
     position: relative;
     overflow:auto;
     height: auto;
+    width: 100vw;
     /*overflow:auto;*/
-    background-color: black ;
+    /*background-color: black ;*/
     /*top: 10vh;*/
     /*left:5vw;*/
 }
@@ -51,11 +52,11 @@
     display: block;
     /*position: absolute;*/
     flex-direction: column;
-    width: 472px;
+    /*width: 472px;*/
     height: 500vh;
     /*width: 30vw;*/
+    width: 100vw;
     overflow: hidden;
-    /*background-color: #686868;*/
 }
 
 .right_items{

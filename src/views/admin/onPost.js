@@ -5,7 +5,7 @@ import {useHistory} from "react-router-dom";
 import {postWorks} from "../../components/firebase/postWorks";
 import UploadWorkImages from "../../components/works/uploadWorkImages";
 import UploadProfile from "../../components/works/uploadProfile";
-import UploadThumNail from "../../components/works/uploadThumNail";
+import UploadThumbNail from "../../components/works/uploadThumbNail";
 import PostThumbNail from "../../components/firebase/postThumbNail";
 // import GetWorkImage from "../../components/works/getWorkImage";
 
@@ -41,22 +41,17 @@ export default function OnPost() {
 
     const getUrl = (e) => {
       setUrl(e.target.value);
-      // console.log(setUrl)
     }
 
-    // const getTeam = (e) => {
-    //     setTeam(e.target.value);
-    // }
     const onPost = async () => {
         history.push(`/works/${team}/${url}`);
         await postWorks(team, url, inputs);
         await PostThumbNail(team, url, thumbUrl, workTitle, name);
-        // await GetData(url);
-        // localStorage.setItem('url',url);
+
         // console.log(url);
     };
 
-    // const [profileUrl, setProfileUrl] = useState()
+    // 이미지에게 할당된 URL 가져오기
     const getImgUrl = (text) => {
         inputs.profileUrl = text;
     }
@@ -70,9 +65,9 @@ export default function OnPost() {
     }
 
     const handleChange = () => {
-        const target = document.getElementById("selectBox");
-        const value = target.options[target.selectedIndex].value;
-        const name = 'team';
+        const target = document.getElementById("selectBox"); //select 요소 가져오기
+        const value = target.options[target.selectedIndex].value; //select에서 선택된 option의 value값 가져오기
+        const name = 'team'; // 변수 inputs의 name을 team으로 지정
         // console.log(target)
         // console.log(value)
         setInputs({
@@ -103,7 +98,7 @@ export default function OnPost() {
                     </div>
                     <div className="post_thumbNail">
                         <p>썸네일</p>
-                        <UploadThumNail getThumbUrl={getThumbUrl} teamName={team} directory={url}/>
+                        <UploadThumbNail getThumbUrl={getThumbUrl} teamName={team} directory={url}/>
                     </div>
                     <div className="student_picture">
                         <p>학생 사진</p>

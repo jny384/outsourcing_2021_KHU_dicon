@@ -2,14 +2,10 @@ import './HomeView.css';
 import React from "react";
 
 import DecoIMG from "./decoIMG";
-import {Link} from "react-router-dom";
 import InstaLink from "../../components/home/items/instaLink";
 import YoutubeLink from "../../components/home/items/youtubeLink";
 
 import Admin from "../../components/home/items/admin";
-
-import TeamKorea from "../../components/home/teamKorea";
-import TeamUS from "../../components/home/teamUS";
 
 import MotionGraphics from "../../components/home/team/MotionGraphics";
 import Animation from "../../components/home/team/Animation";
@@ -62,8 +58,6 @@ function HomeView() {
                             <Game/>
                             <InterActionDesign/>
                             <WebtoonConceptArt/>
-                            {/*<TeamKorea/>*/}
-                            {/*<TeamUS/>*/}
                         </div>
                     </div>
                 </div>
