@@ -7,6 +7,7 @@
 
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    /*overflow: scroll;*/
 
     /*grid-template-rows: max-content max-content 1fr;*/
 }

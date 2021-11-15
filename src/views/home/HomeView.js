@@ -6,6 +6,10 @@ import InstaLink from "../../components/home/items/instaLink";
 import YoutubeLink from "../../components/home/items/youtubeLink";
 
 import Admin from "../../components/home/items/admin";
+import Organization from "../../components/home/items/organization";
+import Guest from "../../components/home/items/guest";
+import Professor from "../../components/home/items/professor";
+import Banner from "../../components/home/items/banner";
 
 import MotionGraphics from "../../components/home/team/MotionGraphics";
 import Animation from "../../components/home/team/Animation";
@@ -51,6 +55,10 @@ function HomeView() {
                     </div>
                     <div className="right_items">
                         <Admin/>
+                        <Organization/>
+                        <Guest/>
+                        <Professor/>
+                        <Banner/>
                         <div className="team" >
                             <MotionGraphics/>
                             <Animation/>

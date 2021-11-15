@@ -3,11 +3,10 @@ import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 
 import {postWorks} from "../../components/firebase/postWorks";
-import UploadWorkImages from "../../components/works/uploadWorkImages";
-import UploadProfile from "../../components/works/uploadProfile";
-import UploadThumbNail from "../../components/works/uploadThumbNail";
+import UploadWorkImages from "../../components/post/uploadWorkImages";
+import UploadProfile from "../../components/post/uploadProfile";
+import UploadThumbNail from "../../components/post/uploadThumbNail";
 import PostThumbNail from "../../components/firebase/postThumbNail";
-// import GetWorkImage from "../../components/works/getWorkImage";
 
 export default function OnPost() {
 
@@ -44,10 +43,13 @@ export default function OnPost() {
     }
 
     const onPost = async () => {
-        history.push(`/works/${team}/${url}`);
+        console.log(team)
+        console.log(url)
+        console.log(inputs)
         await postWorks(team, url, inputs);
         await PostThumbNail(team, url, thumbUrl, workTitle, name);
 
+        // history.push(`/works/${team}/${url}`);
         // console.log(url);
     };
 

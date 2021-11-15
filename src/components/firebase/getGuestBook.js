@@ -2,19 +2,13 @@
 import {firebase} from "./firebase-manager";
 const db = firebase.firestore();
 
-export default function GetGuestBook() {
-    const res = db.collection('guestBook').get().then(async (doc)=> {
-        if (doc.exists) {
-            // console.log(url);
-            const inputData = doc.data().input;
-            // console.log(inputData)
-            return inputData;
-        } else {
-            return null;
-        }
-    }).catch((error)=>{
-        console.log('error:',error)
+export default async function GetGuestBook() {
+    const guestRef = db.collection('guestBook');
+    const guests = []
+
+    const snapshot = await guestRef.get();
+    snapshot.forEach(doc => {
+        guests.unshift(doc.data());
     })
-    console.log(res)
-    return res;
+    return guests;
 }

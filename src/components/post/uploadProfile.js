@@ -53,7 +53,7 @@ export default function UploadProfile(props) {
             {props.getImgUrl}
             {/*<input onChange={handleChangeDirectory} placeholder="저장 폴더 이름"/>*/}
             <br/>
-            <input type="file" multiple onChange={handleChange}/>
+            <input type="file" onChange={handleChange}/>
             <button onClick={handleUpload}>Upload</button>
             <br/>
             <img

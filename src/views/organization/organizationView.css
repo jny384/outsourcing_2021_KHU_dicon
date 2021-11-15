@@ -1,0 +1,65 @@
+.organization_main{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.org_left{
+    background-color: red;
+    width: 472px;
+    position: relative;
+    left: 0;
+    min-height: 95vh;
+    height: auto;
+}
+
+.org_right{
+    margin-left: 24px;
+}
+
+.video_title{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 50px 0;
+}
+
+.people{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.people_detail{
+    font-size: 18px;
+}
+
+.poster_title{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 50px 0;
+}
+.poster_imgs{
+    display: flex;
+    flex-direction: row;
+}
+.poster_image{
+    width: 448px;
+    height: 629px;
+    background-color: blue;
+    margin-right: 24px;
+}
+
+.graduate_title{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 50px 0;
+}
+
+.graduate_img{
+    width: 920px;
+    height: 518px;
+    background-color: blue;
+}
+
+.graduate{
+    margin-bottom: 100px;
+}

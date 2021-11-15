@@ -5,29 +5,55 @@ import { Route, BrowserRouter } from "react-router-dom";
 import Header from "./views/home/header";
 import Footer from "./views/home/footer";
 import HomeView from "./views/home/HomeView";
-import OnPost from "./views/admin/onPost";
+
 import GuestBook from "./views/guest/guestBook";
+
+import AdminView from "./views/admin/adminView";
+import OnPostBanner from "./views/banner/onPostBanner";
+
+import OrganizationView from "./views/organization/organizationView";
+import BannerView from "./views/banner/bannerView";
+import ProfessorView from "./views/professor/professorView";
+
+import OnPost from "./views/admin/onPost";
+import UploadWorkImages from "./components/post/uploadWorkImages";
+import UploadProfile from "./components/post/uploadProfile";
+
 import WorksView from "./views/works/worksView";
-import UploadWorkImages from "./components/works/uploadWorkImages";
-import UploadProfile from "./components/works/uploadProfile";
 import WorksList from "./views/works/worksList";
+
 
 function App() {
     return (
             <div className="mainBody">
-                <Header/>
-                <BrowserRouter>
-                    <Route exact path="/" component={HomeView}/>
-                    <Route path='/write' component={OnPost}/>
-                    <Route path='/guest' component={GuestBook}/>
-                    <Route exact path="/works/:teamName/:urlId" component={WorksView}/>
+                <div>
+                    <Header/>
+                </div>
+                <div>
+                    <BrowserRouter>
+                        <Route exact path="/" component={HomeView}/>
 
-                    <Route exact path="/upload/:urlId" component={UploadProfile}/>
-                    <Route path='/upload' component={UploadWorkImages}/>
+                        <Route path='/guest' component={GuestBook}/>
+                        <Route path='/2021_KHU_dicon' component={OrganizationView}/>
+                        <Route path='/banner' component={BannerView}/>
+                        <Route path='/professor' component={ProfessorView}/>
+                        <Route path='/admin' component={AdminView}/>
 
-                    <Route exact path='/works/:teamName' component={WorksList}/>
-                </BrowserRouter>
-                <Footer/>
+                        <Route path='/write' component={OnPost}/>
+                        <Route exact path="/works/:teamName/:urlId" component={WorksView}/>
+
+                        <Route path='/post_banner' component={OnPostBanner}/>
+
+                        <Route path='/upload' component={UploadWorkImages}/>
+                        <Route exact path="/upload/:urlId" component={UploadProfile}/>
+
+                        <Route exact path='/works/:teamName' component={WorksList}/>
+                    </BrowserRouter>
+                </div>
+                <div>
+                    <Footer/>
+                </div>
+
             </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import GetThumbNail from "../../components/firebase/getThumbNail";
-
+import './worksList.css'
 
 export default function WorksList({match}) {
     const [inputData, setInputData] = useState([]);
@@ -19,11 +19,12 @@ export default function WorksList({match}) {
     return(
         <>
             <section>
-                <div>
+                <div className="list_main">
+                    <span className="list_title">{match.params.teamName}</span>
                     {
                         inputData.map((item, index) => {
                             return(
-                                <div key={index} style={style.component}>
+                                <div key={index} className="thumb_list">
                                     <div className="thumbNail">
                                         <a href={item.url}>
                                             <img
@@ -33,7 +34,7 @@ export default function WorksList({match}) {
                                             />
                                         </a>
                                     </div>
-                                    <div>
+                                    <div className="thumb_under">
                                         <a href={item.url} style={style.title}>{item.title}</a>
                                         <a href={item.url} style={style.name}>{item.name}</a>
                                     </div>
