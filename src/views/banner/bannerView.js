@@ -33,7 +33,7 @@ export default function BannerView() {
     // const thumbUrl = inputData.thumbUrl;
     // console.log(inputData[0].bannerUrl)
     return(
-        <>
+        <div className="bannerViewMain">
             <div className="banner_top">
                 <span className="banner_title">온라인 현수막</span>
                 <div className="banner_main">
@@ -72,7 +72,7 @@ export default function BannerView() {
             {/*        />*/}
             {/*    </div>*/}
             {/*):null}*/}
-        </>
+        </div>
     )
 }
 

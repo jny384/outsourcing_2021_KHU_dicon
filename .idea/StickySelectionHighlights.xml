@@ -183,6 +183,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/post/uploadWorkImages.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/components/works/MotionGraphics/MG_getPosting.js">
           <value>
             <PaintGroupHighlightMap />
@@ -259,6 +264,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/views/admin/app.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/views/admin/auth.js">
           <value>
             <PaintGroupHighlightMap />
           </value>

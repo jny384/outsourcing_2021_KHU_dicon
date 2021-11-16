@@ -12,7 +12,7 @@ export default function Admin() {
     };
 
     const handleClick = () => {
-        history.push(`/admin`);
+        history.push(`/auth/admin`);
     };
 
     return(

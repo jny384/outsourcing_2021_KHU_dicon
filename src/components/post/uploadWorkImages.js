@@ -52,18 +52,21 @@ export default function UploadWorkImages(props) {
         });
 
         Promise.all(promises)
-            // .then(() => { GetWorkImages(urls); })
+            // .then(() => { })
             .catch((err)=> console.log(err))
     };
 
     // console.log("image : ", images);
     // console.log("urls : ", urls);
 
-    const sendText = () => {
-        props.getWorksUrl(urls);
-        console.log(urls)
+    const sendText = async () => {
+        // handleUpload()
+        await props.getWorksUrl(urls);
+        await console.log(urls)
     }
-
+    // console.log(urls)
+    console.log(teamName)
+    console.log(directory)
     return(
         <>
             <progress value={progress} max="100"/>
@@ -72,6 +75,7 @@ export default function UploadWorkImages(props) {
             <br/>
             <input type="file" multiple onChange={handleChange}/>
             <button onClick={handleUpload}>Upload</button>
+            <button onClick={sendText}>send</button>
             <br/>
             <br/>
             {urls.map((url, i) => (
@@ -82,7 +86,6 @@ export default function UploadWorkImages(props) {
                 />
             ))}
             <br/>
-            <a onClick={sendText}>send</a>
             {/*<GetWorkImages urls={urls}/>*/}
         </>
     )

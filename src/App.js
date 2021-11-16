@@ -9,6 +9,7 @@ import HomeView from "./views/home/HomeView";
 import GuestBook from "./views/guest/guestBook";
 
 import AdminView from "./views/admin/adminView";
+import Auth from "./views/admin/auth";
 import OnPostBanner from "./views/banner/onPostBanner";
 
 import OrganizationView from "./views/organization/organizationView";
@@ -26,10 +27,8 @@ import WorksList from "./views/works/worksList";
 function App() {
     return (
             <div className="mainBody">
-                <div>
-                    <Header/>
-                </div>
-                <div>
+                <Header/>
+                <div className="mainComponent">
                     <BrowserRouter>
                         <Route exact path="/" component={HomeView}/>
 
@@ -37,6 +36,8 @@ function App() {
                         <Route path='/2021_KHU_dicon' component={OrganizationView}/>
                         <Route path='/banner' component={BannerView}/>
                         <Route path='/professor' component={ProfessorView}/>
+
+                        <Route path='/auth/admin' component={Auth}/>
                         <Route path='/admin' component={AdminView}/>
 
                         <Route path='/write' component={OnPost}/>
@@ -50,9 +51,7 @@ function App() {
                         <Route exact path='/works/:teamName' component={WorksList}/>
                     </BrowserRouter>
                 </div>
-                <div>
-                    <Footer/>
-                </div>
+                <Footer/>
 
             </div>
   );

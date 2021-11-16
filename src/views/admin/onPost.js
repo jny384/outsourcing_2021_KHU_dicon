@@ -49,7 +49,7 @@ export default function OnPost() {
         await postWorks(team, url, inputs);
         await PostThumbNail(team, url, thumbUrl, workTitle, name);
 
-        // history.push(`/works/${team}/${url}`);
+        history.push(`/works/${team}/${url}`);
         // console.log(url);
     };
 
@@ -90,6 +90,7 @@ export default function OnPost() {
                         <input name="url" onChange={getUrl} value={url} placeholder="주소"/>
                         {/*<input name="team" onChange={onChange} value={team} placeholder="팀 이름"/>*/}
                         <select id="selectBox" onChange={handleChange}>
+                            <option> 선택하세요 </option>
                             <option name="team" value="MotionGraphics">Motion Graphics</option>
                             <option name="team" value="Animation">Animation</option>
                             <option name="team" value="VFX_SFX">VFX / SFX</option>

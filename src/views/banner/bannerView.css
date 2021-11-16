@@ -1,15 +1,21 @@
+.bannerViewMain{
+
+    min-height: 87vh;
+}
+
 .banner_top{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 .banner_main{
-    min-height: 95vh;
     display: grid;
     grid-column-gap: 23px;
     grid-row-gap: 50px;
     /*grid-template-columns: repeat(4, 1fr);*/
     place-items: center;
+    min-height: 75vh;
+    height: max-content;
 }
 .pop_img{
     width: 515px;
