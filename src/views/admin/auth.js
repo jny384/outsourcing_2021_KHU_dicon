@@ -15,15 +15,26 @@ export default function Auth() {
             history.push('/admin')
         }
     }
-    return(
-        <div style={style.main_body}>
-            <p style={style.p}>관리자 전용 페이지입니다.</p>
-            <div style={style.inputBox}>
-                <input style={style.input} type="password" placeholder="비밀번호를 입력하시오" onChange={getPwd}/>
-                <button style={style.button} onClick={compare}>go</button>
-            </div>
+    const onKeyPress = (e) => {
+        if (e.key == 'Enter') {
+            getPwd(e);
+            console.log(e.target.value);
+        }
+    }
 
-        </div>
+    return(
+        <>
+            <div style={style.main_body}>
+                <p style={style.p}><b>Enter Password</b></p>
+                <div style={style.inputBox}>
+                    <input style={style.input} type="password" placeholder="&nbsp;&nbsp;&nbsp; password" onChange={getPwd} onKeyPress={onKeyPress}/>
+                    <button style={style.button} onClick={compare}>→</button>
+                </div>
+            </div>
+            <div className="footer">
+                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
+            </div>
+        </>
     )
 }
 
@@ -41,24 +52,24 @@ const style = {
         fontsize: '24px',
         fontWeight:'bold',
         color:"white"
-
     },
     inputBox: {
         display: 'flex',
         flexDirection: 'row',
-        marginTop: '100px'
+        marginTop: '20px'
     },
     button:{
         width: '50px',
         height: '50px',
         border: 'none',
-        backgroundColor: 'red'
+        backgroundColor: 'red',
     },
     input: {
         border: 'none',
         borderRadius:'0',
         height: '50px',
         padding:'0',
-        margin: '0'
+        margin: '0',
+        width: '300px'
     }
 }

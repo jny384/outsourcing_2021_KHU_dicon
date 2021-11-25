@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import web from "./img/Webtoon_Concept Art.png";
 
 export default function WebtoonConceptArt() {
     const history = useHistory();
@@ -18,9 +19,9 @@ export default function WebtoonConceptArt() {
     return(
         <div style={style.main_body} onDoubleClick={onClick}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="box" >
-                    <div style={style.box}>team</div>
-                    <p style={style.p}>Webtoon Concept Art</p>
+                <div className="team_web" >
+                    <img className="team_web_img" src={web}/>
+                    <p style={style.p} className="team_web_title">Webtoon <br/>Concept Art</p>
                 </div>
             </Draggable>
         </div>

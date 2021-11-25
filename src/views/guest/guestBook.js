@@ -60,10 +60,8 @@ export default function GuestBook() {
     return (
         <>
             <div className="guestBook_main">
-                <span className="guestBook_title"> 방명록 </span>
+                <span className="guestBook_title"> guest Book </span>
                 <div className="guest_list">
-                    {/*<ul className="guest_list">*/}
-                    {/*<li className="grid_list">*/}
                     <div className="list_box">
                         <div className="input_box">
                             <div className="input_top">
@@ -77,14 +75,11 @@ export default function GuestBook() {
                                 <button className="input_btn" onClick={onPost}>등록</button>
                             </div>
                         </div>
-
-
                     </div>
-                    {/*</li>*/}
                     {
                         inputData.map((item, index) => {
                             if (inputData.length > 0) {
-                                return(
+                                return (
                                     // <li className="grid_list">
                                     <div className="list_box">
                                         <div className="guest_box">
@@ -96,22 +91,17 @@ export default function GuestBook() {
                                                 <span> {item.content} </span>
                                             </div>
                                         </div>
-
                                     </div>
-                                    // </li>
-
                                 )
                             }
                         })
                     }
-                    {/*<div style={style.outerBox}>*/}
-                    {/*    */}
-                    {/*</div>*/}
-                    {/*</div>*/}
-                    {/*    </ul>*/}
                 </div>
             </div>
 
+            <div className="footer_book">
+                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
+            </div>
         </>
     )
 }

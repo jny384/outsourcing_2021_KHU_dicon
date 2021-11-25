@@ -25,36 +25,22 @@ body {
 .left_workview {
     display: block;
     /*position: absolute;*/
-    flex-direction: column;
-    width: 472px;
-    height: 500vh;
-    /*width: 30vw;*/
-    overflow: hidden;
-    background-color: #686868;
+    background-color: #E7411C;
 }
 #student_pic{
-    width: 394px;
-    height: 534px;
-    background-color: deeppink;
-    margin: 37px 39px 10px;
+    background-color: black;
 }
 
 #worker_name {
-    font-size: 24px;
     font-weight: bold;
-    margin: 10px 39px;
+    color: white;
 }
 
 .left_detail {
-    font-size: 18px;
-
-    margin: 10px 39px;
 }
 .right_workview {
     display: inline-block;
     position: absolute;
-    left: 472px;
-    right: 0;
     height: fit-content;
     text-align: center;
     justify-content: center;
@@ -62,7 +48,6 @@ body {
 }
 
 #workTitle {
-    font-size: 36px;
     color: white;
     font-weight: bold;
 }
@@ -71,36 +56,357 @@ body {
     text-align: center;
     /*background-color: #E4E4E4;*/
     height: auto;
-    margin: 24px 25px;
     color: white;
     position: relative;
-    top: 0px;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
 }
 
 #workInfo_title{
     color: white;
-    font-size: 36px;
 }
 
 #workInfo {
-    font-size: 18px;
 }
 
 .work_youtube {
     display: flex;
     justify-content: center;
-    left: 0;
-    margin: 24px 25px;
     height: fit-content;
 }
 
 #youtubeLink {
-    width: 920px;
-    height: 518px;
 }
 
 .works_images {
-    width: 77%;
-    margin-bottom: 15px;
+}
+
+@media (min-width: 1440px) {
+    .left_workview {
+        width: 378px;
+        height: 5000vh;
+        overflow: hidden;
+    }
+    #student_pic{
+        width: 260px;
+        height: 347px;
+        background-color: deeppink;
+        margin: 58px 58px 30px;
+    }
+
+    .student_profile_pic{
+        width: 260px;
+        height: 347px;
+    }
+
+    #worker_name {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 0 30px 58px ;
+        color: white;
+    }
+
+    .left_detail {
+        font-size: 18px;
+        margin-left: 58px;
+        /*margin: 10px 39px;*/
+    }
+    .right_workview {
+        right: 0;
+        left: 378px;
+        /*width: ;*/
+    }
+
+    #workTitle {
+        font-size: 36px;
+    }
+
+    .work_info {
+        margin: 24px 25px 100px 25px;
+        top: 0px;
+    }
+
+    #workInfo_title{
+        font-size: 36px;
+    }
+
+    #workInfo {
+        font-size: 18px;
+    }
+
+    .work_youtube {
+        left: 0;
+        margin-bottom: 50px;
+        /*margin: 24px 25px;*/
+    }
+
+    #youtubeLink_small {
+        display: none;
+    }
+
+    .works_images {
+        width: 920px;
+        margin-bottom: 15px;
+    }
+    #youtubeLink_mid{
+        display: none;
+    }
+
+    #youtubeLink_mid{
+        display: none;
+    }
+}
+@media (min-width: 1023px) and (max-width: 1439px){
+    .left_workview {
+        width: 280px;
+        height: 5000vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    #student_pic{
+        width: 193px;
+        height: 257px;
+        background-color: deeppink;
+        margin: 49px 43px 25px;
+    }
+
+    .student_profile_pic{
+        width: 193px;
+        height: 257px;
+    }
+
+    #worker_name {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 25px;
+        color: white;
+    }
+
+    .left_detail {
+        font-size: 18px;
+
+        margin: 10px 39px;
+    }
+    .right_workview {
+        right: 0;
+        /*width: ;*/
+        left: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #workTitle {
+        font-size: 36px;
+        margin: 40px 0;
+    }
+
+    .work_info {
+        margin-bottom: 80px;
+        /*top: 0px;*/
+    }
+
+    #workInfo_title{
+        font-size: 36px;
+    }
+
+    #workInfo {
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+
+    .work_youtube {
+        left: 0;
+        margin-bottom: 40px;
+        /*margin: 24px 25px;*/
+    }
+
+    #youtubeLink_small {
+        display: none;
+    }
+    #youtubeLink{
+        display: none;
+    }
+
+    .works_images {
+        width: 658px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .student_area{
+        margin-bottom: 100px;
+    }
+    .left_workview {
+        width: 196px;
+        height: 5000vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    #student_pic{
+        width: 138px;
+        height: 184px;
+        background-color: deeppink;
+        margin: 36px 29px 18px;
+    }
+
+    .student_profile_pic{
+        width: 138px;
+        height: 184px;
+    }
+
+    #worker_name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 18px;
+        color: white;
+    }
+
+    .left_detail {
+        font-size: 14px;
+
+        margin: 10px 39px;
+    }
+    .right_workview {
+        right: 0;
+        /*width: ;*/
+        left: 196px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #workTitle {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .work_info {
+        margin-bottom: 60px;
+        /*top: 0px;*/
+    }
+
+    #workInfo_title{
+        font-size: 30px;
+    }
+
+    #workInfo {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    .work_youtube {
+        left: 0;
+        margin-bottom: 40px;
+        /*margin: 24px 25px;*/
+    }
+
+    #youtubeLink_small {
+        display: none;
+    }
+    #youtubeLink{
+        display: none;
+    }
+    #youtubeLink_mid{
+        display: none;
+    }
+
+    .works_images {
+        width: 500px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .student_area{
+        display: flex;
+        flex-direction: column;
+        height: 500vh;
+        overflow: hidden;
+    }
+
+    .left_workview {
+        width: 100vw;
+        min-height: 615px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #student_pic{
+        width: 301px;
+        height: 417px;
+        background-color: deeppink;
+        margin: 30px;
+    }
+
+    .student_profile_pic{
+
+        width: 301px;
+        height: 417px;
+    }
+
+    #worker_name {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 39px;
+        color: white;
+    }
+
+    .left_detail {
+        font-size: 18px;
+
+        margin: 10px 39px;
+    }
+    .right_workview {
+        /*right_workviewright: 0;*/
+        height: fit-content;
+        top: 615px;
+        width: 100vw;
+    }
+
+    #workTitle {
+        font-size: 36px;
+    }
+
+    .work_info {
+        margin: 24px 25px 100px 25px;
+        /*top: 0px;*/
+    }
+
+    #workInfo_title{
+        font-size: 36px;
+    }
+
+    #workInfo {
+        font-size: 18px;
+    }
+
+    .work_youtube {
+        left: 0;
+        /*width: 100vw;*/
+        margin: 24px 25px;
+    }
+    #youtubeLink{
+        display: none;
+    }
+    .detail_pic{
+        width: 100vw;
+    }
+    .works_images {
+        width: 328px;
+        margin-bottom: 15px;
+    }
+    #youtubeLink_mid{
+        display: none;
+    }
+
+    #youtubeLink_mid{
+        display: none;
+    }
+}
+
+p {
+    color: white;
 }

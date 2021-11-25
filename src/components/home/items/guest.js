@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import book from "../../../views/home/img/guest_book.png";
 
 export default function Guest() {
     const history = useHistory();
@@ -16,11 +17,11 @@ export default function Guest() {
     };
 
     return(
-        <div className="admin" style={style.main_body} onDoubleClick={handleClick}>
+        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="box" >
-                    <div style={style.box}>방명록</div>
-                    <p style={style.p}>방명록 페이지</p>
+                <div className="home_book" >
+                    <img className="home_book_img" src={book}/>
+                    <p style={style.p} className="home_book_title">Guestbook</p>
                 </div>
             </Draggable>
         </div>
@@ -42,7 +43,7 @@ const style = {
     },
     p: {
         margin: '0',
-        fontsize: '14px',
+        // fontsize: '14px',
         color:"white"
     }
 }

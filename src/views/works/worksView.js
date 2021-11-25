@@ -54,15 +54,18 @@ export default function WorksView({match}) {
                 <div className="left_workview">
                     <div id="student_pic">
                         <img
+                            className="student_profile_pic"
                             src={profileUrl || "http://via.placeholde.com/300"}
                             alt="firebase-image"
-                            style={{width: "394px", height : "534px"}}
+                            // width="100%"
+                            // height="auto"
+                            // style={{width: "394px", height : "534px"}}
                         />
                     </div>
                     <p id="worker_name">{name}</p>
                     <div className="left_detail">
                         <p id="worker_email">{email}</p>
-                        <p id="worker_workLink">{workLink}</p>
+                        <a href={workLink} id="worker_workLink">{workLink}</a>
                     </div>
                 </div>
                 <div className="right_workview">
@@ -79,11 +82,39 @@ export default function WorksView({match}) {
                             style={style.youtubeLink}
                             id="youtubeLink"
                         />
+                        <ReactPlayer
+                            width="658px"
+                            height="370px"
+                            align-items="center"
+                            url={youtubeLink}
+                            style={style.youtubeLink}
+                            id="youtubeLink_mid"
+                        />
+
+                        <ReactPlayer
+                            width="500px"
+                            height="279px"
+                            align-items="center"
+                            url={youtubeLink}
+                            style={style.youtubeLink}
+                            id="youtubeLink_tab"
+                        />
+                        <ReactPlayer
+                            width="328px"
+                            height="183px"
+                            align-items="center"
+                            url={youtubeLink}
+                            style={style.youtubeLink}
+                            id="youtubeLink_small"
+                        />
                     </div>
                     <div className="work_detail_pic">
                         {imageList()}
                     </div>
                 </div>
+            </div>
+            <div className="footer">
+                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
             </div>
         </>
     )

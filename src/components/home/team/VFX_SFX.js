@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import vfx from "./img/VFX_SFX.png";
 
 export default function VFX_SFX() {
     const history = useHistory();
@@ -18,9 +19,9 @@ export default function VFX_SFX() {
     return(
         <div style={style.main_body} onDoubleClick={onClick}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="box" >
-                    <div style={style.box}>team</div>
-                    <p style={style.p}>VFX / SFX</p>
+                <div className="team_vfx" >
+                    <img className="team_vfx_img" src={vfx}/>
+                    <p style={style.p} className="team_vfx_title">VFX / SFX</p>
                 </div>
             </Draggable>
         </div>

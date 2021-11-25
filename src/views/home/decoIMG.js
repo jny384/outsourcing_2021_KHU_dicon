@@ -27,7 +27,7 @@ export default function DecoIMG() {
                     <Draggable onDrag={(e, data) => trackPos(data)} >
                         <div className="deco_image" style={style.deco_image} onDoubleClick={openModal}>
                             <div style={style.box}>이미지 들어갈 자리</div>
-                            <p style={style.p}>deco</p>
+                            {/*<p style={style.p}>deco</p>*/}
                         </div>
                     </Draggable>
                     {status ? (
@@ -55,8 +55,8 @@ const style = {
         borderRadius:"100%"
     },
     set_box: {
-        width: '70vw',
-        height: '70vh',
+        width: '80vw',
+        height: '80vh',
         backgroundColor: "blue",
         position: 'fixed',
         top: '16vh',

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Draggable from "react-draggable";
+import insta from './img/인스타그램.png';
 
 export default function InstaLink() {
     const [position, setPosition] = useState({ x: 0, y: 0 }); // box의 포지션 값
@@ -8,15 +9,16 @@ export default function InstaLink() {
         setPosition({ x: data.x, y: data.y });
     };
     const handleClick = (e) => {
-        window.location.href = 'https://www.instagram.com'; //이동할 링크
+        window.location.href = 'https://instagram.com/cookie_dicon_2021?utm_medium=copy_link'; //이동할 링크
     };
 
     return(
         <div className="main_body" style={style.main_body} onDoubleClick={handleClick}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="box" >
-                    <div style={style.box}>인스타</div>
-                    <p style={style.p}>Instagram Link</p>
+                <div className="home_insta" >
+                    <img src={insta} className='home_insta_img'/>
+                    <p style={style.p} className='home_insta_title'>@cookie_dicon_2021</p>
+
                 </div>
             </Draggable>
         </div>

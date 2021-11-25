@@ -1,34 +1,33 @@
 .header {
     display: flex;
-    position: relative;
+    position: fixed;
     top: 0px;
     background-color: #333333;
     width: 100vw;
-    height: 5vh;
     align-items: center;
+    z-index: 100;
     /*padding: 10px 5px 2px 5px;*/
 }
 
 .header_left{
-    display: table;
+    display: flex;
+    flex-direction: row;
     position: relative;
-    left: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .header_right{
     display: flex;
     position: absolute;
     justify-content: space-between;
+    align-items: center;
 
     /*top: 7px;*/
-    right: 10px;
     /*padding: 10px 5px 2px 5px;*/
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    margin-left: 5px;
+    /*background-color: white;*/
     border-radius: 5px;
     justify-content: center;
     display: table-cell;
@@ -38,64 +37,311 @@
 }
 
 #homeIcon {
-    width: 25px;
-    height: 25px;
     opacity: 0;
     display: table-cell;
     vertical-align: middle;
 }
 
 .dicon_2021 {
-    width: 100px;
-    height: 25px;
     /*background-color: aqua;*/
     border-radius: 5px;
-    margin-left: 10px;
     text-align: center;
     color: white;
-    font-size: 16px;
     display: table-cell;
     vertical-align: middle;
 }
 
 .info {
-    width: 40px;
-    height: 25px;
     /*background-color: yellow;*/
     border-radius: 5px;
-    margin-left: 10px;
     text-align: center;
     color: white;
-    font-size: 16px;
     display: table-cell;
     vertical-align: middle;
 }
 
 .real_time {
     color: white;
-    font-size: 14px;
     margin-top: 2.5%;
     /*text-align: ``;*/
 }
 
 .insta_header {
-    width: 25px;
-    height: 25px;
-    background-color: deeppink;
-    margin-right: 10px;
-    border-radius: 5px;
+    /*background-color: deeppink;*/
+    /*border-radius: 5px;*/
     margin-top: 2%;
 }
 
 .youtube_header {
-    width: 25px;
-    height: 25px;
-    background-color: red;
-    margin-right: 10px;
-    border-radius: 5px;
+    /*background-color: red;*/
+    /*border-radius: 5px;*/
     margin-top: 2%;
 }
 
 a {
     text-decoration: none;
 }
+
+
+.header{
+    height: 25px;
+}
+
+@media (min-width: 1440px) {
+    .header{
+        height: 35px;
+    }
+    .header_left{
+        left: 10px;
+
+        line-height: 1.5;
+    }
+    .header_right{
+        right: 10px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+
+    #homeIcon {
+        width: 25px;
+        height: 25px;
+    }
+    .home_img{
+        width: 25px;
+    }
+    .insta_img{
+        width: 25px;
+    }
+    .tube_img{
+        width: 25px;
+    }
+
+    .dicon_2021 {
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 2px;
+        /*margin-left: 10px;*/
+        font-size: 16px;
+    }
+
+    .info {
+        width: 40px;
+        height: 25px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .real_time {
+        color: white;
+        font-size: 14px;
+    }
+
+    .insta_header {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .youtube_header {
+        width: 25px;
+        height: 25px;
+        /*background-color: red;*/
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1439px){
+    .header_left{
+        left: 10px;
+        line-height: 1.5;
+    }
+    .header_right{
+        right: 10px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        /*margin-left: 5px;*/
+    }
+
+    #homeIcon {
+        width: 20px;
+        height: 20px;
+    }
+    .home_img{
+        width: 20px;
+    }
+    .insta_img{
+        width: 20px;
+    }
+    .tube_img{
+        width: 20px;
+    }
+
+    .dicon_2021 {
+        width: 85px;
+        height: 20px;
+        /*margin-left: 10px;*/
+        font-size: 14px;
+    }
+
+    .info {
+        width: 30px;
+        height: 20px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .real_time {
+        color: white;
+        font-size: 14px;
+    }
+
+    .insta_header {
+        width: 25px;
+        height: 25px;
+        margin-right: 7px;
+    }
+
+    .youtube_header {
+        width: 20px;
+        height: 20px;
+        /*background-color: red;*/
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+/*@media (min-width: 768px) and (max-width: 1023px){*/
+/*    .header_left{*/
+/*        left: 10px;*/
+/*        line-height: 1.75;*/
+/*    }*/
+/*    .header_right{*/
+/*        right: 10px;*/
+/*    }*/
+
+/*    .icon {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*        margin-left: 5px;*/
+/*    }*/
+/*    .home_img{*/
+/*        width: 17px;*/
+/*    }*/
+/*    .insta_img{*/
+/*        width: 17px;*/
+/*    }*/
+/*    .tube_img{*/
+/*        width: 17px;*/
+/*    }*/
+
+/*    #homeIcon {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*    }*/
+
+/*    .dicon_2021 {*/
+/*        width: 68px;*/
+/*        height: 25px;*/
+/*        border-radius: 5px;*/
+/*        margin-left: 10px;*/
+/*        font-size: 13px;*/
+
+/*        !*padding-left: 9px;*!*/
+/*    }*/
+
+/*    .info {*/
+/*        width: 32px;*/
+/*        height: 25px;*/
+/*        margin-left: 20px;*/
+/*        !*padding-left: 20px;*!*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .real_time {*/
+/*        color: white;*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .insta_header {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*        margin-right: 3px;*/
+/*    }*/
+
+/*    .youtube_header {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*        !*background-color: red;*!*/
+/*        margin-right: 5px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 767px) {*/
+/*    .header_left{*/
+/*        left: 10px;*/
+/*        line-height: 1.75;*/
+/*    }*/
+/*    .header_right{*/
+/*        right: 10px;*/
+/*    }*/
+
+/*    .icon {*/
+/*        width: 17px;*/
+/*        max-height: 17px;*/
+/*        margin-left: 5px;*/
+/*    }*/
+
+/*    #homeIcon {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*    }*/
+/*    .home_img{*/
+/*        width: 17px;*/
+/*    }*/
+/*    .insta_img{*/
+/*        width: 17px;*/
+/*    }*/
+/*    .tube_img{*/
+/*        width: 17px;*/
+/*    }*/
+
+/*    .dicon_2021 {*/
+/*        width: 68px;*/
+/*        height: 25px;*/
+/*        border-radius: 5px;*/
+/*        margin-left: 9px;*/
+/*        !*padding-left: 9px;*!*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .info {*/
+/*        width: 32px;*/
+/*        height: 25px;*/
+/*        margin-left: 20px;*/
+/*        font-size: 13px;*/
+/*        !*padding-left: 20px;*!*/
+/*    }*/
+
+/*    .real_time {*/
+/*        color: white;*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .insta_header {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*        margin-right: 3px;*/
+/*    }*/
+
+/*    .youtube_header {*/
+/*        width: 17px;*/
+/*        height: 17px;*/
+/*        !*background-color: red;*!*/
+/*        margin-right: 5px;*/
+/*    }*/
+/*}*/

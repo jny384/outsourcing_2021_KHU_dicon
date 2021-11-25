@@ -33,46 +33,41 @@ export default function BannerView() {
     // const thumbUrl = inputData.thumbUrl;
     // console.log(inputData[0].bannerUrl)
     return(
-        <div className="bannerViewMain">
-            <div className="banner_top">
-                <span className="banner_title">온라인 현수막</span>
-                <div className="banner_main">
-                    {
-                        inputData.map((item, index) => {
-                            return(
-                                <div key={index} className="banner_list">
-                                    <div onClick={openModal}>
-                                        <img
-                                            className="banner"
-                                            src={item.bannerUrl}
-                                            alt="OnlineBanner"
-                                        />
-                                        <div className="banner_under">
-                                            <span>From. {item.from}</span>
-                                            <span>To. {item.to}</span>
+        <>
+            <div className="bannerViewMain">
+                <div className="banner_top">
+                    <span className="banner_title">online_banner</span>
+                    <div className="banner_main">
+                        {
+                            inputData.map((item, index) => {
+                                return(
+                                    <div key={index} className="banner_list">
+                                        <div onClick={openModal} className="banner_container">
+                                            <img
+                                                className="banner"
+                                                src={item.bannerUrl}
+                                                alt="OnlineBanner"
+                                            />
+                                            <div className="banner_under">
+                                                <span>From. {item.from}</span>
+                                                <span>To. {item.to}</span>
+                                            </div>
                                         </div>
+                                        {/*{status ? (*/}
+                                        {/*    <PopUpBanner data={inputData} index={index}/>*/}
+                                        {/*):null}*/}
                                     </div>
-                                    {/*{status ? (*/}
-                                    {/*    <PopUpBanner data={inputData} index={index}/>*/}
-                                    {/*):null}*/}
-                                </div>
-                            )
-                        })
-                    }
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-                {/*<PopUpBanner url={}*/}
             </div>
-            {/*{status ? (*/}
-            {/*    <div onClick={closeModal} className="pop_up">*/}
-            {/*        <img*/}
-            {/*            className="pop_img"*/}
-            {/*            src={inputData[imageNum].bannerUrl}*/}
-            {/*            alt="OnlineBanner"*/}
-            {/*            style={style.thumb}*/}
-            {/*        />*/}
-            {/*    </div>*/}
-            {/*):null}*/}
-        </div>
+            <div className="footer">
+                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
+            </div>
+        </>
+
     )
 }
 

@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
 
+import banner from '../../../views/home/img/online_banner.png';
+
 export default function Banner() {
     const history = useHistory();
 
@@ -16,11 +18,11 @@ export default function Banner() {
     };
 
     return(
-        <div className="admin" style={style.main_body} onDoubleClick={handleClick}>
+        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="box" >
-                    <div style={style.box}>현수막</div>
-                    <p style={style.p}>온라인 현수막</p>
+                <div className="home_banner" >
+                    <img className="home_banner_img" src={banner}/>
+                    <p style={style.p} className="home_banner_title">online_banner</p>
                 </div>
             </Draggable>
         </div>

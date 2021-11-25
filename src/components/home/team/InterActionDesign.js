@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import ui from "./img/ui_ux.png";
 
 export default function InterActionDesign() {
     const history = useHistory();
@@ -18,9 +19,9 @@ export default function InterActionDesign() {
     return(
         <div style={style.main_body} onDoubleClick={onClick}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="box" >
-                    <div style={style.box}>team</div>
-                    <p style={style.p}>InterAction Design UI / UX</p>
+                <div className="team_ui" >
+                    <img className="team_ui_img" src={ui}/>
+                    <p style={style.p} className="team_ui_title">UI / UX</p>
                 </div>
             </Draggable>
         </div>

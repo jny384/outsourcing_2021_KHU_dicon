@@ -2,64 +2,324 @@
     width: 100vw;
     min-height: 87vh;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
     flex-direction: column;
     overflow: scroll;
     height: auto;
     text-align: center;
+    background-color: #E7411C;
 }
 .guestBook_title{
     color:white;
-    font-size: 36px;
     font-weight: bold;
-    margin: 50px 0;
-}
-.input_box{
-    width: 310px;
-    height: 310px;
 }
 .guest_list {
     display: grid;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    min-height: 330px;
-    /*grid-template-columns: repeat(4, 1fr);*/
-    /*grid-auto-columns: minmax(330px, auto);*/
     place-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
+    .guestBook_main{
+        padding-bottom: 400px;
+    }
+    .guestBook_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .input_box{
+        width: 310px;
+        height: 310px;
+    }
+    .guest_list {
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        min-height: 330px;
+    }
     .guest_list{
         grid-template-columns: repeat(4, 1fr);
+        margin: 0 24px;
+    }
+    .list_box{
+        width: 330px;
+        min-height: 330px;
+    }
+    .input_top{
+        width: 316px;
+    }
+    .input_name {
+        width: 210px;
+        height: 30px;
+    }
+    .input_content {
+        width: 300px;
+        height: 220px;
+        margin-top: 10px;
+    }
+    .input_bottom{
+        width: 310px;
+    }
+    .input_btn {
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;
+        left: 225px;
+        font-size: 16px;
+    }
+    .guest_top{
+        width: 310px;
+    }
+    .guest_name{
+        width: 250px;
+        height: 30px;
+    }
+    .guest_date{
+        width: 60px;
+        height: 30px;
+    }
+    .guest_content{
+        width: 310px;
+        height: 270px;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
-    .guest_list{
-        grid-template-columns: repeat(2, 1fr);
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .guestBook_main{
+        padding-bottom: 200px;
     }
+    .guestBook_title{
+        font-size: 36px;
+        margin: 40px 0;
+    }
+    .input_box{
+        width: 310px;
+        height: 310px;
+    }
+    .guest_list {
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        min-height: 330px;
+    }
+    .guest_list {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 20px;
+    }
+    .list_box{
+        width: 310px;
+        min-height: 310px;
+        font-size: 16px;
+    }
+    .input_box{
+        width: 310px;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input_top{
+        width: 290px;
+    }
+    .input_name {
+        width: 282px;
+        height: 30px;
+        margin: 10px 0 0 0;
+    }
+    .input_content {
+        width: 282px;
+        height: 201px;
+        margin-top: 10px;
+    }
+    .input_bottom{
+        width: 310px;
+    }
+    .input_btn {
+        width: 80px;
+        height: 30px;
+        margin-top: 5px;
+        left: 217px;
+        font-size: 16px;
+    }
+    .guest_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .guest_top{
+        width: 290px;
+    }
+    .guest_name{
+        width: 240px;
+        height: 30px;
+        margin: 10px 0 0 0;
+
+    }
+    .guest_date{
+        width: 50px;
+        height: 30px;
+        margin: 10px 0 0 0;
+    }
+    .guest_content{
+        width: 290px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .guestBook_main{
+        padding-bottom: 200px;
+    }
+    .guestBook_title{
+        font-size: 36px;
+        margin: 30px 0;
+    }
+    .input_box{
+        width: 228px;
+        height: 231px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .guest_list {
+        grid-column-gap: 17px;
+        grid-row-gap: 17px;
+        min-height: 231px;
+    }
+    .guest_list{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 16px;
+    }
+    .list_box{
+        width: 228px;
+        min-height: 231px;
+        font-size: 14px;
+    }
+    .input_top{
+        margin-top: 10px;
+        /*width: 228px;*/
+    }
+    .input_name {
+        width: 207px;
+        height: 27px;
+    }
+    .input_content {
+        width: 207px;
+        height: 148px;
+        margin-top: 7px;
+    }
+    .input_bottom{
+        width: 228px;
+    }
+    .input_btn {
+        width: 50px;
+        height: 20px;
+        margin-top: 1px;
+        left: 170px;
+        /*right: 60px;*/
+        font-size: 14px;
+    }
+    .guest_box{
+        width: 228px;
+        height: 231px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top:0;
+    }
+    .guest_top{
+        width: 208px;
+        margin: 10px 0 0 0px;
+    }
+    .guest_name{
+        width: 150px;
+        height: 15px;
+    }
+    .guest_date{
+        width: 58px;
+        height: 15px;
+        position: relative;
+        /*left: 20px;*/
+    }
+    .guest_content{
+        /*margin-left: 10px;*/
+        margin-top: 10px;
+        width: 208px;
+        height: 180px;
+    }
+
 }
 @media (max-width: 767px) {
+
+    .guestBook_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .input_box{
+        width: 310px;
+        height: 310px;
+    }
+    .guest_list {
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        min-height: 330px;
+    }
     .guest_list{
         grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list_box{
+        width: 330px;
+        min-height: 330px;
+    }
+    .input_top{
+        width: 316px;
+    }
+    .input_name {
+        width: 210px;
+        height: 30px;
+    }
+    .input_content {
+        margin-top: 10px;
+        width: 300px;
+        height: 220px;
+    }
+    .input_bottom{
+        width: 310px;
+    }
+    .input_btn {
+        width: 80px;
+        height: 30px;
+        margin-top: 5px;
+        left: 225px;
+        font-size: 16px;
+    }
+    .guest_top{
+        width: 310px;
+    }
+    .guest_name{
+        width: 250px;
+        height: 30px;
+    }
+    .guest_date{
+        width: 60px;
+        height: 30px;
+    }
+    .guest_content{
+        width: 310px;
+        height: 270px;
     }
 }
-/*.guest_input{*/
-/*    background-color: #686868;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    width: 330px;*/
-/*}*/
+
+
+
 .list_box {
-    /*background-color: #686868;*/
     display: flex;
     flex-direction: column;
-    width: 330px;
-    min-height: 330px;
     align-items: center;
     justify-content: center;
     text-align: left;
-    border: white 2px solid;
-    color: white;
+    border: black 2px solid;
+    color: black;
 }
 .guest_box{
     position: relative;
@@ -67,95 +327,47 @@
     top: 0;
 }
 .guest_top{
-    /*margin-top: 10px;*/
     display: flex;
     flex-direction: row;
-    width: 310px;
-}
-.guest_name{
-    width: 250px;
-    height: 30px;
-    /*margin-right: 10px;*/
 }
 .guest_date{
     text-align: right;
-    width: 60px;
-    height: 30px;
-    color: #686868;
-}
-.guest_content{
-    width: 310px;
-    height: 270px;
-    /*margin-top: 10px;*/
+    color: black;
 }
 .input_top{
-    /*margin-top: 10px;*/
     display: flex;
     flex-direction: row;
-    width: 316px;
 }
 .input_name{
-    width: 210px;
-    height: 30px;
-    /*margin-right: 10px;*/
     left: 10px;
+    background-color:transparent;
+    border: black 1px solid;
 }
-.input_date{
-    width: 90px;
-    height: 30px;
+.input_name::placeholder{
+    color: black;
+}
+.input_content::placeholder{
+    color: black;
 }
 .input_content{
-    width: 310px;
-    height: 220px;
-    margin-top: 10px;
-    border: none;
+    /*margin-top: 10px;*/
     resize: none;
-}
-.input_bottom{
-    width: 310px;
+    background-color:transparent;
+    border: black 1px solid;
 }
 .input_btn{
-    width: 80px;
-    height: 30px;
-    margin-top: 10px;
-    border: none;
+    border: black 1px solid;
     position: relative;
-    left: 230px;
-    font-size: 18px;
-    /*right: 100px;*/
+    background-color: black;
+    color: white;
 }
-
-/** {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.guest_list li {*/
-/*    padding: 10px;*/
-/*    margin-bottom: 20px;*/
-/*    min-height: 180px;*/
-/*    border: 2px solid black;*/
-
-/*}*/
-
-/*.grid_list{*/
-/*    position: absolute;*/
-/*}*/
-
-/*ul {*/
-/*    list-style: none;*/
-/*    list-style-position: inside;*/
-/*    width: 100vw;*/
-/*}*/
-
-/*li {*/
-/*    display: list-item;*/
-/*    text-align: -webkit-match-parent;*/
-/*    background-color: #686868;*/
-/*}*/
-
-/*body {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    font-size: 0.813em;*/
-/*    height: 100%;*/
-/*}*/
+.footer_book{
+    /*width: 100vw;*/
+    /*position: absolute;*/
+    height: 8vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #E7411C;
+}

@@ -51,8 +51,7 @@ function App() {
                         <Route exact path='/works/:teamName' component={WorksList}/>
                     </BrowserRouter>
                 </div>
-                <Footer/>
-
+                {/*<Footer/>*/}
             </div>
   );
 }

@@ -18,25 +18,25 @@ export default function WorksList({match}) {
 
     return(
         <>
-            <section>
+            <section className="workListMain">
+                <span className="list_title">{match.params.teamName}</span>
                 <div className="list_main">
-                    <span className="list_title">{match.params.teamName}</span>
                     {
                         inputData.map((item, index) => {
                             return(
                                 <div key={index} className="thumb_list">
-                                    <div className="thumbNail">
+                                    <div >
                                         <a href={item.url}>
                                             <img
                                                 src={item.thumbUrl}
                                                 alt="thumbNail"
-                                                style={style.thumb}
+                                                className="thumbNail"
                                             />
                                         </a>
                                     </div>
                                     <div className="thumb_under">
-                                        <a href={item.url} style={style.title}>{item.title}</a>
-                                        <a href={item.url} style={style.name}>{item.name}</a>
+                                        <a href={item.url} className="thumb_title">{item.title}</a>
+                                        <a href={item.url} className="thumb_name">{item.name}</a>
                                     </div>
                                 </div>
                             )
@@ -44,6 +44,9 @@ export default function WorksList({match}) {
                     }
                 </div>
             </section>
+            <div className="footer">
+                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
+            </div>
         </>
     )
 }

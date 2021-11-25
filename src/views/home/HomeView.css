@@ -1,3 +1,38 @@
+.pop_image_n{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.pop_photo_n{
+    /*position: relative;*/
+    /*top: 5000px;*/
+    height: 60vh;
+    width: auto;
+    z-index: 100;
+}
+.pop_image{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.pop_photo{
+    /*position: relative;*/
+    /*top: 5000px;*/
+    height: 60vh;
+    width: auto;
+    z-index: 100;
+}
+
 .hommeWrap {
     height: 87vh;
     margin: 0;
@@ -39,13 +74,6 @@
     /*justify-content: space-between;*/
 }
 
-#deco_1 {
-    display: flex;
-}
-
-#deco_3 {
-    display: flex;
-}
 
 .left_items{
 
@@ -72,21 +100,486 @@
 
 }
 
+.pages{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    /*left: 30vw;*/
+}
+
 .team {
     width: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    left: 30vw;
+    /*left: 30vw;*/
+}
+.home_insta_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.home_youtube{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.home_notice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.home_photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@media (min-width: 1440px) {
+
+    .home_book_img, .home_org_img, .home_staff_img, .home_banner_img, .home_professor_img, .home_youtube_img, .home_insta_img, .team_2D_img, .team_3D_img, .team_game_img, .team_ui_img, .team_vfx_img, .team_web_img, .home_type_img, .home_photo_img, .home_notice_img, .home_trash_img{
+        width: 120px;
+    }
+    .home_book_title, .home_org_title, .home_staff_title, .home_banner_title, .home_professor_title, .home_youtube_title, .home_insta_title, .team_2D_title, .team_3D_title, .team_game_title, .team_ui_title, .team_vfx_title, .team_web_title, .home_type_title, .home_photo_title, .home_notice_title, .home_trash_title{
+        font-size: 14px;
+    }
+
+    .home_link{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 50px;
+        left: 30px;
+    }
+    .home_youtube{
+        margin-left: 50px;
+    }
+
+    .home_notice{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        margin-left: 50px;
+    }
+
+    .deco_1{
+        position: relative;
+        top: 200px;
+    }
+    .home_photo{
+        position: absolute;
+        top: -50px;
+        left: 1000px;
+        margin-left: 250px;
+    }
+    .home_trash{
+        position: absolute;
+        bottom: 20px;
+        left: 60px;
+    }
+    .home_staff{
+        position: absolute;
+        top: 100px;
+        right: 50px;
+    }
+    .home_banner{
+        position: absolute;
+        top: 100px;
+        right: 230px;
+    }
+    .home_org{
+        position: absolute;
+        top: 250px;
+        right: 370px;
+    }
+    .home_professor{
+        position: absolute;
+        top: 200px;
+        right: 500px;
+    }
+    .home_book{
+        position: absolute;
+        top: 370px;
+        right: 150px;
+    }
+    .team_vfx{
+        position: absolute;
+        bottom: 180px;
+        right: 50px;
+    }
+    .team_3D{
+        position: absolute;
+        bottom: 180px;
+        right: 210px;
+    }
+    .team_2D{
+        position: absolute;
+        bottom: 180px;
+        right: 370px;
+    }
+    .team_web{
+        position: absolute;
+        bottom: 20px;
+        right: 45px;
+    }
+    .team_ui{
+        position: absolute;
+        bottom: 37px;
+        right: 210px;
+    }
+    .team_game{
+
+        position: absolute;
+        bottom: 37px;
+        right: 370px;
+    }
+    /*.pop_image{*/
+    /*    position: absolute;*/
+    /*    bottom: 0;*/
+    /*    top: -500px;*/
+    /*}*/
+    /*.home_book, .home_org, .home_staff, .home_banner, .home_professor, .home_youtube, .home_insta, .team_2D, .team_3D, .team_game, .team_ui, .team_vfx, .team_web, .home_type, .home_photo, .home_notice, .home_trash{*/
+    /*    width: 120px;*/
+    /*    height: 130px;*/
+    /*}*/
 }
 
-/*@media (min-width: 1024px) {*/
 
-/*}*/
-/*@media (min-width: 768px) and (max-width: 1024px){*/
-/*
- */
-/*}*/
-/*@media (max-width: 767px) {*/
 
-/*}*/
+@media (min-width: 1024px) and (max-width: 1439px){
+    .left_icons{
+        width: 50vw;
+        height: 95vh;
+    }
+
+    .home_book_img, .home_org_img, .home_staff_img, .home_banner_img, .home_professor_img, .home_youtube_img, .home_insta_img, .team_2D_img, .team_3D_img, .team_game_img, .team_ui_img, .team_vfx_img, .team_web_img, .home_type_img, .home_photo_img, .home_notice_img, .home_trash_img{
+        width: 80px;
+    }
+    .home_book_title, .home_org_title, .home_staff_title, .home_banner_title, .home_professor_title, .home_youtube_title, .home_insta_title, .team_2D_title, .team_3D_title, .team_game_title, .team_ui_title, .team_vfx_title, .team_web_title, .home_type_title, .home_photo_title, .home_notice_title, .home_trash_title{
+        font-size: 12px;
+    }
+    .home_link{
+        display: flex;
+    }
+    .home_youtube{
+        position: absolute;
+        top: 30px;
+        left: 150px;
+    }
+    .home_insta{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .home_notice{
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        margin-left: 50px;
+    }
+    .home_type{
+        position: absolute;
+        top: 130px;
+        margin-left: -40px;
+    }
+    .home_photo{
+        position: absolute;
+        top: -50px;
+        left: 500px;
+        margin-left: 180px;
+    }
+    .home_trash{
+        position: absolute;
+        bottom: 15px;
+        left: 60px;
+    }
+    .home_staff{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    .home_banner{
+        position: absolute;
+        top: 50px;
+        right: 230px;
+    }
+    .home_org{
+        position: absolute;
+        top: 150px;
+        right: 330px;
+    }
+    .home_professor{
+        position: absolute;
+        top: 100px;
+        right: 430px;
+    }
+    .home_book{
+        position: absolute;
+        top: 190px;
+        right: 150px;
+    }
+    .team_vfx{
+        position: absolute;
+        bottom: 150px;
+        right: 50px;
+    }
+    .team_3D{
+        position: absolute;
+        bottom: 150px;
+        right: 150px;
+    }
+    .team_2D{
+        position: absolute;
+        bottom: 150px;
+        right: 255px;
+    }
+    .team_web{
+        position: absolute;
+        bottom: 20px;
+        right: 45px;
+    }
+    .team_ui{
+        position: absolute;
+        bottom: 37px;
+        right: 150px;
+    }
+    .team_game{
+        position: absolute;
+        bottom: 37px;
+        right: 255px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+
+    /*.pop_image{*/
+    /*    width: 100vw;*/
+    /*    margin-top: calc(-50vw + 50%);*/
+    /*    top: -200px;*/
+    /*    left: 17px;*/
+    /*}*/
+
+    .home_book_img, .home_org_img, .home_staff_img, .home_banner_img, .home_professor_img, .home_youtube_img, .home_insta_img, .team_2D_img, .team_3D_img, .team_game_img, .team_ui_img, .team_vfx_img, .team_web_img, .home_type_img, .home_photo_img, .home_notice_img, .home_trash_img{
+        width: 80px;
+    }
+    .home_book_title, .home_org_title, .home_staff_title, .home_banner_title, .home_professor_title, .home_youtube_title, .home_insta_title, .team_2D_title, .team_3D_title, .team_game_title, .team_ui_title, .team_vfx_title, .team_web_title, .home_type_title, .home_photo_title, .home_notice_title, .home_trash_title{
+        font-size: 12px;
+    }
+
+    .home_youtube{
+        position: absolute;
+        top: 30px;
+        left: 150px;
+    }
+    .home_insta{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .home_notice{
+        position: absolute;
+        top: -70px;
+    }
+    .deco_1{
+        position: absolute;
+        bottom: 140px;
+        left: -15px;
+    }
+    .deco2{
+        position: absolute;
+        bottom: 230px;
+        left: 140px;
+    }
+    /*.home_photo{*/
+    /*    position: absolute;*/
+    /*    bottom: 0px;*/
+    /*    margin-left: 180px;*/
+    /*}*/
+    .home_trash{
+        position: absolute;
+        bottom: 15px;
+        left: 60px;
+    }
+    .home_staff{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    .home_banner{
+        position: absolute;
+        top: 50px;
+        right:150px;
+    }
+    .home_org{
+        position: absolute;
+        top: 170px;
+        right: 250px;
+    }
+    .home_professor{
+        position: absolute;
+        top: 120px;
+        right: 360px;
+    }
+    .home_book{
+        position: absolute;
+        bottom: 270px;
+        right: 110px;
+    }
+    .team_vfx{
+        position: absolute;
+        bottom: 150px;
+        right: 50px;
+    }
+    .team_3D{
+        position: absolute;
+        bottom: 150px;
+        right: 150px;
+    }
+    .team_2D{
+        position: absolute;
+        bottom: 150px;
+        right: 255px;
+    }
+    .team_web{
+        position: absolute;
+        bottom: 20px;
+        right: 45px;
+    }
+    .team_ui{
+        position: absolute;
+        bottom: 37px;
+        right: 150px;
+    }
+    .team_game{
+        position: absolute;
+        bottom: 37px;
+        right: 255px;
+    }
+}
+@media (max-width: 767px) {
+
+    .home_book_img, .home_org_img, .home_staff_img, .home_banner_img, .home_professor_img, .home_youtube_img, .home_insta_img, .team_2D_img, .team_3D_img, .team_game_img, .team_ui_img, .team_vfx_img, .team_web_img, .home_type_img, .home_photo_img, .home_notice_img, .home_trash_img{
+        width: 65px;
+    }
+    .home_book_title, .home_org_title, .home_staff_title, .home_banner_title, .home_professor_title, .home_youtube_title, .home_insta_title, .team_2D_title, .team_3D_title, .team_game_title, .team_ui_title, .team_vfx_title, .team_web_title, .home_type_title, .home_photo_title, .home_notice_title, .home_trash_title{
+        font-size: 10px;
+    }
+    .home_youtube{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .home_insta{
+        position: absolute;
+        top: 20px;
+        right:95px;
+    }
+
+    /*.home_notice{*/
+    /*    position: absolute;*/
+    /*    top: 20px;*/
+    /*}*/
+    .deco{
+        position: absolute;
+        top: 20px;
+        left: -60px;
+    }
+    .deco_1{
+        position: absolute;
+        top: 140px;
+        left: -60px;
+    }
+    .deco2{
+        position: absolute;
+        top: 140px;
+        left: 30px;
+    }
+    .home_photo_title{
+        margin-top: 10px;
+    }
+    /*.home_photo{*/
+    /*    position: absolute;*/
+    /*    bottom: 0px;*/
+    /*    margin-left: 180px;*/
+    /*}*/
+    .home_trash{
+        position: absolute;
+        top: 120px;
+        right: 20px;
+    }
+    .home_staff{
+        position: absolute;
+        top: 120px;
+        right:115px;
+    }
+    .home_banner{
+        position: absolute;
+        top: 20px;
+        left: 120px;
+    }
+    .home_org{
+        position: absolute;
+        top: 270px;
+        left: 115px;
+    }
+    .home_professor{
+        position: absolute;
+        top: 260px;
+        left: 20px;
+    }
+    .home_book{
+        position: absolute;
+        bottom: 270px;
+        right: 25px;
+    }
+    .team_vfx{
+        position: absolute;
+        bottom: 150px;
+        right: 20px;
+    }
+    .team_3D{
+        position: absolute;
+        bottom: 150px;
+        right: 120px;
+    }
+    .team_2D{
+        position: absolute;
+        bottom: 150px;
+        right: 225px;
+    }
+    .team_web{
+        position: absolute;
+        bottom: 25px;
+        right: 20px;
+    }
+    .team_ui{
+        position: absolute;
+        bottom: 37px;
+        right: 120px;
+    }
+    .team_game{
+        position: absolute;
+        bottom: 37px;
+        right: 225px;
+    }
+}
+
+#worker_workLink {
+    color: white;
+    text-decoration: none;
+}
+
+#worker_workLink:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.pop_photo{
+    /*position: absolute;*/
+    /*top: -100px;*/
+}

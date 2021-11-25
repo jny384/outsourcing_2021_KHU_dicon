@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import game from "./img/game_folder_mini.png";
 
 export default function Game() {
     const history = useHistory();
@@ -17,9 +18,9 @@ export default function Game() {
     return(
         <div style={style.main_body} onDoubleClick={onClick}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="box" >
-                    <div style={style.box}>team</div>
-                    <p style={style.p}>Game</p>
+                <div className="team_game" >
+                    <img className="team_game_img" src={game}/>
+                    <p style={style.p} className="team_game_title">Game</p>
                 </div>
             </Draggable>
         </div>

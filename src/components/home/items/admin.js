@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import staff from "../../../views/home/img/staff_only.png";
 
 export default function Admin() {
     const history = useHistory();
@@ -16,11 +17,11 @@ export default function Admin() {
     };
 
     return(
-        <div className="admin" style={style.main_body} onDoubleClick={handleClick}>
+        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="box" >
-                    <div style={style.box}>관리자</div>
-                    <p style={style.p}>관리자 접근</p>
+                <div className="home_staff" >
+                    <img className="home_staff_img" src={staff}/>
+                    <p className="home_staff_title">STAFF_ONLY</p>
                 </div>
             </Draggable>
         </div>

@@ -1,28 +1,27 @@
 import React from "react";
 import Clock from "react-live-clock";
 import './header.css'
-import {useHistory} from "react-router-dom";
+
+import cookie from './heder/img/cookie_icon_header.png';
+import instagram from './heder/img/instagram_header.png';
+import youtube from './heder/img/youtube_header.png';
 
 export default function Header() {
-    const history = useHistory();
-
     const handleInstaClick = (e) => {
-        window.location.href = 'https://www.instagram.com'; //이동할 링크
+        window.location.href = 'https://instagram.com/cookie_dicon_2021?utm_medium=copy_link'; //이동할 링크
     };
 
     const handleYoutubeClick = (e) => {
-        window.location.href = 'https://www.youtube.com'; //이동할 링크
+        window.location.href = 'https://youtube.com/channel/UChHuUIP9W4_7FXr8UFZ7aoA'; //이동할 링크
     };
-
-    const onClick = () => {
-        history.push(`/2021_KHU_dicon`);
-    }
 
     return(
         <div className="header">
             <div className="header_left">
                 <div className="icon">
-                    <a id="homeIcon" href="/">sss</a>
+                    <a href='/'>
+                        <img className="home_img" src={cookie}/>
+                    </a>
                 </div>
                 <div className="dicon_2021">Dicon 2021</div>
                 <div className="info">
@@ -31,8 +30,11 @@ export default function Header() {
             </div>
 
             <div className="header_right">
-                <div className="insta_header" onClick={handleInstaClick}></div>
-                <div className="youtube_header" onClick={handleYoutubeClick}></div>
+                <div className="insta_header" onClick={handleInstaClick}>
+                    <img className="insta_img" src={instagram}/>
+                </div>
+                <div className="youtube_header" onClick={handleYoutubeClick}>
+                    <img className="tube_img" src={youtube}/></div>
                 <Clock className="real_time" format={'HH:mm:ss'} ticking={true}/>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
+import threeD from "./img/3D.png";
 
 export default function Animation() {
     const history = useHistory();
@@ -12,16 +13,16 @@ export default function Animation() {
     };
 
     const onClick = () => {
-        history.push(`/works/Animation`);
+        history.push(`/works/3D`);
     }
 
     return(
         <div>
             <div style={style.main_body} onDoubleClick={onClick}>
                 <Draggable onDrag={(e, data) => trackPos(data)}>
-                    <div className="box" >
-                        <div style={style.box}>team</div>
-                        <p style={style.p}>Animation</p>
+                    <div className="team_3D" >
+                        <img className="team_3D_img" src={threeD}/>
+                        <p style={style.p} className="team_3D_title">3D</p>
                     </div>
                 </Draggable>
             </div>

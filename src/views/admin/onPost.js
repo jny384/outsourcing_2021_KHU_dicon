@@ -91,8 +91,8 @@ export default function OnPost() {
                         {/*<input name="team" onChange={onChange} value={team} placeholder="팀 이름"/>*/}
                         <select id="selectBox" onChange={handleChange}>
                             <option> 선택하세요 </option>
-                            <option name="team" value="MotionGraphics">Motion Graphics</option>
-                            <option name="team" value="Animation">Animation</option>
+                            <option name="team" value="2D">2D </option>
+                            <option name="team" value="3D">3D </option>
                             <option name="team" value="VFX_SFX">VFX / SFX</option>
                             <option name="team" value="Game">Game</option>
                             <option name="team" value="InteractionDesign">Interaction Design</option>

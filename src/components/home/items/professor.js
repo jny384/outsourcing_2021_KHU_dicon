@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
 
+import professor from '../../../views/home/img/about_dicon.png'
+
 export default function Professor() {
     const history = useHistory();
 
@@ -16,11 +18,11 @@ export default function Professor() {
     };
 
     return(
-        <div className="admin" style={style.main_body} onDoubleClick={handleClick}>
+        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="box" >
-                    <div style={style.box}>교수</div>
-                    <p style={style.p}>교수 상세 페이지</p>
+                <div className="home_professor" >
+                    <img className="home_professor_img" src={professor}/>
+                    <p style={style.p} className="home_professor_title">about_DICON</p>
                 </div>
             </Draggable>
         </div>
@@ -33,16 +35,4 @@ const style = {
         width: '130px',
         height: '120px',
     },
-    box: {
-        width: '130px',
-        height: '100px',
-        backgroundColor: "yellow",
-        margin:'0',
-        borderRadius:"10%"
-    },
-    p: {
-        margin: '0',
-        fontsize: '14px',
-        color:"white"
-    }
 }

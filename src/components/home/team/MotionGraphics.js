@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import Draggable from "react-draggable";
 
+import twoD from './img/2D.png'
+
 export default function MotionGraphics() {
     const history = useHistory();
 
@@ -12,15 +14,15 @@ export default function MotionGraphics() {
     };
 
     const onClick = () => {
-        history.push(`/works/MotionGraphics`);
+        history.push(`/works/2D`);
     }
 
     return(
         <div style={style.main_body} onDoubleClick={onClick}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="box" >
-                    <div style={style.box}>team</div>
-                    <p style={style.p}>Motion Graphics</p>
+                <div className="team_2D" >
+                    <img className="team_2D_img" src={twoD}/>
+                    <p style={style.p} className="team_2D_title">2D</p>
                 </div>
             </Draggable>
         </div>
