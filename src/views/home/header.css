@@ -80,6 +80,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 
@@ -215,6 +216,10 @@ a {
         margin-right: 10px;
         margin-bottom: 5px;
     }
+
+}
+a:visited{
+    color: white;
 }
 /*@media (min-width: 768px) and (max-width: 1023px){*/
 /*    .header_left{*/
