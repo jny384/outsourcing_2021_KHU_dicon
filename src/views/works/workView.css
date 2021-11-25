@@ -170,6 +170,9 @@ body {
         margin: 49px 43px 25px;
     }
 
+    #youtubeLink_tab{
+        display: none;
+    }
     .student_profile_pic{
         width: 193px;
         height: 257px;
@@ -319,6 +322,10 @@ body {
     }
 }
 @media (max-width: 767px) {
+
+    #youtubeLink_tab{
+        display: none;
+    }
     .student_area{
         display: flex;
         flex-direction: column;
