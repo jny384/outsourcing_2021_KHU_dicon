@@ -1,3 +1,15 @@
+.video_back{
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top:0;
+
+}
+.hommeWrap{
+    z-index: 100;
+}
+
 .pop_image_n{
     width: 100vw;
     height: 100vh;
@@ -28,13 +40,41 @@
 .pop_photo{
     /*position: relative;*/
     /*top: 5000px;*/
-    height: 60vh;
+    height: 80vh;
     width: auto;
     z-index: 100;
 }
 
+@media (min-width: 1440px) {
+    .pop_photo, .pop_photo_n{
+        height: 830px;
+        width: auto;
+        z-index: 100;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .pop_photo, .pop_photo_n{
+        height: 600px;
+        width: auto;
+        z-index: 100;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pop_photo, .pop_photo_n{
+        height: 60vh;
+        width: auto;
+        z-index: 100;
+    }
+}
+@media (max-width: 767px) {
+    .pop_photo, .pop_photo_n{
+        height: 60vh;
+        width: auto;
+        z-index: 100;
+    }
+}
+
 .hommeWrap {
-    height: 87vh;
     margin: 0;
     position: relative;
     /*top: 5vh;*/
@@ -57,7 +97,7 @@
 }
 
 .footer {
-    height: 8vh;
+    /*height: 8vh;*/
     position: absolute;
     background-color: black;
     /*bottom: 0;*/
@@ -140,6 +180,9 @@
     text-align: center;
 }
 @media (min-width: 1440px) {
+    .hommeWrap{
+        height: calc(100vh - 35px);
+    }
 
     .home_book_img, .home_org_img, .home_staff_img, .home_banner_img, .home_professor_img, .home_youtube_img, .home_insta_img, .team_2D_img, .team_3D_img, .team_game_img, .team_ui_img, .team_vfx_img, .team_web_img, .home_type_img, .home_photo_img, .home_notice_img, .home_trash_img{
         width: 120px;
@@ -251,6 +294,9 @@
 
 
 @media (min-width: 1024px) and (max-width: 1439px){
+    .hommeWrap{
+        height: calc(100vh - 25px);
+    }
     .left_icons{
         width: 50vw;
         height: 95vh;
@@ -356,6 +402,9 @@
 }
 @media (min-width: 768px) and (max-width: 1023px){
 
+    .hommeWrap{
+        height: calc(100vh - 25px);
+    }
     /*.pop_image{*/
     /*    width: 100vw;*/
     /*    margin-top: calc(-50vw + 50%);*/
@@ -463,6 +512,9 @@
 }
 @media (max-width: 767px) {
 
+    .hommeWrap{
+        height: calc(100vh - 25px);
+    }
     .home_book_img, .home_org_img, .home_staff_img, .home_banner_img, .home_professor_img, .home_youtube_img, .home_insta_img, .team_2D_img, .team_3D_img, .team_game_img, .team_ui_img, .team_vfx_img, .team_web_img, .home_type_img, .home_photo_img, .home_notice_img, .home_trash_img{
         width: 65px;
     }

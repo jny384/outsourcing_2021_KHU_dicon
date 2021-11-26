@@ -400,6 +400,7 @@ body {
 
     .left_workview {
         width: 100vw;
+        height: 615px;
         /*min-height: 615px;*/
         display: flex;
         align-items: center;
@@ -407,16 +408,15 @@ body {
         flex-direction: column;
     }
     #student_pic{
-        width: 301px;
-        height: 417px;
+        width: 260px;
+        height: 347px;
         /*background-color: deeppink;*/
         margin: 30px;
     }
 
     .student_profile_pic{
-
-        width: 301px;
-        height: 417px;
+        width: 260px;
+        height: 347px;
     }
 
     #worker_name {

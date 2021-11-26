@@ -1,4 +1,5 @@
 import './HomeView.css';
+import './footer.css'
 import React, {useState, useEffect} from "react";
 
 // import DecoIMG from "./decoIMG";
@@ -25,6 +26,9 @@ import Draggable from "react-draggable";
 import deco from './img/notice.png';
 import deco1 from './img/typo_poster.png';
 import deco2 from './img/photo_final2222.png';
+import deco3 from './img/trash can.png';
+
+import video from './img/backdrop.mp4'
 
 function HomeView() {
     const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -33,52 +37,82 @@ function HomeView() {
         setPosition({ x: data.x, y: data.y });
     };
 
-    const [statusNotice, setStatusNotice] = useState(true)
-    const [statusTypo, setStatusTypo] = useState(false)
-    const [statusPhoto, setStatusPhoto] = useState(false)
-
+    const [statusNotice, setStatusNotice] = useState(true);
+    const [statusTypo, setStatusTypo] = useState(false);
+    const [statusPhoto, setStatusPhoto] = useState(false);
+    const [statusTrash, setStatusTrash] =useState(false);
     // useEffect(()=>{
     //     if (window.localStorage.getItem("visited") == true) {
     //         setStatusNotice(false);
     //     }
     // }, [])
     const openModalNotice = () => {
-        if (statusTypo === true || statusPhoto === true) {
+        if (statusTypo === true || statusPhoto === true || statusTrash === true) {
             setStatusTypo(false);
             setStatusPhoto(false);
+            setStatusTrash(false);
         }
         else {
             setStatusNotice(!statusNotice);
         }
     };
     const openModalTypo = () => {
-        if (statusNotice === true || statusPhoto === true) {
+        if (statusNotice === true || statusPhoto === true || statusTrash === true) {
             setStatusNotice(false);
             setStatusPhoto(false);
+            setStatusTrash(false);
         }
         else {
             setStatusTypo(!statusTypo);
         }
     };
     const openModalPhoto = () => {
-        if (statusTypo === true || statusNotice === true) {
+        if (statusTypo === true || statusNotice === true || statusTrash === true) {
             setStatusTypo(false);
             setStatusNotice(false);
+            setStatusTrash(false);
         }
         else {
             setStatusPhoto(!statusPhoto);
         }
     };
+    const openModalTrash = () => {
+        if (statusTypo === true || statusNotice === true || statusPhoto === true) {
+            setStatusTypo(false);
+            setStatusNotice(false);
+            setStatusPhoto(false);
+        } else {
+            setStatusTrash(!statusTrash);
+        }
+    }
 
     const closeModal = () => {
         setStatusPhoto(false);
         setStatusNotice(false);
         setStatusTypo(false);
+        setStatusTrash(false);
         // window.localStorage.setItem('visited', 1)
     }
     return (
         <>
+
             <div className="hommeWrap" onClick={closeModal}>
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    style={{
+                        position: 'absolute',
+                        width : "100%",
+                        height : '100%',
+                        left : '0',
+                        top: "0",
+                        objectFit: 'cover',
+                        zIndex:'-1'
+                    }}
+                    height="auto" className="video_back">
+                    <source src={video} type="video/mp4"/>
+                </video>
                 <div className="home_link">
                     <InstaLink/>
                     <YoutubeLink/>
@@ -123,7 +157,17 @@ function HomeView() {
                     {/*    </div>*/}
                     {/*):null}*/}
                 </div>
-                <Trash/>
+                <div onClick={closeModal} className="home_icon" style={style.main_body}>
+                    <Draggable onDrag={(e, data) => trackPos(data)} >
+                        <div className="home_trash"  onDoubleClick={openModalTrash} onTouchStart={openModalTrash}>
+                            <img className="home_trash_img" src={deco3}/>
+                            <p style={style.p} className="home_trash_title">trash can</p>
+                        </div>
+                    </Draggable>
+                </div>
+                <div style={style.footer_txt}>
+                    <p id="footer_text">KyungHee Univ. Dicon 2021 Degree Show</p>
+                </div>
                 <Admin/>
                 <Organization/>
                 <Guest/>
@@ -135,6 +179,8 @@ function HomeView() {
                 <Game/>
                 <InterActionDesign/>
                 <WebtoonConceptArt/>
+
+
                 {statusNotice ? (
                     <div onClick={closeModal} className="pop_image_n">
                         <img className="pop_photo_n" onClick={closeModal} src={deco}/>
@@ -150,10 +196,20 @@ function HomeView() {
                         <img onClick={closeModal} className="pop_photo" src={deco2}/>
                     </div>
                 ):null}
+                {statusTrash ? (
+                    <div onClick={closeModal} className="pop_image">
+                        <img
+                            onClick={closeModal}
+                            src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/trashcan_gif.gif?alt=media&token=62682d0f-9238-4947-b952-cccea2bff68f' || "http://via.placeholde.com/300"}
+                            alt="firebase-image"
+                            className="pop_photo"
+                        />
+                    </div>
+                ):null}
+
             </div>
-            <div className="footer">
-                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
-            </div>
+
+
         </>
     );
 }
@@ -161,6 +217,12 @@ export default HomeView;
 
 
 const style = {
+    footer_txt : {
+      width: '100vw',
+      textAlign:'center',
+        position:'fixed',
+        bottom: '10px'
+    },
     main_body: {
         textAlign:'center',
         width: '120px',

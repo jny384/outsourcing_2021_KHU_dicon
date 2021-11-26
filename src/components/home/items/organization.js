@@ -20,7 +20,7 @@ export default function Organization() {
             <Draggable onDrag={(e, data) => trackPos(data)} >
                 <div className="home_org"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img
-                        src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/images%2F2D%2Fadwad%2Fworks%2Fabout_cookie.gif?alt=media&token=6ff9b832-7d27-46ce-afcf-e8d92219e217' || "http://via.placeholde.com/300"}
+                        src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/about_cookie.gif?alt=media&token=53081ced-b58f-4645-a23f-8e3180c48efd' || "http://via.placeholde.com/300"}
                         alt="firebase-image"
                         className="home_org_img"
                     />
