@@ -1,6 +1,6 @@
 // import './onPost.css'
 import React, {useState} from "react";
-
+import './onPostBanner.css'
 import UploadBanner from "../../components/post/uploadBanner";
 import PostBanner from "../../components/firebase/postBanner";
 
@@ -33,21 +33,6 @@ export default function OnPostBanner() {
         setUrl(text);
     }
 
-    // const handleChange = () => {
-    //     const target = document.getElementById("selectBox"); //select 요소 가져오기
-    //     const value = target.options[target.selectedIndex].value; //select에서 선택된 option의 value값 가져오기
-    //     const name = 'team'; // 변수 inputs의 name을 team으로 지정
-    //     // console.log(target)
-    //     // console.log(value)
-    //     setInputs({
-    //         ...inputs,
-    //         [name]: value
-    //     })
-    //     // console.log(value, name)
-    // }
-    // console.log(name)
-    // console.log(team)
-
     const handleFrom = (e) => {
         setFrom(e.target.value);
     }
@@ -58,16 +43,24 @@ export default function OnPostBanner() {
     return (
         <>
             <div className="works">
-                <div className="student_info">
-                    <div className="select_url">
-                        <p>온라인 현수막</p>
-                        <UploadBanner getBannerUrl={getBannerUrl}/>
+                <div className="upload-banner">
+                    <div className="student_info">
+                        <div className="select_url">
+                            <p>온라인 현수막</p>
+                            <div className="inputs_banner">
+                                <input type="text" placeholder="From." onChange={handleFrom}/>
+                                <input type="text" placeholder="To." onChange={handleTo}/>
+                            </div>
+                        </div>
+                        <div className="uploading">
 
-                        <input type="text" placeholder="From." onChange={handleFrom}/>
-                        <input type="text" placeholder="To." onChange={handleTo}/>
+                            <UploadBanner getBannerUrl={getBannerUrl}/>
+                        </div>
+
                     </div>
-                    <button onClick={onPost}>Post</button>
+                    <button id='btn_toPost' onClick={onPost}>Post</button>
                 </div>
+
             </div>
 
         </>

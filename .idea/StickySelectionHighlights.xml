@@ -358,6 +358,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/views/banner/onPostBanner.css">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/views/banner/onPostBanner.js">
           <value>
             <PaintGroupHighlightMap />

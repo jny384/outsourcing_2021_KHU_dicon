@@ -1,0 +1,28 @@
+#btn_toPost {
+    width: 200px;
+    height: 50px;
+    background-color: #373537;
+    color: white;
+    border: 2px white solid;
+    margin-left: 20px;
+}
+.uploading{
+    border: white 1px solid;
+}
+
+.works{
+    height: 100vh;
+}
+.upload-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.select_url{
+    display: flex;
+    flex-direction: column;
+}
+.inputs_banner{
+    display: flex;
+    flex-direction: row;
+}
