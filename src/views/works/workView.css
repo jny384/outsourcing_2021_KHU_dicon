@@ -65,7 +65,9 @@ body {
 .left_detail {
 }
 .right_workview {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
     height: fit-content;
     text-align: center;
@@ -153,6 +155,7 @@ body {
     .work_info {
         margin: 24px 25px 100px 25px;
         top: 0px;
+        width: 920px;
     }
 
     #workInfo_title{
@@ -253,6 +256,8 @@ body {
 
     .work_info {
         margin-bottom: 80px;
+
+        width: 658px;
         /*top: 0px;*/
     }
 
@@ -343,6 +348,8 @@ body {
     }
 
     .work_info {
+
+        width: 500px;
         margin-bottom: 60px;
         /*top: 0px;*/
     }
