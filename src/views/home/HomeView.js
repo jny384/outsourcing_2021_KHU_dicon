@@ -85,7 +85,7 @@ function HomeView() {
                 </div>
                 <div onClick={closeModal} className="deco" style={style.main_body}>
                     <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice}>
+                        <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice} onTouchStart={openModalNotice}>
                             <img src={deco} className="home_notice_img"/>
                             <p style={style.p} className="home_notice_title">typo_poster.jpg</p>
                         </div>
