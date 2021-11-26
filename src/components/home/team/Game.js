@@ -16,7 +16,7 @@ export default function Game() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={openModalNotice}>
+        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={onClick}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
                 <div className="team_game" >
                     <img className="team_game_img" src={game}/>
