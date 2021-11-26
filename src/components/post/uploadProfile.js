@@ -37,7 +37,7 @@ export default function UploadProfile(props) {
                     .getDownloadURL()
                     .then((url) => {
                         setUrl(url);
-                        console.log("url : ", url);
+                        console.log("Profile url : ", url);
 
                         props.getImgUrl(url);
                         // if (url != '') {GetProfileImage(url);}

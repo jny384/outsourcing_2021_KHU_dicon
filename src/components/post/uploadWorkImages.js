@@ -61,10 +61,10 @@ export default function UploadWorkImages(props) {
             // .then(() => { })
             .catch((err)=> console.log(err))
     };
-    const initializeInput = () => {
-        console.log('a')
-        setImages([]);
-    }
+    // const initializeInput = () => {
+    //     console.log('a')
+    //     setImages([]);
+    // }
 
     // console.log("image : ", images);
     // console.log("urls : ", urls);
@@ -72,18 +72,18 @@ export default function UploadWorkImages(props) {
     const sendText = async () => {
         // handleUpload()
         await props.getWorksUrl(urls);
-        await console.log(urls)
+        await console.log('Works : ',urls)
     }
     // console.log(urls)
-    console.log(teamName)
-    console.log(directory)
+    // console.log(teamName)
+    // console.log(directory)
     return(
         <>
             <progress value={progress} max="100"/>
             <br/>
             {/*<input onChange={handleChangeDirectory} placeholder="저장 폴더 이름"/>*/}
             <br/>
-            <input type="file" multiple onClick={initializeInput} onChange={handleChange}/>
+            <input type="file" multiple onChange={handleChange}/>
             <button onClick={clicked ? null: handleUpload}>Upload</button>
             <button onClick={sendText}>send</button>
             <br/>

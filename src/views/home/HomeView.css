@@ -290,7 +290,10 @@
     /*    height: 130px;*/
     /*}*/
 }
-
+.home_book_title, .home_org_title, .home_staff_title, .home_banner_title, .home_professor_title, .home_youtube_title, .home_insta_title, .team_2D_title, .team_3D_title, .team_game_title, .team_ui_title, .team_vfx_title, .team_web_title, .home_type_title, .home_photo_title, .home_notice_title, .home_trash_title{
+    /*font-size: 10px;*/
+    font-weight: bold;
+}
 
 
 @media (min-width: 1024px) and (max-width: 1439px){

@@ -41,7 +41,7 @@ export default function UploadThumbNail(props) {
                     .getDownloadURL()
                     .then((url) => {
                         setUrl(url);
-                        console.log("url : ", url);
+                        console.log("ThumbNail url : ", url);
                         props.getThumbUrl(url);
                     })
             }
