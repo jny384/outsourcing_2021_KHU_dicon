@@ -4,6 +4,9 @@ body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
 .bannerViewMain{
     min-height: 87vh;
 }
+.banner_title{
+    font-weight: bold;
+}
 
 .banner_top{
     display: flex;

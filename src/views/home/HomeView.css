@@ -513,7 +513,10 @@
     }
 }
 @media (max-width: 767px) {
-
+    .pop_photo_trash{
+        width: 90vw;
+        height: auto;
+    }
     .hommeWrap{
         height: calc(100vh - 25px);
     }

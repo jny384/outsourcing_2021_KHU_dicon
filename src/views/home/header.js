@@ -23,7 +23,7 @@ export default function Header() {
                         <img className="home_img" src={cookie}/>
                     </a>
                 </div>
-                <div className="dicon_2021">Dicon 2021</div>
+                <a href="/" className="dicon_2021">Dicon 2021</a>
                 <div className="info">
                     <a href="/2021_KHU_dicon">Info</a>
                 </div>

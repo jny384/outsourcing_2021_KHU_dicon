@@ -207,7 +207,7 @@ function HomeView() {
                                 onClick={closeModal}
                                 src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/trashcan_gif.gif?alt=media&token=62682d0f-9238-4947-b952-cccea2bff68f' || "http://via.placeholde.com/300"}
                                 alt="firebase-image"
-                                className="pop_photo"
+                                className="pop_photo pop_photo_trash"
                             />
                         </div>
                     ):null}
