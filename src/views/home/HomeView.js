@@ -98,6 +98,7 @@ function HomeView() {
 
             <div className="hommeWrap" onClick={closeModal}>
                 <video
+                    controls
                     autoPlay
                     muted
                     loop
