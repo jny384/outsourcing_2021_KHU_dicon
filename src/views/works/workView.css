@@ -35,6 +35,12 @@ body {
     font-weight: bold;
     color: white;
 }
+#worker_email{
+    word-break: break-word;
+}
+#worker_workLink{
+    word-break: break-word;
+}
 
 .left_detail {
 }
@@ -344,7 +350,7 @@ body {
     #student_pic{
         width: 301px;
         height: 417px;
-        background-color: deeppink;
+        /*background-color: deeppink;*/
         margin: 30px;
     }
 
