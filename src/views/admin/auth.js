@@ -11,11 +11,6 @@ export default function Auth() {
     const getPwd = (e) => {
         setInput(e.target.value)
     }
-    const [position, setPosition] = useState({ x: 0, y: 0 }); // box의 포지션 값
-    // 업데이트 되는 값을 set 해줌
-    const trackPos = (data) => {
-        setPosition({ x: data.x, y: data.y });
-    };
     const compare = () => {
         if (input == pwd) {
             history.push('/admin')
@@ -36,16 +31,6 @@ export default function Auth() {
                     <input style={style.input} type="password" placeholder="&nbsp;&nbsp;&nbsp; password" onChange={getPwd} onKeyPress={onKeyPress}/>
                     <button style={style.button} onClick={compare}>→</button>
                 </div>
-                <Draggable
-                    // onStart={handleStart}
-                    // onStop={handleEnd}
-                    onDrag={(e, data) => trackPos(data)}
-                >
-                    <div className="team_3D">
-                        <img className="team_3D_img" src={threeD}/>
-                        <p style={style.p} className="team_3D_title">3D</p>
-                    </div>
-                </Draggable>
             </div>
             <div className="footer">
                 <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
