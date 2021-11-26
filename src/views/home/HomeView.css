@@ -80,7 +80,7 @@
     /*top: 5vh;*/
     width: 100%;
     overflow: hidden;
-    background-color: black;
+    background-color: transparent;
 }
 
 .items {
@@ -211,7 +211,7 @@
 
     .deco_1{
         position: absolute;
-        bottom: 200px;
+        bottom: 210px;
     }
     .home_photo{
         position: absolute;
@@ -222,7 +222,7 @@
     }
     .home_trash{
         position: absolute;
-        bottom: 20px;
+        bottom: 30px;
         left: 60px;
     }
     .home_staff{
@@ -247,37 +247,37 @@
     }
     .home_book{
         position: absolute;
-        bottom: 370px;
+        bottom: 390px;
         right: 150px;
     }
     .team_vfx{
         position: absolute;
-        bottom: 180px;
+        bottom: 240px;
         right: 50px;
     }
     .team_3D{
         position: absolute;
-        bottom: 180px;
+        bottom: 240px;
         right: 210px;
     }
     .team_2D{
         position: absolute;
-        bottom: 180px;
+        bottom: 240px;
         right: 370px;
     }
     .team_web{
         position: absolute;
-        bottom: 20px;
+        bottom: 80px;
         right: 45px;
     }
     .team_ui{
         position: absolute;
-        bottom: 37px;
+        bottom: 97px;
         right: 210px;
     }
     .team_game{
         position: absolute;
-        bottom: 37px;
+        bottom: 97px;
         right: 370px;
     }
     /*.pop_image{*/
@@ -341,7 +341,8 @@
     }
     .home_trash{
         position: absolute;
-        bottom: 15px;
+        /*bottom: 75px;*/
+        top: 70vh;
         left: 60px;
     }
     .home_staff{
@@ -371,32 +372,32 @@
     }
     .team_vfx{
         position: absolute;
-        bottom: 150px;
+        bottom: 210px;
         right: 50px;
     }
     .team_3D{
         position: absolute;
-        bottom: 150px;
+        bottom: 210px;
         right: 150px;
     }
     .team_2D{
         position: absolute;
-        bottom: 150px;
+        bottom: 210px;
         right: 255px;
     }
     .team_web{
         position: absolute;
-        bottom: 20px;
+        bottom: 85px;
         right: 45px;
     }
     .team_ui{
         position: absolute;
-        bottom: 37px;
+        bottom: 97px;
         right: 150px;
     }
     .team_game{
         position: absolute;
-        bottom: 37px;
+        bottom: 97px;
         right: 255px;
     }
 }
@@ -436,12 +437,12 @@
     }
     .deco_1{
         position: absolute;
-        bottom: 140px;
+        bottom: 200px;
         left: -15px;
     }
     .deco2{
         position: absolute;
-        bottom: 230px;
+        bottom: 290px;
         left: 140px;
     }
     /*.home_photo{*/
@@ -451,8 +452,9 @@
     /*}*/
     .home_trash{
         position: absolute;
-        bottom: 15px;
+        bottom: 75px;
         left: 60px;
+        /*border: 10px red solid;*/
     }
     .home_staff{
         position: absolute;
@@ -476,37 +478,37 @@
     }
     .home_book{
         position: absolute;
-        bottom: 270px;
+        bottom: 330px;
         right: 110px;
     }
     .team_vfx{
         position: absolute;
-        bottom: 150px;
+        bottom: 210px;
         right: 50px;
     }
     .team_3D{
         position: absolute;
-        bottom: 150px;
+        bottom: 210px;
         right: 150px;
     }
     .team_2D{
         position: absolute;
-        bottom: 150px;
+        bottom: 210px;
         right: 255px;
     }
     .team_web{
         position: absolute;
-        bottom: 20px;
+        bottom: 100px;
         right: 45px;
     }
     .team_ui{
         position: absolute;
-        bottom: 37px;
+        bottom: 115px;
         right: 150px;
     }
     .team_game{
         position: absolute;
-        bottom: 37px;
+        bottom: 115px;
         right: 255px;
     }
 }

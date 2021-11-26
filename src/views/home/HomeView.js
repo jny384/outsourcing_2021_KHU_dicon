@@ -96,7 +96,7 @@ function HomeView() {
     return (
         <>
 
-            <div className="hommeWrap" onClick={closeModal}>
+            <div>
                 <video
                     controls
                     autoPlay
@@ -111,108 +111,110 @@ function HomeView() {
                         left : '0',
                         top: "0",
                         objectFit: 'cover',
-                        zIndex:'-1'
+                        zIndex:'10'
                     }}
                     height="auto" className="video_back">
                     <source src={video} type="video/mp4"/>
                 </video>
-                <div className="home_link">
-                    <InstaLink/>
-                    <YoutubeLink/>
-                </div>
-                <div onClick={closeModal} className="deco" style={style.main_body}>
-                    <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice} onTouchStart={openModalNotice}>
-                            <img src={deco} className="home_notice_img" onDragStart="return true"/>
-                            <p style={style.p} className="home_notice_title"> Notice.txt</p>
+                <div className="hommeWrap" onClick={closeModal}>
 
-                        </div>
-                    </Draggable>
-                    {/*{statusNotice ? (*/}
-                    {/*    <div onClick={closeModal} className="pop_image_n">*/}
-                    {/*        <img className="pop_photo_n" onClick={closeModal} src={deco}/>*/}
-                    {/*    </div>*/}
-                    {/*):null}*/}
-                </div>
-                <div onClick={closeModal} className="deco_1" style={style.main_body}>
-                    <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_type" style={style.deco_image} onDoubleClick={openModalTypo}  onTouchStart={openModalTypo}>
-                            <img src={deco1} className="home_type_img"/>
-                            <p style={style.p} className="home_type_title">typo_poster.jpg</p>
-                        </div>
-                    </Draggable>
-                    {/*{statusTypo ? (*/}
-                    {/*    <div onClick={closeModal} className="pop_image">*/}
-                    {/*        <img onClick={closeModal} className="pop_photo" src={deco1}/>*/}
-                    {/*    </div>*/}
-                    {/*):null}*/}
-                </div>
-                <div className="deco2" onClick={closeModal} style={style.main_body}>
-                    <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_photo" style={style.deco_image} onDoubleClick={openModalPhoto}  onTouchStart={openModalPhoto}>
-                            <img src={deco2} className="home_photo_img"/>
-                            <p style={style.newp} className="home_photo_title">photo_final2222.jpg</p>
-                        </div>
-                    </Draggable>
-                    {/*{statusPhoto ? (*/}
-                    {/*    <div onClick={closeModal} className="pop_image">*/}
-                    {/*        <img onClick={closeModal} className="pop_photo" src={deco2}/>*/}
-                    {/*    </div>*/}
-                    {/*):null}*/}
-                </div>
-                <div onClick={closeModal} className="home_icon" style={style.main_body}>
-                    <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_trash"  onDoubleClick={openModalTrash} onTouchStart={openModalTrash}>
-                            <img className="home_trash_img" src={deco3}/>
-                            <p style={style.p} className="home_trash_title">trash can</p>
-                        </div>
-                    </Draggable>
-                </div>
-                <div style={style.footer_txt}>
-                    <p id="footer_text">KyungHee Univ. Dicon 2021 Degree Show</p>
-                </div>
-                <Admin/>
-                <Organization/>
-                <Guest/>
-                <Professor/>
-                <Banner/>
-                <MotionGraphics/>
-                <Animation/>
-                <VFX_SFX/>
-                <Game/>
-                <InterActionDesign/>
-                <WebtoonConceptArt/>
+                    <div className="home_link">
+                        <InstaLink/>
+                        <YoutubeLink/>
+                    </div>
+                    <div onClick={closeModal} className="deco" style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice} onTouchStart={openModalNotice}>
+                                <img src={deco} className="home_notice_img" onDragStart="return true"/>
+                                <p style={style.p} className="home_notice_title"> Notice.txt</p>
+
+                            </div>
+                        </Draggable>
+                        {/*{statusNotice ? (*/}
+                        {/*    <div onClick={closeModal} className="pop_image_n">*/}
+                        {/*        <img className="pop_photo_n" onClick={closeModal} src={deco}/>*/}
+                        {/*    </div>*/}
+                        {/*):null}*/}
+                    </div>
+                    <div onClick={closeModal} className="deco_1" style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_type" style={style.deco_image} onDoubleClick={openModalTypo}  onTouchStart={openModalTypo}>
+                                <img src={deco1} className="home_type_img"/>
+                                <p style={style.p} className="home_type_title">typo_poster.jpg</p>
+                            </div>
+                        </Draggable>
+                        {/*{statusTypo ? (*/}
+                        {/*    <div onClick={closeModal} className="pop_image">*/}
+                        {/*        <img onClick={closeModal} className="pop_photo" src={deco1}/>*/}
+                        {/*    </div>*/}
+                        {/*):null}*/}
+                    </div>
+                    <div className="deco2" onClick={closeModal} style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_photo" style={style.deco_image} onDoubleClick={openModalPhoto}  onTouchStart={openModalPhoto}>
+                                <img src={deco2} className="home_photo_img"/>
+                                <p style={style.newp} className="home_photo_title">photo_final2222.jpg</p>
+                            </div>
+                        </Draggable>
+                        {/*{statusPhoto ? (*/}
+                        {/*    <div onClick={closeModal} className="pop_image">*/}
+                        {/*        <img onClick={closeModal} className="pop_photo" src={deco2}/>*/}
+                        {/*    </div>*/}
+                        {/*):null}*/}
+                    </div>
+                    <div onClick={closeModal} className="home_icon" style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_trash"  onDoubleClick={openModalTrash} onTouchStart={openModalTrash}>
+                                <img className="home_trash_img" src={deco3}/>
+                                <p style={style.p} className="home_trash_title">trash can</p>
+                            </div>
+                        </Draggable>
+                    </div>
+                    <div style={style.footer_txt}>
+                        <p id="footer_text">KyungHee Univ. Dicon 2021 Degree Show</p>
+                    </div>
+                    <Admin/>
+                    <Organization/>
+                    <Guest/>
+                    <Professor/>
+                    <Banner/>
+                    <MotionGraphics/>
+                    <Animation/>
+                    <VFX_SFX/>
+                    <Game/>
+                    <InterActionDesign/>
+                    <WebtoonConceptArt/>
 
 
-                {statusNotice ? (
-                    <div onClick={closeModal} className="pop_image_n">
-                        <img className="pop_photo_n" onClick={closeModal} src={deco}/>
-                    </div>
-                ):null}
-                {statusTypo ? (
-                    <div onClick={closeModal} className="pop_image">
-                        <img onClick={closeModal} className="pop_photo" src={deco1}/>
-                    </div>
-                ):null}
-                {statusPhoto ? (
-                    <div onClick={closeModal} className="pop_image">
-                        <img onClick={closeModal} className="pop_photo" src={deco2}/>
-                    </div>
-                ):null}
-                {statusTrash ? (
-                    <div onClick={closeModal} className="pop_image">
-                        <img
-                            onClick={closeModal}
-                            src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/trashcan_gif.gif?alt=media&token=62682d0f-9238-4947-b952-cccea2bff68f' || "http://via.placeholde.com/300"}
-                            alt="firebase-image"
-                            className="pop_photo"
-                        />
-                    </div>
-                ):null}
+                    {statusNotice ? (
+                        <div onClick={closeModal} className="pop_image_n">
+                            <img className="pop_photo_n" onClick={closeModal} src={deco}/>
+                        </div>
+                    ):null}
+                    {statusTypo ? (
+                        <div onClick={closeModal} className="pop_image">
+                            <img onClick={closeModal} className="pop_photo" src={deco1}/>
+                        </div>
+                    ):null}
+                    {statusPhoto ? (
+                        <div onClick={closeModal} className="pop_image">
+                            <img onClick={closeModal} className="pop_photo" src={deco2}/>
+                        </div>
+                    ):null}
+                    {statusTrash ? (
+                        <div onClick={closeModal} className="pop_image">
+                            <img
+                                onClick={closeModal}
+                                src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/trashcan_gif.gif?alt=media&token=62682d0f-9238-4947-b952-cccea2bff68f' || "http://via.placeholde.com/300"}
+                                alt="firebase-image"
+                                className="pop_photo"
+                            />
+                        </div>
+                    ):null}
+
+                </div>
 
             </div>
-
-
         </>
     );
 }
