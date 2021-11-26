@@ -102,7 +102,8 @@ function HomeView() {
                     autoPlay
                     muted
                     loop
-                    playsinline
+                    playsInline
+
                     style={{
                         position: 'absolute',
                         width : "100%",
