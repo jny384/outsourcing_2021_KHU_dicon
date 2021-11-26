@@ -8,6 +8,7 @@
 }
 .list_title{
     color: white;
+    font-weight: bold;
 }
 .workListMain{
     display: flex;

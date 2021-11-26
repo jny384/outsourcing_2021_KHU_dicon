@@ -87,7 +87,8 @@ function HomeView() {
                     <Draggable onDrag={(e, data) => trackPos(data)} >
                         <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice} onTouchStart={openModalNotice}>
                             <img src={deco} className="home_notice_img" onDragStart="return true"/>
-                            <p style={style.p} className="home_notice_title">typo_poster.jpg</p>
+                            <p style={style.p} className="home_notice_title"> Notice.txt</p>
+
                         </div>
                     </Draggable>
                     {/*{statusNotice ? (*/}

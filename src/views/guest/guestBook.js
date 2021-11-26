@@ -9,6 +9,9 @@ export default function GuestBook() {
     const [date, setDate] = useState('');
     const [inputData, setInputData] = useState([]);
 
+    const [length, setLength] = useState(0)
+    const [check, setCheck] = useState(true);
+
     // const [clicked, setClicked] = useState(false);
     useEffect(() => {
         exec();
@@ -30,37 +33,31 @@ export default function GuestBook() {
         setDate(month + '-' + date);
         setWriter(e.target.value);
     };
-    // const onDateChange = (e) => {
-    // };
+
     const onContentChange = (e) => {
+        if (e.target.value.length === 0) {
+            setCheck(false);
+        }
+        if (e.target.value.length > 440) {
+            setCheck(false);
+        } else {
+            setCheck(true);
+        }
+        setLength(e.target.value.length)
         setContent(e.target.value);
     };
     const onPost = async () => {
-        await PostGuestBook(writer, date, content);
-        await window.location.reload();
+        if (check === true) {
+            await PostGuestBook(writer, date, content);
+            await window.location.reload();
+        }
         // console.log(url);
     };
-    // async function onPost() {
-    //     await PostGuestBook(writer, content);
-    //     // setClicked(true);
-    // };
-    // const abc = ['Apple', 'Banana', 'Orange'];
-    // const rev = () => {
-    //     const reverse = [];
-    //     for (let i = inputData.length - 1; i <= 0; i--) {
-    //         reverse.push(inputData[i]);
-    //     }
-    //     console.log(reverse)
-    //     return reverse;
-    // }
-    //
-    // console.log('i',inputData)
-    // console.log(inputData.reverse())
 
     return (
         <>
             <div className="guestBook_main">
-                <span className="guestBook_title"> guest Book </span>
+                <span className="guestBook_title"> Guest_Book </span>
                 <div className="guest_list">
                     <div className="list_box">
                         <div className="input_box">
@@ -69,10 +66,15 @@ export default function GuestBook() {
                                 {/*<input className="input_date" placeholder="날짜" onChange={onDateChange}/>*/}
                             </div>
                             <div>
-                                <textarea className="input_content" placeholder="내용 작성란입니다.&#13;&#10;비방, 욕설, 광고글 작성 시 삭제될 수 있으며,&#13;&#10;한 번 작성된 글은 수정할 수 없습니다." onChange={onContentChange}/>
+                                <textarea className="input_content" name="guest_content" placeholder="내용 작성란입니다.&#13;&#10;비방, 욕설, 광고글 작성 시 삭제될 수 있으며,&#13;&#10;한 번 작성된 글은 수정할 수 없습니다." onChange={onContentChange}/>
+
                             </div>
                             <div className="input_bottom">
-                                <button className="input_btn" onClick={onPost}>등록</button>
+                                <div className="check_length">
+
+                                    <span > {length}/440</span>
+                                </div>
+                                <button className={check ? "input_btn" : "unactive_btn"} onClick={onPost}>등록</button>
                             </div>
                         </div>
                     </div>

@@ -17,11 +17,11 @@ export default function Guest() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick} onTouchStart={handleClick}>
+        <div className="home_icon" style={style.main_body} >
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_book" >
+                <div className="home_book" onDoubleClick={handleClick} onTouchStart={handleClick} >
                     <img className="home_book_img" src={book}/>
-                    <p style={style.p} className="home_book_title">Guestbook</p>
+                    <p style={style.p} className="home_book_title">Guest_book</p>
                 </div>
             </Draggable>
         </div>

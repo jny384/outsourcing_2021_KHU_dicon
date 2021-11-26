@@ -13,13 +13,36 @@ export default function WorksList({match}) {
         const data =  await GetThumbNail(match.params.teamName);
         await setInputData(data);
     }
+    const getTitle = () => {
+        if (match.params.teamName === 'VFX_SFX') {
+            return 'VFX / SFX'
+        }
 
+        if (match.params.teamName === 'InteractionDesign') {
+            return 'UI / UX'
+        }
+
+        if (match.params.teamName === 'WebtoonConceptArt') {
+            return 'Webtoon / Concept Art'
+        }
+        if (match.params.teamName === '2D') {
+            return '2D'
+        }
+
+        if (match.params.teamName === '3D') {
+            return '3D'
+        }
+
+        if (match.params.teamName === 'Game') {
+            return 'Game'
+        }
+    }
     // const thumbUrl = inputData.thumbUrl;
 
     return(
         <>
             <section className="workListMain">
-                <span className="list_title">{match.params.teamName}</span>
+                <span className="list_title">{getTitle()}</span>
                 <div className="list_main">
                     {
                         inputData.map((item, index) => {

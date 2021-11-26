@@ -17,9 +17,9 @@ export default function Notice() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick} onTouchStart={handleClick}>
+        <div className="home_icon" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_notice" >
+                <div className="home_notice"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img className="home_notice_img" src={notice}/>
                     <p style={style.p} className="home_notice_title">Notice.txt</p>
                 </div>

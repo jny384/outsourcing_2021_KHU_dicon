@@ -17,9 +17,9 @@ export default function Trash() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick} onTouchStart={handleClick}>
+        <div className="home_icon" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_trash" >
+                <div className="home_trash"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img className="home_trash_img" src={trash}/>
                     <p style={style.p} className="home_trash_title">trash can</p>
                 </div>

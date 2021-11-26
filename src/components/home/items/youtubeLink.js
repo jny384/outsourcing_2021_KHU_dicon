@@ -13,9 +13,9 @@ export default function YoutubeLink() {
     };
 
     return(
-        <div className="main_body" style={style.main_body} onDoubleClick={handleClick} onTouchStart={handleClick}>
+        <div className="main_body" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_youtube" >
+                <div className="home_youtube"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img src={youtube} className='home_youtube_img'/>
                     <p style={style.p} className='home_youtube_title'>Youtube.url</p>
                 </div>

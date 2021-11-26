@@ -17,9 +17,9 @@ export default function InterActionDesign() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={onClick}>
+        <div style={style.main_body} >
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="team_ui" >
+                <div className="team_ui" onDoubleClick={onClick}  onTouchStart={onClick}>
                     <img className="team_ui_img" src={ui}/>
                     <p style={style.p} className="team_ui_title">UI / UX</p>
                 </div>

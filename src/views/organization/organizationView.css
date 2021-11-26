@@ -265,6 +265,7 @@
     .org_top{
         width: 100vw;
         height: 640px;
+        font-size: 14px;
         /*background-color: orange;*/
     }
     .org_left{

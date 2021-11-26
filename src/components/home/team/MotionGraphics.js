@@ -18,9 +18,9 @@ export default function MotionGraphics() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={onClick}>
+        <div style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="team_2D" >
+                <div className="team_2D"  onDoubleClick={onClick}  onTouchStart={onClick}>
                     <img className="team_2D_img" src={twoD}/>
                     <p style={style.p} className="team_2D_title">2D</p>
                 </div>

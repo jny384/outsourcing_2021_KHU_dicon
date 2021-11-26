@@ -8,6 +8,13 @@
     text-align: center;
     background-color: #E7411C;
 }
+.input_bottom{
+    display: flex;
+    flex-direction: row;
+}
+.guest_content{
+    word-break: break-word;
+}
 .guestBook_title{
     color:white;
     font-weight: bold;
@@ -15,6 +22,9 @@
 .guest_list {
     display: grid;
     place-items: center;
+}
+.unactive_btn{
+    background-color: gray;
 }
 @media (min-width: 1440px) {
     .guestBook_main{
@@ -56,12 +66,17 @@
     .input_bottom{
         width: 310px;
     }
-    .input_btn {
+    .input_btn, .unactive_btn {
         width: 80px;
         height: 30px;
-        margin-top: 10px;
-        left: 225px;
+        margin-top: 5px;
+        left: 155px;
         font-size: 16px;
+    }
+
+    .check_length{
+        width: 64px;
+        margin-left: 5px;
     }
     .guest_top{
         width: 310px;
@@ -104,7 +119,7 @@
     .list_box{
         width: 310px;
         min-height: 310px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .input_box{
         width: 310px;
@@ -129,12 +144,17 @@
     .input_bottom{
         width: 310px;
     }
-    .input_btn {
+    .input_btn, .unactive_btn {
         width: 80px;
         height: 30px;
         margin-top: 5px;
-        left: 217px;
+        left: 137px;
         font-size: 16px;
+    }
+
+    .check_length{
+        width: 64px;
+        margin-left: 16px;
     }
     .guest_box{
         display: flex;
@@ -160,6 +180,9 @@
         width: 290px;
         height: 250px;
         margin-bottom: 10px;
+    }
+    .input_name::placeholder, .input_content::placeholder{
+        font-size: 14px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
@@ -189,7 +212,10 @@
     .list_box{
         width: 228px;
         min-height: 231px;
-        font-size: 14px;
+        font-size: 11px;
+    }
+    .input_name::placeholder, .input_content::placeholder{
+        font-size: 11px;
     }
     .input_top{
         margin-top: 10px;
@@ -207,13 +233,18 @@
     .input_bottom{
         width: 228px;
     }
-    .input_btn {
+    .input_btn, .unactive_btn {
         width: 50px;
         height: 20px;
         margin-top: 1px;
-        left: 170px;
+        left: 105px;
         /*right: 60px;*/
         font-size: 14px;
+    }
+
+    .check_length{
+        width: 56px;
+        margin-left: 10px;
     }
     .guest_box{
         width: 228px;
@@ -240,7 +271,7 @@
     }
     .guest_content{
         /*margin-left: 10px;*/
-        margin-top: 10px;
+        margin-top: 5px;
         width: 208px;
         height: 180px;
     }
@@ -286,13 +317,17 @@
     .input_bottom{
         width: 310px;
     }
-    .input_btn {
+    .input_btn, .unactive_btn {
         width: 80px;
         height: 30px;
         margin-top: 5px;
-        left: 225px;
+        left: 160px;
         font-size: 16px;
     }
+    .check_length{
+        width: 64px;
+    }
+
     .guest_top{
         width: 310px;
     }
@@ -370,4 +405,17 @@
     justify-content: center;
     align-items: end;
     background-color: #E7411C;
+}
+
+.unactive_btn{
+    background-color: gray;
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    /*left: 225px;*/
+    font-size: 16px;
+
+    border: none;
+    position: relative;
+    color: white;
 }

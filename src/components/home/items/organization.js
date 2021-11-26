@@ -16,9 +16,9 @@ export default function Organization() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick} onTouchStart={handleClick}>
+        <div className="home_icon" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_org" >
+                <div className="home_org"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img
                         src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/images%2F2D%2Fadwad%2Fworks%2Fabout_cookie.gif?alt=media&token=6ff9b832-7d27-46ce-afcf-e8d92219e217' || "http://via.placeholde.com/300"}
                         alt="firebase-image"

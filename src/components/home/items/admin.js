@@ -17,9 +17,9 @@ export default function Admin() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick}  onTouchStart={handleClick}>
+        <div className="home_icon" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_staff" >
+                <div className="home_staff"  onDoubleClick={handleClick}  onTouchStart={handleClick} >
                     <img className="home_staff_img" src={staff}/>
                     <p className="home_staff_title">STAFF_ONLY</p>
                 </div>

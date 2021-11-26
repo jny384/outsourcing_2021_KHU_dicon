@@ -17,9 +17,9 @@ export default function VFX_SFX() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={onClick}>
+        <div style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="team_vfx" >
+                <div className="team_vfx"  onDoubleClick={onClick}  onTouchStart={onClick} >
                     <img className="team_vfx_img" src={vfx}/>
                     <p style={style.p} className="team_vfx_title">VFX / SFX</p>
                 </div>

@@ -167,12 +167,13 @@
     }
 
     .deco_1{
-        position: relative;
-        top: 200px;
+        position: absolute;
+        bottom: 200px;
     }
     .home_photo{
         position: absolute;
-        top: -50px;
+        top:0;
+        /*top: -50px;*/
         left: 1000px;
         margin-left: 250px;
     }
@@ -203,7 +204,7 @@
     }
     .home_book{
         position: absolute;
-        top: 370px;
+        bottom: 370px;
         right: 150px;
     }
     .team_vfx{
@@ -232,7 +233,6 @@
         right: 210px;
     }
     .team_game{
-
         position: absolute;
         bottom: 37px;
         right: 370px;

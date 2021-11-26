@@ -18,9 +18,9 @@ export default function Banner() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} onDoubleClick={handleClick} onTouchStart={handleClick}>
+        <div className="home_icon" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_banner" >
+                <div className="home_banner" onDoubleClick={handleClick} onTouchStart={handleClick} >
                     <img className="home_banner_img" src={banner}/>
                     <p style={style.p} className="home_banner_title">online_banner</p>
                 </div>
