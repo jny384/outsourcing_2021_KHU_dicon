@@ -9,6 +9,7 @@ export default function Auth() {
     const [input, setInput] = useState('');
 
     const getPwd = (e) => {
+        // console.log(e);
         setInput(e.target.value)
     }
     const compare = () => {
@@ -18,11 +19,15 @@ export default function Auth() {
     }
     const onKeyPress = (e) => {
         if (e.key == 'Enter') {
-            getPwd(e);
-            console.log(e.target.value);
+            getPwdEnter(e.target.value);
+            // console.log(e.target.value);
         }
     }
-
+    const getPwdEnter = (e) => {
+        // console.log(e);
+        setInput(e);
+        compare();
+    }
     return(
         <>
             <div style={style.main_body}>
