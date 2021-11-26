@@ -117,7 +117,21 @@ export default function WorksView({match}) {
                 </div>
             </div>
             <div className="left_color">
-
+                <div id="student_pic">
+                    <img
+                        className="student_profile_pic"
+                        src={profileUrl || "http://via.placeholde.com/300"}
+                        alt="firebase-image"
+                        // width="100%"
+                        // height="auto"
+                        // style={{width: "394px", height : "534px"}}
+                    />
+                </div>
+                <p id="worker_name">{name}</p>
+                <div className="left_detail">
+                    <p id="worker_email">{email}</p>
+                    <a href={workLink} id="worker_workLink">{workLink}</a>
+                </div>
             </div>
             {/*<div className="footer footer_works">*/}
             {/*    <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>*/}

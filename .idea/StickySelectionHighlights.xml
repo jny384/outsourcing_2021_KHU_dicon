@@ -208,6 +208,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/post/uploadThumbNail.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/components/post/uploadWorkImages.js">
           <value>
             <PaintGroupHighlightMap />

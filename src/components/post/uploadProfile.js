@@ -5,6 +5,7 @@ export default function UploadProfile(props) {
     const [image, setImage] = useState();
     const [url, setUrl] = useState();
     const [progress, setProgress] = useState(0);
+    const [clicked, setClicked] = useState(false);
 
     const directory = props.directory;
     const teamName = props.teamName;
@@ -16,6 +17,7 @@ export default function UploadProfile(props) {
     };
 
     const handleUpload = () => {
+        setClicked(true);
         const uploadTask = storage.ref(`images/${teamName}/${directory}/profile/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
@@ -54,7 +56,7 @@ export default function UploadProfile(props) {
             {/*<input onChange={handleChangeDirectory} placeholder="저장 폴더 이름"/>*/}
             <br/>
             <input type="file" onChange={handleChange}/>
-            <button onClick={handleUpload}>Upload</button>
+            <button onClick={clicked ? null: handleUpload}>Upload</button>
             <br/>
             <img
                      src={url || "http://via.placeholde.com/300"}

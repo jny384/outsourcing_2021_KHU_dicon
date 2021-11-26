@@ -5,6 +5,7 @@ export default function UploadBanner(props) {
     const [image, setImage] = useState();
     const [url, setUrl] = useState();
     const [progress, setProgress] = useState(0);
+    const [clicked, setClicked] = useState(false);
 
     const handleChange = (e) => {
         if (e.target.files[0]) {
@@ -13,6 +14,7 @@ export default function UploadBanner(props) {
     };
 
     const handleUpload = () => {
+        setClicked(true);
         const uploadTask = storage.ref(`images/banner/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
@@ -51,7 +53,7 @@ export default function UploadBanner(props) {
             {/*<input onChange={handleChangeDirectory} placeholder="저장 폴더 이름"/>*/}
             <br/>
             <input type="file" onChange={handleChange}/>
-            <button onClick={handleUpload}>Upload</button>
+            <button onClick={clicked ? null: handleUpload}>Upload</button>
             <br/>
             <img
                 src={url || "http://via.placeholde.com/300"}

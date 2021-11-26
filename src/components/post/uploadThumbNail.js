@@ -6,6 +6,7 @@ export default function UploadThumbNail(props) {
     const [url, setUrl] = useState();
     const [progress, setProgress] = useState(0);
 
+    const [clicked, setClicked] = useState(false);
     const directory = props.directory;
     const teamName = props.teamName;
 
@@ -20,6 +21,7 @@ export default function UploadThumbNail(props) {
     // }
 
     const handleUpload = () => {
+        setClicked(true);
         const uploadTask = storage.ref(`images/${teamName}/${directory}/thumb/${image.name}`).put(image);
         uploadTask.on(
             "state_changed",
@@ -54,7 +56,7 @@ export default function UploadThumbNail(props) {
             {/*<input onChange={handleChangeDirectory} placeholder="저장 폴더 이름"/>*/}
             <br/>
             <input type="file" multiple onChange={handleChange}/>
-            <button onClick={handleUpload}>Upload</button>
+            <button onClick={clicked ? null: handleUpload}>Upload</button>
             {/*<a onClick={sendText}>send</a>*/}
             <br/>
             <img

@@ -32,7 +32,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 23px;
         grid-row-gap: 50px;
-        margin: 24px 0;
+        margin: 24px 0 400px 0;
     }
     .thumbNail{
         width: 330px;
@@ -51,7 +51,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 24px;
         grid-row-gap: 40px;
-        margin: 24px 0;
+        margin: 24px 0 200px 0;
     }
     .thumbNail{
         width: 226px;
@@ -66,6 +66,9 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
+    .workListMain{
+        /*padding-bottom: 400px;*/
+    }
     .list_title{
         font-size: 30px;
         margin: 30px 0;
@@ -74,7 +77,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 24px;
         grid-row-gap: 30px;
-        margin: 40px 0;
+        margin: 24px 0 100px 0;
     }
     .thumbNail{
         width: 154px;
@@ -94,7 +97,8 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 14px;
         grid-row-gap: 25px;
-        margin: 16px 0;
+        margin: 16px 0 200px 0;
+
     }
     .thumbNail{
         width: 156px;
@@ -104,7 +108,7 @@
         font-size: 16px;
     }
     .workListMain{
-        margin-bottom: 200px;
+        /*margin-bottom: 200px;*/
     }
 }
 

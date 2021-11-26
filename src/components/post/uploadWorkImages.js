@@ -6,11 +6,16 @@ export default function UploadWorkImages(props) {
     const [images, setImages] = useState([]);
     const [urls, setUrls] = useState([]);
     const [progress, setProgress] = useState(0);
+    const [clicked, setClicked] = useState(false);
     // const [directory, setDirectory] = useState("");
     const directory = props.directory;
     const teamName = props.teamName;
     
     const handleChange = (e) => {
+        if (images.length != 0) {
+            console.log('a')
+            setImages([])
+        };
         for (let i = 0; i < e.target.files.length; i++) {
             const newImage = e.target.files[i]
             newImage["id"] = Math.random();
@@ -23,6 +28,7 @@ export default function UploadWorkImages(props) {
     // }
 
     const handleUpload = () => {
+        setClicked(true);
         const promises = []
         images.map((image) => {
             const uploadTask = storage.ref(`images/${teamName}/${directory}/works/${image.name}`).put(image);
@@ -55,6 +61,10 @@ export default function UploadWorkImages(props) {
             // .then(() => { })
             .catch((err)=> console.log(err))
     };
+    const initializeInput = () => {
+        console.log('a')
+        setImages([]);
+    }
 
     // console.log("image : ", images);
     // console.log("urls : ", urls);
@@ -73,8 +83,8 @@ export default function UploadWorkImages(props) {
             <br/>
             {/*<input onChange={handleChangeDirectory} placeholder="저장 폴더 이름"/>*/}
             <br/>
-            <input type="file" multiple onChange={handleChange}/>
-            <button onClick={handleUpload}>Upload</button>
+            <input type="file" multiple onClick={initializeInput} onChange={handleChange}/>
+            <button onClick={clicked ? null: handleUpload}>Upload</button>
             <button onClick={sendText}>send</button>
             <br/>
             <br/>
