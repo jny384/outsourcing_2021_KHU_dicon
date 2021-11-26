@@ -18,7 +18,7 @@ export default function MotionGraphics() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick}>
+        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={openModalNotice}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
                 <div className="team_2D" >
                     <img className="team_2D_img" src={twoD}/>

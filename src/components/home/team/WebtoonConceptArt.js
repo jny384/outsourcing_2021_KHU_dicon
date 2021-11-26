@@ -17,7 +17,7 @@ export default function WebtoonConceptArt() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick}>
+        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={openModalNotice}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
                 <div className="team_web" >
                     <img className="team_web_img" src={web}/>

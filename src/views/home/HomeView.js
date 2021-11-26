@@ -86,7 +86,7 @@ function HomeView() {
                 <div onClick={closeModal} className="deco" style={style.main_body}>
                     <Draggable onDrag={(e, data) => trackPos(data)} >
                         <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice} onTouchStart={openModalNotice}>
-                            <img src={deco} className="home_notice_img"/>
+                            <img src={deco} className="home_notice_img" onDragStart="return true"/>
                             <p style={style.p} className="home_notice_title">typo_poster.jpg</p>
                         </div>
                     </Draggable>
@@ -98,7 +98,7 @@ function HomeView() {
                 </div>
                 <div onClick={closeModal} className="deco_1" style={style.main_body}>
                     <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_type" style={style.deco_image} onDoubleClick={openModalTypo}>
+                        <div className="home_type" style={style.deco_image} onDoubleClick={openModalTypo}  onTouchStart={openModalTypo}>
                             <img src={deco1} className="home_type_img"/>
                             <p style={style.p} className="home_type_title">typo_poster.jpg</p>
                         </div>
@@ -111,7 +111,7 @@ function HomeView() {
                 </div>
                 <div className="deco2" onClick={closeModal} style={style.main_body}>
                     <Draggable onDrag={(e, data) => trackPos(data)} >
-                        <div className="home_photo" style={style.deco_image} onDoubleClick={openModalPhoto}>
+                        <div className="home_photo" style={style.deco_image} onDoubleClick={openModalPhoto}  onTouchStart={openModalPhoto}>
                             <img src={deco2} className="home_photo_img"/>
                             <p style={style.newp} className="home_photo_title">photo_final2222.jpg</p>
                         </div>
