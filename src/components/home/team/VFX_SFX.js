@@ -17,7 +17,7 @@ export default function VFX_SFX() {
     }
 
     return(
-        <div style={style.main_body} onDoubleClick={onClick  onTouchStart={openModalNotice}>
+        <div style={style.main_body} onDoubleClick={onClick}  onTouchStart={openModalNotice}>
             <Draggable onDrag={(e, data) => trackPos(data)}>
                 <div className="team_vfx" >
                     <img className="team_vfx_img" src={vfx}/>
