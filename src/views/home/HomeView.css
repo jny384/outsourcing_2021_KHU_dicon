@@ -586,37 +586,37 @@
     }
     .home_book{
         position: absolute;
-        bottom: 270px;
+        bottom: 350px;
         right: 25px;
     }
     .team_vfx{
         position: absolute;
-        bottom: 150px;
+        bottom: 230px;
         right: 20px;
     }
     .team_3D{
         position: absolute;
-        bottom: 150px;
+        bottom: 230px;
         right: 120px;
     }
     .team_2D{
         position: absolute;
-        bottom: 150px;
+        bottom: 230px;
         right: 225px;
     }
     .team_web{
         position: absolute;
-        bottom: 25px;
+        bottom: 105px;
         right: 20px;
     }
     .team_ui{
         position: absolute;
-        bottom: 37px;
+        bottom: 117px;
         right: 120px;
     }
     .team_game{
         position: absolute;
-        bottom: 37px;
+        bottom: 117px;
         right: 225px;
     }
 }
