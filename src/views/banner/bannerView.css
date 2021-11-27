@@ -95,6 +95,9 @@ body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
 @media (max-width: 767px) {
     .banner_main{
         grid-template-columns: repeat(2, 1fr);
+        /*grid-column-gap: 20px;*/
+        grid-row-gap: 30px;
+        margin: 0 24px 200px;
     }
     .banner{
         width: 156px;

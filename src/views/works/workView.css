@@ -443,7 +443,7 @@ body {
 
     .left_detail {
         font-size: 18px;
-
+        text-align: center;
         margin: 10px 39px;
     }
     .right_workview {
