@@ -60,17 +60,11 @@ body {
 }
 #worker_email{
     word-break: break-word;
-    margin: 0;
 }
 .left_detail{
     word-break: break-word;
 }
 
-.left_detail {
-}
-#worker_workLink{
-    margin: 0;
-}
 .right_workview {
     display: flex;
     flex-direction: column;
@@ -100,19 +94,10 @@ body {
     color: white;
 }
 
-#workInfo {
-}
-
 .work_youtube {
     display: flex;
     justify-content: center;
     height: fit-content;
-}
-
-#youtubeLink {
-}
-
-.works_images {
 }
 
 @media (min-width: 1440px) {
@@ -136,6 +121,10 @@ body {
     .student_profile_pic{
         width: 260px;
         height: 347px;
+    }
+    .title_workView{
+        margin: 80px 58px 30px;
+        width: 260px;
     }
 
     #worker_name {
@@ -245,6 +234,11 @@ body {
         height: 257px;
     }
 
+    .title_workView{
+        margin: 100px 43px 25px;
+        width: 193px;
+    }
+
     #worker_name {
         font-size: 24px;
         font-weight: bold;
@@ -333,6 +327,11 @@ body {
         width: 138px;
         height: 184px;
         margin: 36px 29px 18px;
+    }
+
+    .title_workView{
+        margin: 100px 29px 18px;
+        width: 138px;
     }
     .left_detail {
         width: 138px;
@@ -429,7 +428,9 @@ body {
         overflow: scroll;
         /*padding-bottom: 200px;*/
     }
-
+    .title_workView{
+        display: none;
+    }
     .left_workview {
         width: 100vw;
         height: 615px;

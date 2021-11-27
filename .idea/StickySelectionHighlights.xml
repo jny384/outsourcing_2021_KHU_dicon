@@ -73,6 +73,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/firebase/getWorks.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/components/firebase/postBanner.js">
           <value>
             <PaintGroupHighlightMap />
@@ -199,6 +204,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/components/post/uploadBanner.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/post/uploadBug.js">
           <value>
             <PaintGroupHighlightMap />
           </value>

@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import storage from "../firebase/firebase-manager";
-// import GetWorkImages from "./getWorkImages";
 
 export default function UploadWorkImages(props) {
     const [images, setImages] = useState([]);
@@ -10,19 +9,20 @@ export default function UploadWorkImages(props) {
     // const [directory, setDirectory] = useState("");
     const directory = props.directory;
     const teamName = props.teamName;
-    
+
     const handleChange = (e) => {
         if (images.length != 0) {
-            console.log('a')
+            // console.log('a')
             setImages([])
         };
+
         for (let i = 0; i < e.target.files.length; i++) {
-            const newImage = e.target.files[i]
+            const newImage = e.target.files[i];
             newImage["id"] = Math.random();
             setImages((prevState) => [...prevState, newImage]);
         }
     };
-
+    // console.log(images)
     // const handleChangeDirectory = (e) => {
     //     setDirectory(e.target.value);
     // }

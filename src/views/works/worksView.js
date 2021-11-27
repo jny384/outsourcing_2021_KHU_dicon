@@ -3,6 +3,7 @@ import ReactPlayer from "react-player/youtube";
 
 import {GetPostingInfo} from "../../components/firebase/getPostingInfo";
 import './workView.css';
+import title from  './img/title_W.png';
 
 const Split = ({text}) => {
     return <p className="works_detail_txt">
@@ -122,7 +123,7 @@ export default function WorksView({match}) {
                     <img
                         className="student_profile_pic"
                         src={profileUrl || "http://via.placeholde.com/300"}
-                        alt="firebase-image"
+                        alt="profile-image"
                         // width="100%"
                         // height="auto"
                         // style={{width: "394px", height : "534px"}}
@@ -133,6 +134,7 @@ export default function WorksView({match}) {
                     <p id="worker_email">{email}</p>
                     <a href={workLink} id="worker_workLink">{workLink}</a>
                 </div>
+                <img className="title_workView" src={title} alt="cookie"/>
             </div>
             {/*<div className="footer footer_works">*/}
             {/*    <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>*/}
