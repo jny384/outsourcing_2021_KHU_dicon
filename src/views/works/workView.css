@@ -9,7 +9,10 @@ body {
     /*top: 47px;*/
     margin-bottom: 0;
 }
-
+.work_detail_pic{
+    display: flex;
+    flex-direction: column;
+}
 .mainContent {
 }
 
@@ -120,7 +123,6 @@ body {
     #student_pic{
         width: 260px;
         height: 347px;
-        background-color: deeppink;
         margin: 58px 58px 30px;
     }
     .left_detail {
@@ -147,7 +149,7 @@ body {
     .right_workview {
         right: 0;
         left: 378px;
-        padding-bottom: 400px;
+        /*padding-bottom: 400px;*/
         /*width: ;*/
     }
 
@@ -190,8 +192,16 @@ body {
     #youtubeLink_tab{
         display: none;
     }
+    .work_detail_pic{
+        height: fit-content;
+        margin-bottom: 400px;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1439px){
+    .work_detail_pic{
+        height: fit-content;
+        margin-bottom: 200px;
+    }
     .left_color{
         width: 280px;
     }
@@ -217,7 +227,6 @@ body {
     #student_pic{
         width: 193px;
         height: 257px;
-        background-color: deeppink;
         margin: 49px 43px 25px;
     }
     .left_detail {
@@ -252,7 +261,7 @@ body {
         /*flex-direction: column;*/
         /*align-items: center;*/
         /*height: fit-content;*/
-        padding-bottom: 200px;
+        /*padding-bottom: 200px;*/
     }
 
     #workTitle {
@@ -296,6 +305,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
+    .work_detail_pic{
+        height: fit-content;
+        margin-bottom: 100px;
+    }
     .left_color{
         width: 196px;
     }
@@ -315,7 +328,6 @@ body {
     #student_pic{
         width: 138px;
         height: 184px;
-        background-color: deeppink;
         margin: 36px 29px 18px;
     }
     .left_detail {
@@ -347,7 +359,7 @@ body {
         align-items: center;
         /*width: 100vw;*/
         height: fit-content;
-        padding-bottom: 200px;
+        /*padding-bottom: 200px;*/
     }
 
     #workTitle {
@@ -399,6 +411,7 @@ body {
     }
     .work_detail_pic{
         height: fit-content;
+        margin-bottom: 200px;
     }
     .student_area{
         display: flex;
@@ -410,7 +423,7 @@ body {
         /*bottom: 0;*/
         /*max-height: 2000vh;*/
         overflow: scroll;
-        padding-bottom: 200px;
+        /*padding-bottom: 200px;*/
     }
 
     .left_workview {
@@ -454,7 +467,7 @@ body {
         height: fit-content;
         /*height: 5000vh;*/
         /*overflow: scroll;*/
-        padding-bottom: 200px;
+        /*padding-bottom: 200px;*/
     }
 
     #workTitle {
@@ -497,7 +510,7 @@ body {
         display: none;
     }
     .student_area{
-        padding-bottom: 200px;
+        /*padding-bottom: 200px;*/
     }
     .left_color{
         display: none;

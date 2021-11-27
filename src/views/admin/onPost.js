@@ -87,17 +87,18 @@ export default function OnPost() {
                 <div className="student_info">
                     <div className="select_url">
                         <p>이 작품의 주소와 팀 이름</p>
-                        <input name="url" onChange={getUrl} value={url} placeholder="주소"/>
-                        {/*<input name="team" onChange={onChange} value={team} placeholder="팀 이름"/>*/}
-                        <select id="selectBox" onChange={handleChange}>
-                            <option> 선택하세요 </option>
-                            <option name="team" value="2D">2D </option>
-                            <option name="team" value="3D">3D </option>
-                            <option name="team" value="VFX_SFX">VFX / SFX</option>
-                            <option name="team" value="Game">Game</option>
-                            <option name="team" value="InteractionDesign">Interaction Design</option>
-                            <option name="team" value="WebtoonConceptArt">Webtoon Concept Art </option>
-                        </select>
+                        <div id="url_team">
+                            <input name="url" onChange={getUrl} value={url} placeholder="주소"/>
+                            <select id="selectBox" onChange={handleChange}>
+                                <option> 선택하세요 </option>
+                                <option name="team" value="2D">2D </option>
+                                <option name="team" value="3D">3D </option>
+                                <option name="team" value="VFX_SFX">VFX / SFX</option>
+                                <option name="team" value="Game">Game</option>
+                                <option name="team" value="InteractionDesign">Interaction Design</option>
+                                <option name="team" value="WebtoonConceptArt">Webtoon Concept Art </option>
+                            </select>
+                        </div>
                     </div>
                     <div className="post_thumbNail">
                         <p>썸네일</p>

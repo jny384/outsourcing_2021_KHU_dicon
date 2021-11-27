@@ -69,9 +69,6 @@ export default function WorksView({match}) {
                     </div>
                 </div>
                 <div className="right_workview">
-                    <div className="left_workview_r">
-
-                    </div>
                     <div className="work_info">
                         <p id="workTitle">{workTitle}</p>
                         <Split text={workInfo||''}/>
@@ -113,6 +110,10 @@ export default function WorksView({match}) {
                     </div>
                     <div className="work_detail_pic">
                         {imageList()}
+                    </div>
+
+                    <div className="works_footer">
+                        <p id="footer_text">KyungHee Univ. Dicon 2021 Degree Show </p>
                     </div>
                 </div>
             </div>

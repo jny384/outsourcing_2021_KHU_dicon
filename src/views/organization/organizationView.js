@@ -106,11 +106,12 @@ export default function OrganizationView() {
                             <p id="video_people"><b>파트장</b> 박철호 이상준 이지현 김재인 김다혜 김수아 임승정</p>
                         </p>
                     </div>
+                    <div className="org_footer">
+                        <p id="footer_text">KyungHee Univ. Dicon 2021 Degree Show </p>
+                    </div>
                 </div>
             </div>
-            <div className="footer">
-                <p id="footer_text" >KyungHee Univ. Dicon 2021 Degree Show </p>
-            </div>
+
         </>
     )
 }

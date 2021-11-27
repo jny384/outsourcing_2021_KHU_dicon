@@ -1,6 +1,9 @@
 
 body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
-
+#url_team{
+    display: flex;
+    flex-direction: row;
+}
 .bannerViewMain{
     min-height: 87vh;
 }
