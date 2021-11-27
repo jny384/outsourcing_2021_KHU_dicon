@@ -60,12 +60,16 @@ body {
 }
 #worker_email{
     word-break: break-word;
+    margin: 0;
 }
 .left_detail{
     word-break: break-word;
 }
 
 .left_detail {
+}
+#worker_workLink{
+    margin: 0;
 }
 .right_workview {
     display: flex;
@@ -438,7 +442,6 @@ body {
     #student_pic{
         width: 260px;
         height: 347px;
-        /*background-color: deeppink;*/
         margin: 30px;
     }
 
@@ -514,6 +517,9 @@ body {
     }
     .left_color{
         display: none;
+    }
+    .works_detail_txt{
+        line-height: 2;
     }
 }
 

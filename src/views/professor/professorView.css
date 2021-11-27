@@ -311,4 +311,7 @@
     .professor_main{
         padding-bottom: 200px;
     }
+    .major_detail{
+        line-height: 2;
+    }
 }

@@ -5,7 +5,7 @@ import {GetPostingInfo} from "../../components/firebase/getPostingInfo";
 import './workView.css';
 
 const Split = ({text}) => {
-    return <p>
+    return <p className="works_detail_txt">
         {text.split("\n").map((txt) => (
             <>
                 {txt}
