@@ -605,22 +605,22 @@
     }
     .home_book{
         position: fixed;
-        bottom: 285px;
-        right: 25px;
+        bottom: 255px;
+        right: 20px;
     }
     .team_vfx{
         position: fixed;
-        bottom: 165px;
+        bottom: 155px;
         right: 20px;
     }
     .team_3D{
         position: fixed;
-        bottom: 165px;
+        bottom: 155px;
         right: 120px;
     }
     .team_2D{
         position: fixed;
-        bottom: 165px;
+        bottom: 155px;
         right: 225px;
     }
     .team_web{
