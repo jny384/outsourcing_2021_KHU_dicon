@@ -542,7 +542,7 @@
     .home_insta{
         position: fixed;
         top: 45px;
-        right: 105px;
+        right: 90px;
         width: 80px;
         word-break: break-word;
     }
@@ -586,7 +586,7 @@
     .home_staff{
         position: fixed;
         top: 155px;
-        right:115px;
+        right:95px;
     }
     .home_banner{
         position: fixed;
@@ -605,37 +605,37 @@
     }
     .home_book{
         position: fixed;
-        bottom: 320px;
+        bottom: 285px;
         right: 25px;
     }
     .team_vfx{
         position: fixed;
-        bottom: 190px;
+        bottom: 165px;
         right: 20px;
     }
     .team_3D{
         position: fixed;
-        bottom: 190px;
+        bottom: 165px;
         right: 120px;
     }
     .team_2D{
         position: fixed;
-        bottom: 190px;
+        bottom: 165px;
         right: 225px;
     }
     .team_web{
         position: fixed;
-        bottom: 75px;
+        bottom: 50px;
         right: 20px;
     }
     .team_ui{
         position: fixed;
-        bottom: 87px;
+        bottom: 62px;
         right: 120px;
     }
     .team_game{
         position: fixed;
-        bottom: 87px;
+        bottom: 62px;
         right: 225px;
     }
 }
