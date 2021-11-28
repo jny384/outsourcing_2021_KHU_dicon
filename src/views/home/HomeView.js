@@ -144,7 +144,7 @@ function HomeView() {
                             </div>
                         </Draggable>
                     </div>
-                    <div onClick={closeModal} className="home_icon" style={style.main_body}>
+                    <div onClick={closeModal} className="deco3" style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
                             <div className="home_trash"  onDoubleClick={openModalTrash} onTouchStart={openModalTrash}>
                                 <img className="home_trash_img" src={deco3}/>
@@ -174,17 +174,17 @@ function HomeView() {
                         </div>
                     ):null}
                     {statusTypo ? (
-                        <div onClick={closeModal} className="pop_image">
+                        <div onClick={closeModal} className="pop_image_n">
                             <img onClick={closeModal} className="pop_photo" src={deco1}/>
                         </div>
                     ):null}
                     {statusPhoto ? (
-                        <div onClick={closeModal} className="pop_image">
+                        <div onClick={closeModal} className="pop_image_n">
                             <img onClick={closeModal} className="pop_photo" src={deco2}/>
                         </div>
                     ):null}
                     {statusTrash ? (
-                        <div onClick={closeModal} className="pop_image">
+                        <div onClick={closeModal} className="pop_image_n">
                             <img
                                 onClick={closeModal}
                                 src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/trashcan_gif.gif?alt=media&token=62682d0f-9238-4947-b952-cccea2bff68f' || "http://via.placeholde.com/300"}
@@ -230,7 +230,7 @@ const style = {
         // top: '10vh',
         // left: '30%',
 
-        zIndex: '100'
+        zIndex: '101'
     },
     set_box2: {
         width: 'auto',
@@ -254,7 +254,7 @@ const style = {
         color:"white"
     },
     deco_image: {
-        position: 'relative',
+        // position: 'relative',
         // left: '50%',
         zIndex:'1',
         // width: '100%'

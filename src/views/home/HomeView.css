@@ -233,80 +233,84 @@
 
     .home_notice{
         position: absolute;
-        top: 100px;
-        left: 100px;
+        top: 220px;
+        left: 40px;
         margin-left: 50px;
+        width: 130px;
+        overflow: hidden;
     }
 
     .deco_1{
         position: absolute;
-        bottom: 210px;
+        top: 380px;
+        left: 50px;
+
     }
     .home_photo{
         position: absolute;
-        top:0;
+        top:300px;
         /*top: -50px;*/
-        left: 1000px;
-        margin-left: 250px;
+        left: 230px;
+        /*margin-left: 250px;*/
     }
-    .home_trash{
+    .deco3{
         position: absolute;
         bottom: 30px;
         left: 60px;
     }
     .home_staff{
         position: absolute;
-        top: 100px;
+        top: 80px;
         right: 50px;
     }
     .home_banner{
         position: absolute;
-        top: 100px;
+        top: 80px;
         right: 230px;
     }
     .home_org{
         position: absolute;
-        top: 250px;
+        top: 230px;
         right: 370px;
     }
     .home_professor{
         position: absolute;
-        top: 200px;
+        top: 180px;
         right: 500px;
     }
     .home_book{
         position: absolute;
-        bottom: 390px;
+        bottom: 380px;
         right: 150px;
     }
     .team_vfx{
         position: absolute;
-        bottom: 240px;
+        bottom: 230px;
         right: 50px;
     }
     .team_3D{
         position: absolute;
-        bottom: 240px;
+        bottom: 230px;
         right: 210px;
     }
     .team_2D{
         position: absolute;
-        bottom: 240px;
+        bottom: 230px;
         right: 370px;
     }
     .team_web{
         position: absolute;
-        bottom: 80px;
+        bottom: 70px;
         right: 45px;
     }
     .team_ui{
         position: absolute;
-        bottom: 97px;
+        bottom: 87px;
         right: 210px;
     }
     .team_game{
         position: absolute;
-        bottom: 97px;
+        bottom: 87px;
         right: 370px;
     }
     /*.pop_image{*/
@@ -356,25 +360,26 @@
 
     .home_notice{
         position: absolute;
-        top: 60px;
+        top: 160px;
         left: 60px;
         margin-left: 50px;
     }
     .home_type{
         position: absolute;
-        top: 130px;
-        margin-left: -40px;
+        bottom: 230px;
+        left: 50px;
+        /*margin-left: -40px;*/
     }
     .home_photo{
         position: absolute;
-        top: -50px;
-        left: 500px;
-        margin-left: 180px;
+        bottom: 250px;
+        left: 160px;
+        /*margin-left: 180px;*/
     }
     .home_trash{
         position: absolute;
-        /*bottom: 75px;*/
-        top: 70vh;
+        bottom: 100px;
+        /*top: 70vh;*/
         left: 60px;
     }
     .home_staff{
@@ -465,27 +470,23 @@
 
     .home_notice{
         position: absolute;
-        top: 20px;
+        top: 150px;
+        left: 70px;
     }
     .deco_1{
         position: absolute;
         bottom: 200px;
-        left: -15px;
+        left: 30px;
     }
     .deco2{
         position: absolute;
         bottom: 290px;
         left: 140px;
     }
-    /*.home_photo{*/
-    /*    position: absolute;*/
-    /*    bottom: 0px;*/
-    /*    margin-left: 180px;*/
-    /*}*/
     .home_trash{
         position: absolute;
         bottom: 75px;
-        left: 60px;
+        left: 40px;
         /*border: 10px red solid;*/
     }
     .home_staff{
@@ -510,37 +511,37 @@
     }
     .home_book{
         position: absolute;
-        bottom: 330px;
+        bottom: 310px;
         right: 110px;
     }
     .team_vfx{
         position: absolute;
-        bottom: 210px;
+        bottom: 190px;
         right: 50px;
     }
     .team_3D{
         position: absolute;
-        bottom: 210px;
+        bottom: 190px;
         right: 150px;
     }
     .team_2D{
         position: absolute;
-        bottom: 210px;
+        bottom: 190px;
         right: 255px;
     }
     .team_web{
         position: absolute;
-        bottom: 100px;
+        bottom: 75px;
         right: 45px;
     }
     .team_ui{
         position: absolute;
-        bottom: 115px;
+        bottom: 90px;
         right: 150px;
     }
     .team_game{
         position: absolute;
-        bottom: 115px;
+        bottom: 90px;
         right: 255px;
     }
 }
