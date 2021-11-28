@@ -98,7 +98,7 @@
 
 .footer {
     /*height: 8vh;*/
-    position: absolute;
+    /*position: absolute;*/
     background-color: black;
     /*bottom: 0;*/
     width: 100%;
@@ -162,6 +162,9 @@
     text-align: center;
     width: fit-content;
 
+}
+.home_link{
+    visibility: visible;
 }
 .home_youtube{
     display: flex;
@@ -532,13 +535,13 @@
         font-size: 10px;
     }
     .home_youtube{
-        position: absolute;
-        top: 20px;
+        position: fixed;
+        top: 45px;
         right: 20px;
     }
     .home_insta{
-        position: absolute;
-        top: 20px;
+        position: fixed;
+        top: 45px;
         right:95px;
     }
 
@@ -547,19 +550,19 @@
     /*    top: 20px;*/
     /*}*/
     .deco{
-        position: absolute;
-        top: 20px;
+        position: fixed;
+        top: 45px;
         left: -60px;
     }
     .deco_1{
-        position: absolute;
-        top: 140px;
+        position: fixed;
+        top: 165px;
         left: -60px;
     }
     .deco2{
-        position: absolute;
-        top: 140px;
-        left: 30px;
+        position: fixed;
+        top: 165px;
+        left: 35px;
     }
     .home_photo_title{
         margin-top: 10px;
@@ -570,62 +573,62 @@
     /*    margin-left: 180px;*/
     /*}*/
     .home_trash{
-        position: absolute;
-        top: 120px;
+        position: fixed;
+        top: 145px;
         right: 20px;
     }
     .home_staff{
-        position: absolute;
-        top: 120px;
+        position: fixed;
+        top: 145px;
         right:115px;
     }
     .home_banner{
-        position: absolute;
-        top: 20px;
+        position: fixed;
+        top: 45px;
         left: 120px;
     }
     .home_org{
-        position: absolute;
-        top: 270px;
+        position: fixed;
+        top: 295px;
         left: 115px;
     }
     .home_professor{
-        position: absolute;
-        top: 260px;
+        position: fixed;
+        top: 285px;
         left: 20px;
     }
     .home_book{
-        position: absolute;
+        position: fixed;
         bottom: 350px;
         right: 25px;
     }
     .team_vfx{
-        position: absolute;
+        position: fixed;
         bottom: 230px;
         right: 20px;
     }
     .team_3D{
-        position: absolute;
+        position: fixed;
         bottom: 230px;
         right: 120px;
     }
     .team_2D{
-        position: absolute;
+        position: fixed;
         bottom: 230px;
         right: 225px;
     }
     .team_web{
-        position: absolute;
+        position: fixed;
         bottom: 105px;
         right: 20px;
     }
     .team_ui{
-        position: absolute;
+        position: fixed;
         bottom: 117px;
         right: 120px;
     }
     .team_game{
-        position: absolute;
+        position: fixed;
         bottom: 117px;
         right: 225px;
     }
