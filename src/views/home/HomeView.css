@@ -27,16 +27,6 @@
     width: auto;
     z-index: 100;
 }
-.pop_image{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
 .pop_photo{
     /*position: relative;*/
     /*top: 5000px;*/
@@ -58,6 +48,17 @@
         width: auto;
         z-index: 100;
     }
+
+    .pop_image{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     .pop_photo, .pop_photo_n{
@@ -65,12 +66,35 @@
         width: auto;
         z-index: 100;
     }
+
+    .pop_image{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
 }
 @media (max-width: 767px) {
-    .pop_photo, .pop_photo_n{
+    .pop_photo, .pop_photo_n {
         height: 60vh;
         width: auto;
         z-index: 100;
+        position: relative;
+        top: -10vh;
+        margin: auto;
+    }
+    .pop_image{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
     }
 }
 
@@ -558,17 +582,21 @@
     .deco{
         position: fixed;
         top: 45px;
-        left: -60px;
+        left: 25px;
     }
     .deco_1{
+        display: flex;
+        align-items: center;
+        width: fit-content;
         position: fixed;
-        top: 165px;
-        left: -60px;
+        top: 145px;
+        left: 20px;
+        /*left: -60px;*/
     }
     .deco2{
         position: fixed;
-        top: 165px;
-        left: 35px;
+        top: 145px;
+        left: 100px;
     }
     .home_photo_title{
         margin-top: 10px;
@@ -595,13 +623,13 @@
     }
     .home_org{
         position: fixed;
-        top: 295px;
+        top: 275px;
         left: 115px;
     }
     .home_professor{
         position: fixed;
-        top: 285px;
-        left: 20px;
+        top: 265px;
+        left: 25px;
     }
     .home_book{
         position: fixed;

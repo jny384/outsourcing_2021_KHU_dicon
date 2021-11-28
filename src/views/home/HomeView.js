@@ -91,7 +91,6 @@ function HomeView() {
         setStatusNotice(false);
         setStatusTypo(false);
         setStatusTrash(false);
-        // window.localStorage.setItem('visited', 1)
     }
     return (
         <>
@@ -107,7 +106,6 @@ function HomeView() {
                     style={{
                         position: 'absolute',
                         width : "100%",
-                        // height : '100%',
                         left : '0',
                         top: "0",
                         objectFit: 'cover',
@@ -117,7 +115,6 @@ function HomeView() {
                     <source src={video} type="video/mp4"/>
                 </video>
                 <div className="hommeWrap" onClick={closeModal}>
-
                     <div className="home_link">
                         <InstaLink/>
                         <YoutubeLink/>
@@ -130,11 +127,6 @@ function HomeView() {
 
                             </div>
                         </Draggable>
-                        {/*{statusNotice ? (*/}
-                        {/*    <div onClick={closeModal} className="pop_image_n">*/}
-                        {/*        <img className="pop_photo_n" onClick={closeModal} src={deco}/>*/}
-                        {/*    </div>*/}
-                        {/*):null}*/}
                     </div>
                     <div onClick={closeModal} className="deco_1" style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
@@ -143,11 +135,6 @@ function HomeView() {
                                 <p style={style.p} className="home_type_title">typo_poster.jpg</p>
                             </div>
                         </Draggable>
-                        {/*{statusTypo ? (*/}
-                        {/*    <div onClick={closeModal} className="pop_image">*/}
-                        {/*        <img onClick={closeModal} className="pop_photo" src={deco1}/>*/}
-                        {/*    </div>*/}
-                        {/*):null}*/}
                     </div>
                     <div className="deco2" onClick={closeModal} style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
@@ -156,11 +143,6 @@ function HomeView() {
                                 <p style={style.newp} className="home_photo_title">photo_final2222.jpg</p>
                             </div>
                         </Draggable>
-                        {/*{statusPhoto ? (*/}
-                        {/*    <div onClick={closeModal} className="pop_image">*/}
-                        {/*        <img onClick={closeModal} className="pop_photo" src={deco2}/>*/}
-                        {/*    </div>*/}
-                        {/*):null}*/}
                     </div>
                     <div onClick={closeModal} className="home_icon" style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
@@ -230,23 +212,23 @@ const style = {
     },
     main_body: {
         textAlign:'center',
-        width: '120px',
+        // width: '120px',,
         height: 'auto',
     },
     box: {
-        width: '120px',
-        height: '120px',
+        // width: '120px',
+        // height: '120px',
         // backgroundColor: "red",
         margin:'0',
         borderRadius:"100%"
     },
     set_box: {
         width: 'auto',
-        height: '50vh',
+        // height: '50vh',
         // // backgroundColor: "blue",
         position: 'absolute',
         // top: '10vh',
-        left: '30%',
+        // left: '30%',
 
         zIndex: '100'
     },
@@ -256,7 +238,7 @@ const style = {
         // backgroundColor: "blue",
         position: 'fixed',
         top: '10vh',
-        left: '30vw',
+        // left: '30vw',
 
         zIndex: '100'
     },
@@ -273,7 +255,7 @@ const style = {
     },
     deco_image: {
         position: 'relative',
-        left: '50%',
+        // left: '50%',
         zIndex:'1',
         // width: '100%'
     },
