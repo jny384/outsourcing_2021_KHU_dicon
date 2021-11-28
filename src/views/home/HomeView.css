@@ -35,6 +35,10 @@
     z-index: 100;
 }
 
+.team_vfx_title{
+    margin: 0;
+}
+
 @media (min-width: 1440px) {
     .pop_photo, .pop_photo_n{
         height: 830px;
@@ -650,7 +654,7 @@
     }
     .home_org{
         position: fixed;
-        top: 275px;
+        top: 265px;
         left: 115px;
     }
     .home_professor{
