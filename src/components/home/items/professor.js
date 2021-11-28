@@ -27,13 +27,11 @@ export default function Professor() {
                     </div>
                 </Draggable>
             </div>
-            <div className="home_icon link_body_mobile" style={style.main_body}>
-                <Draggable onDrag={(e, data) => trackPos(data)} >
-                    <div className="home_professor"  onClick={handleClick}>
-                        <img className="home_professor_img" src={professor}/>
-                        <p style={style.p} className="home_professor_title">about_DICON</p>
-                    </div>
-                </Draggable>
+            <div className="home_icon link_body_mobile" onClick={handleClick} style={style.main_body}>
+                <div className="home_professor"  >
+                    <img className="home_professor_img" src={professor}/>
+                    <p style={style.p} className="home_professor_title">about_DICON</p>
+                </div>
             </div>
         </>
 

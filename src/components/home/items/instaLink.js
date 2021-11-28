@@ -47,7 +47,7 @@ const style = {
         borderRadius:"10%"
     },
     p: {
-        margin: '0',
+        // margin: '0',
         fontsize: '14px',
         color:"white"
     }

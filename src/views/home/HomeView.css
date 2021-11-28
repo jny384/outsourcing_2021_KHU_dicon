@@ -275,7 +275,7 @@
     }
     .home_professor{
         position: absolute;
-        top: 180px;
+        top: 150px;
         right: 500px;
     }
     .home_book{
@@ -315,6 +315,13 @@
     }
     .link_body_mobile{
         display: none;
+    }
+
+    .home_staff_title, .home_professor_title{
+        margin: 0;
+    }
+    .home_insta_title{
+        margin: -5px;
     }
 }
 .home_book_title, .home_org_title, .home_staff_title, .home_banner_title, .home_professor_title, .home_youtube_title, .home_insta_title, .team_2D_title, .team_3D_title, .team_game_title, .team_ui_title, .team_vfx_title, .team_web_title, .home_type_title, .home_photo_title, .home_notice_title, .home_trash_title{
@@ -435,6 +442,13 @@
         bottom: 97px;
         right: 255px;
     }
+
+    .home_staff_title, .home_professor_title{
+        margin: 0;
+    }
+    .home_insta_title{
+        margin: -5px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px){
 
@@ -545,6 +559,13 @@
         bottom: 90px;
         right: 255px;
     }
+
+    .home_staff_title, .home_professor_title{
+        margin: 0;
+    }
+    .home_insta_title{
+        margin: -5px;
+    }
 }
 @media (max-width: 767px) {
 
@@ -591,7 +612,7 @@
         left: 25px;
     }
     .deco_1{
-        display: flex;
+        /*display: flex;*/
         align-items: center;
         width: fit-content;
         position: fixed;
@@ -612,7 +633,7 @@
     /*    bottom: 0px;*/
     /*    margin-left: 180px;*/
     /*}*/
-    .home_trash{
+    .deco3{
         position: fixed;
         top: 155px;
         right: 20px;
@@ -671,6 +692,12 @@
         position: fixed;
         bottom: 62px;
         right: 225px;
+    }
+    .home_staff_title, .home_professor_title{
+        margin: 0;
+    }
+    .home_insta_title{
+        margin: -5px;
     }
 }
 
