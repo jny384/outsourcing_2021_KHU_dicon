@@ -84,11 +84,12 @@
 }
 @media (max-width: 767px) {
     .pop_photo, .pop_photo_n {
+        position: fixed;
         height: 60vh;
         width: auto;
         z-index: 100;
-        position: relative;
-        top: -10vh;
+        /*position: relative;*/
+        top: 15vh;
         margin: auto;
     }
     .pop_image{
