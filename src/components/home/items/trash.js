@@ -17,14 +17,25 @@ export default function Trash() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body}>
-            <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_trash"  onDoubleClick={handleClick} onTouchStart={handleClick}>
-                    <img className="home_trash_img" src={trash}/>
-                    <p style={style.p} className="home_trash_title">trash can</p>
-                </div>
-            </Draggable>
-        </div>
+        <>
+            <div className="home_icon link_body_com" style={style.main_body}>
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_trash"  onDoubleClick={handleClick} onTouchStart={handleClick}>
+                        <img className="home_trash_img" src={trash}/>
+                        <p style={style.p} className="home_trash_title">trash can</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div className="home_icon link_body_mobile" style={style.main_body}>
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_trash"  onClick={handleClick}>
+                        <img className="home_trash_img" src={trash}/>
+                        <p style={style.p} className="home_trash_title">trash can</p>
+                    </div>
+                </Draggable>
+            </div>
+        </>
+
     )
 }
 

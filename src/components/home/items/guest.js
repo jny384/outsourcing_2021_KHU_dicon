@@ -17,14 +17,25 @@ export default function Guest() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body} >
-            <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_book" onDoubleClick={handleClick} onTouchStart={handleClick} >
-                    <img className="home_book_img" src={book}/>
-                    <p style={style.p} className="home_book_title">Guest_book</p>
-                </div>
-            </Draggable>
-        </div>
+        <>
+            <div className="home_icon link_body_com" style={style.main_body} >
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_book" onDoubleClick={handleClick} onTouchStart={handleClick} >
+                        <img className="home_book_img" src={book}/>
+                        <p style={style.p} className="home_book_title">Guest_book</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div className="home_icon link_body_mobile" style={style.main_body} >
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_book" onClick={handleClick} >
+                        <img className="home_book_img" src={book}/>
+                        <p style={style.p} className="home_book_title">Guest_book</p>
+                    </div>
+                </Draggable>
+            </div>
+        </>
+
     )
 }
 

@@ -18,14 +18,24 @@ export default function Banner() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body}>
-            <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_banner" onDoubleClick={handleClick} onTouchStart={handleClick} >
-                    <img className="home_banner_img" src={banner}/>
-                    <p style={style.p} className="home_banner_title">online_banner</p>
-                </div>
-            </Draggable>
-        </div>
+        <>
+            <div className="home_icon link_body_com" style={style.main_body}>
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_banner" onDoubleClick={handleClick} onTouchStart={handleClick} >
+                        <img className="home_banner_img" src={banner}/>
+                        <p style={style.p} className="home_banner_title">online_banner</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div className="home_icon link_body_mobile" style={style.main_body}>
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_banner" onClick={handleClick} >
+                        <img className="home_banner_img" src={banner}/>
+                        <p style={style.p} className="home_banner_title">online_banner</p>
+                    </div>
+                </Draggable>
+            </div>
+        </>
     )
 }
 

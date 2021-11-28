@@ -16,18 +16,33 @@ export default function Organization() {
     };
 
     return(
-        <div className="home_icon" style={style.main_body}>
-            <Draggable onDrag={(e, data) => trackPos(data)} >
-                <div className="home_org"  onDoubleClick={handleClick} onTouchStart={handleClick}>
-                    <img
-                        src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/about_cookie.gif?alt=media&token=53081ced-b58f-4645-a23f-8e3180c48efd' || "http://via.placeholde.com/300"}
-                        alt="firebase-image"
-                        className="home_org_img"
-                    />
-                    <p style={style.p} className="home_org_title">about_COOKIE</p>
-                </div>
-            </Draggable>
-        </div>
+        <>
+            <div className="home_icon link_body_com" style={style.main_body}>
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_org"  onDoubleClick={handleClick} onTouchStart={handleClick}>
+                        <img
+                            src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/about_cookie.gif?alt=media&token=53081ced-b58f-4645-a23f-8e3180c48efd' || "http://via.placeholde.com/300"}
+                            alt="firebase-image"
+                            className="home_org_img"
+                        />
+                        <p style={style.p} className="home_org_title">about_COOKIE</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div className="home_icon link_body_mobile" style={style.main_body}>
+                <Draggable onDrag={(e, data) => trackPos(data)} >
+                    <div className="home_org"  onClick={handleClick}>
+                        <img
+                            src={'https://firebasestorage.googleapis.com/v0/b/dicon-2021.appspot.com/o/about_cookie.gif?alt=media&token=53081ced-b58f-4645-a23f-8e3180c48efd' || "http://via.placeholde.com/300"}
+                            alt="firebase-image"
+                            className="home_org_img"
+                        />
+                        <p style={style.p} className="home_org_title">about_COOKIE</p>
+                    </div>
+                </Draggable>
+            </div>
+        </>
+
     )
 }
 

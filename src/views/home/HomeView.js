@@ -119,7 +119,7 @@ function HomeView() {
                         <InstaLink/>
                         <YoutubeLink/>
                     </div>
-                    <div onClick={closeModal} className="deco" style={style.main_body}>
+                    <div onClick={closeModal} className="deco link_body_com" style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
                             <div className="home_notice" style={style.deco_image} onDoubleClick={openModalNotice} onTouchStart={openModalNotice}>
                                 <img src={deco} className="home_notice_img" onDragStart="return true"/>
@@ -128,7 +128,7 @@ function HomeView() {
                             </div>
                         </Draggable>
                     </div>
-                    <div onClick={closeModal} className="deco_1" style={style.main_body}>
+                    <div onClick={closeModal} className="deco_1 link_body_com" style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
                             <div className="home_type" style={style.deco_image} onDoubleClick={openModalTypo}  onTouchStart={openModalTypo}>
                                 <img src={deco1} className="home_type_img"/>
@@ -136,7 +136,7 @@ function HomeView() {
                             </div>
                         </Draggable>
                     </div>
-                    <div className="deco2" onClick={closeModal} style={style.main_body}>
+                    <div className="deco2 link_body_com" onClick={closeModal} style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
                             <div className="home_photo" style={style.deco_image} onDoubleClick={openModalPhoto}  onTouchStart={openModalPhoto}>
                                 <img src={deco2} className="home_photo_img"/>
@@ -144,9 +144,42 @@ function HomeView() {
                             </div>
                         </Draggable>
                     </div>
-                    <div onClick={closeModal} className="deco3" style={style.main_body}>
+                    <div onClick={closeModal} className="deco3 link_body_com" style={style.main_body}>
                         <Draggable onDrag={(e, data) => trackPos(data)} >
                             <div className="home_trash"  onDoubleClick={openModalTrash} onTouchStart={openModalTrash}>
+                                <img className="home_trash_img" src={deco3}/>
+                                <p style={style.p} className="home_trash_title">trash can</p>
+                            </div>
+                        </Draggable>
+                    </div>
+                    <div onClick={closeModal} className="deco link_body_mobile" style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_notice" style={style.deco_image} onClick={openModalNotice} >
+                                <img src={deco} className="home_notice_img" onDragStart="return true"/>
+                                <p style={style.p} className="home_notice_title"> Notice.txt</p>
+
+                            </div>
+                        </Draggable>
+                    </div>
+                    <div onClick={closeModal} className="deco_1 link_body_mobile" style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_type" style={style.deco_image} onClick={openModalTypo}>
+                                <img src={deco1} className="home_type_img"/>
+                                <p style={style.p} className="home_type_title">typo_poster.jpg</p>
+                            </div>
+                        </Draggable>
+                    </div>
+                    <div className="deco2 link_body_mobile" onClick={closeModal} style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_photo" style={style.deco_image} onClick={openModalPhoto}>
+                                <img src={deco2} className="home_photo_img"/>
+                                <p style={style.newp} className="home_photo_title">photo_final2222.jpg</p>
+                            </div>
+                        </Draggable>
+                    </div>
+                    <div onClick={closeModal} className="deco3 link_body_mobile" style={style.main_body}>
+                        <Draggable onDrag={(e, data) => trackPos(data)} >
+                            <div className="home_trash"  onClick={openModalTrash}>
                                 <img className="home_trash_img" src={deco3}/>
                                 <p style={style.p} className="home_trash_title">trash can</p>
                             </div>
