@@ -237,7 +237,7 @@
 
     .home_notice{
         position: absolute;
-        top: 220px;
+        top: 210px;
         left: 40px;
         margin-left: 50px;
         width: 130px;
@@ -270,7 +270,7 @@
     .home_banner{
         position: absolute;
         top: 80px;
-        right: 230px;
+        right: 200px;
     }
     .home_org{
         position: absolute;
@@ -370,7 +370,7 @@
     .home_notice{
         position: absolute;
         top: 160px;
-        left: 60px;
+        left: 30px;
         margin-left: 50px;
     }
     .home_type{
