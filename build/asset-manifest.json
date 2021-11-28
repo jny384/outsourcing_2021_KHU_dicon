@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc48ec30.chunk.css",
-    "main.js": "/static/js/main.b66c8840.chunk.js",
-    "main.js.map": "/static/js/main.b66c8840.chunk.js.map",
+    "main.css": "/static/css/main.3510a0bd.chunk.css",
+    "main.js": "/static/js/main.244f02fb.chunk.js",
+    "main.js.map": "/static/js/main.244f02fb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c6787621.js",
     "runtime-main.js.map": "/static/js/runtime-main.c6787621.js.map",
     "static/js/2.0ca088fd.chunk.js": "/static/js/2.0ca088fd.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.01bf45cf.chunk.js": "/static/js/3.01bf45cf.chunk.js",
     "static/js/3.01bf45cf.chunk.js.map": "/static/js/3.01bf45cf.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.cc48ec30.chunk.css.map": "/static/css/main.cc48ec30.chunk.css.map",
+    "static/css/main.3510a0bd.chunk.css.map": "/static/css/main.3510a0bd.chunk.css.map",
     "static/js/2.0ca088fd.chunk.js.LICENSE.txt": "/static/js/2.0ca088fd.chunk.js.LICENSE.txt",
     "static/media/about_dicon.1495a181.png": "/static/media/about_dicon.1495a181.png",
     "static/media/backdrop.17c84c73.mp4": "/static/media/backdrop.17c84c73.mp4",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.c6787621.js",
     "static/js/2.0ca088fd.chunk.js",
-    "static/css/main.cc48ec30.chunk.css",
-    "static/js/main.b66c8840.chunk.js"
+    "static/css/main.3510a0bd.chunk.css",
+    "static/js/main.244f02fb.chunk.js"
   ]
 }

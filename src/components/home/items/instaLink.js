@@ -13,7 +13,7 @@ export default function InstaLink() {
     };
 
     return(
-        <div className="main_body" style={style.main_body}>
+        <div className="main_body insta_body" style={style.main_body}>
             <Draggable onDrag={(e, data) => trackPos(data)} >
                 <div className="home_insta"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img src={insta} className='home_insta_img'/>

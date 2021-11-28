@@ -542,7 +542,13 @@
     .home_insta{
         position: fixed;
         top: 45px;
-        right:95px;
+        right: 105px;
+        width: 80px;
+        word-break: break-word;
+    }
+    .insta_body{
+    }
+    .home_insta_title{
     }
 
     /*.home_notice{*/
@@ -574,12 +580,12 @@
     /*}*/
     .home_trash{
         position: fixed;
-        top: 145px;
+        top: 155px;
         right: 20px;
     }
     .home_staff{
         position: fixed;
-        top: 145px;
+        top: 155px;
         right:115px;
     }
     .home_banner{
@@ -599,37 +605,37 @@
     }
     .home_book{
         position: fixed;
-        bottom: 350px;
+        bottom: 320px;
         right: 25px;
     }
     .team_vfx{
         position: fixed;
-        bottom: 230px;
+        bottom: 190px;
         right: 20px;
     }
     .team_3D{
         position: fixed;
-        bottom: 230px;
+        bottom: 190px;
         right: 120px;
     }
     .team_2D{
         position: fixed;
-        bottom: 230px;
+        bottom: 190px;
         right: 225px;
     }
     .team_web{
         position: fixed;
-        bottom: 105px;
+        bottom: 75px;
         right: 20px;
     }
     .team_ui{
         position: fixed;
-        bottom: 117px;
+        bottom: 87px;
         right: 120px;
     }
     .team_game{
         position: fixed;
-        bottom: 117px;
+        bottom: 87px;
         right: 225px;
     }
 }
