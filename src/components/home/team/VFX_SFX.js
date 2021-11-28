@@ -17,14 +17,22 @@ export default function VFX_SFX() {
     }
 
     return(
-        <div style={style.main_body}>
-            <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="team_vfx"  onDoubleClick={onClick}  onTouchStart={onClick} >
+        <>
+            <div style={style.main_body} className="link_body_com">
+                <Draggable onDrag={(e, data) => trackPos(data)}>
+                    <div className="team_vfx"  onDoubleClick={onClick}  onTouchStart={onClick} >
+                        <img className="team_vfx_img" src={vfx}/>
+                        <p style={style.p} className="team_vfx_title">VFX / SFX</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div style={style.main_body} className="link_body_mobile">
+                <div className="team_vfx"  onClick={onClick}>
                     <img className="team_vfx_img" src={vfx}/>
                     <p style={style.p} className="team_vfx_title">VFX / SFX</p>
                 </div>
-            </Draggable>
-        </div>
+            </div>
+        </>
     )
 }
 

@@ -18,14 +18,22 @@ export default function MotionGraphics() {
     }
 
     return(
-        <div style={style.main_body}>
-            <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="team_2D"  onDoubleClick={onClick}  onTouchStart={onClick}>
+        <>
+            <div style={style.main_body} className="link_body_com">
+                <Draggable onDrag={(e, data) => trackPos(data)}>
+                    <div className="team_2D"  onDoubleClick={onClick}  onTouchStart={onClick}>
+                        <img className="team_2D_img" src={twoD}/>
+                        <p style={style.p} className="team_2D_title">2D</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div style={style.main_body} className="link_body_mobile">
+                <div className="team_2D"  onClick={onClick}>
                     <img className="team_2D_img" src={twoD}/>
                     <p style={style.p} className="team_2D_title">2D</p>
                 </div>
-            </Draggable>
-        </div>
+            </div>
+        </>
     )
 }
 

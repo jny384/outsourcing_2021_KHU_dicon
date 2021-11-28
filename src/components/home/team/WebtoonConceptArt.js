@@ -17,14 +17,22 @@ export default function WebtoonConceptArt() {
     }
 
     return(
-        <div style={style.main_body}>
-            <Draggable onDrag={(e, data) => trackPos(data)}>
-                <div className="team_web"  onDoubleClick={onClick}  onTouchStart={onClick}>
+        <>
+            <div style={style.main_body} className="link_body_com">
+                <Draggable onDrag={(e, data) => trackPos(data)}>
+                    <div className="team_web"  onDoubleClick={onClick}  onTouchStart={onClick}>
+                        <img className="team_web_img" src={web}/>
+                        <p style={style.p} className="team_web_title">Webtoon <br/>Concept Art</p>
+                    </div>
+                </Draggable>
+            </div>
+            <div style={style.main_body} className="link_body_mobile">
+                <div className="team_web"  onClick={onClick}>
                     <img className="team_web_img" src={web}/>
                     <p style={style.p} className="team_web_title">Webtoon <br/>Concept Art</p>
                 </div>
-            </Draggable>
-        </div>
+            </div>
+        </>
     )
 }
 

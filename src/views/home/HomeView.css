@@ -399,7 +399,7 @@
     .home_banner{
         position: absolute;
         top: 50px;
-        right: 230px;
+        right: 150px;
     }
     .home_org{
         position: absolute;
@@ -414,7 +414,7 @@
     .home_book{
         position: absolute;
         top: 190px;
-        right: 150px;
+        right: 110px;
     }
     .team_vfx{
         position: absolute;
@@ -604,6 +604,7 @@
     .insta_body{
     }
     .home_insta_title{
+        width: 80px;
     }
 
     /*.home_notice{*/

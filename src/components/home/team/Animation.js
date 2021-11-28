@@ -18,10 +18,8 @@ export default function Animation() {
 
     return(
         <div>
-            <div style={style.main_body}>
+            <div style={style.main_body} className="link_body_com">
                 <Draggable
-                    // onStart={handleStart}
-                    // onStop={handleEnd}
                     onDrag={(e, data) => trackPos(data)}
                 >
                     <div className="team_3D"  onDoubleClick={onClick} onTouchStart={onClick}>
@@ -29,6 +27,12 @@ export default function Animation() {
                         <p style={style.p} className="team_3D_title">3D</p>
                     </div>
                 </Draggable>
+            </div>
+            <div style={style.main_body} className="link_body_mobile">
+                <div className="team_3D"  onClick={onClick}>
+                    <img className="team_3D_img" src={threeD}/>
+                    <p style={style.p} className="team_3D_title">3D</p>
+                </div>
             </div>
         </div>
     )
