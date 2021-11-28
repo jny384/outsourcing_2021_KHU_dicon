@@ -28,8 +28,8 @@ export default function InstaLink() {
 const style = {
     main_body: {
         textAlign:'center',
-        width: '130px',
-        height: '120px',
+        // width: '130px',
+        // height: '120px',
     },
     box: {
         width: '130px',

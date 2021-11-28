@@ -23,6 +23,7 @@
 
 .mainComponent{
     margin: 0;
+    z-index: 1;
 }
 
 @media (min-width: 1440px) {

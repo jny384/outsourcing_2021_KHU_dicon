@@ -160,6 +160,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: fit-content;
+
 }
 .home_youtube{
     display: flex;
@@ -436,7 +438,7 @@
 
     .home_notice{
         position: absolute;
-        top: -70px;
+        top: 20px;
     }
     .deco_1{
         position: absolute;
