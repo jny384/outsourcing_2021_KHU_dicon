@@ -323,7 +323,7 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1439px){\
+@media (min-width: 1024px) and (max-width: 1439px){
 
     .link_body_mobile{
         display: none;

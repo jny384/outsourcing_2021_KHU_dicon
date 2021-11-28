@@ -23,13 +23,11 @@ export default function InstaLink() {
                     </div>
                 </Draggable>
             </div>
-            <div className="main_body link_body_mobile insta_body" style={style.main_body}>
-                <Draggable onDrag={(e, data) => trackPos(data)} >
-                    <div className="home_insta"  onClick={handleClick}>
-                        <img src={insta} className='home_insta_img' />
-                        <p style={style.p} className='home_insta_title'>@cookie_dicon_2021</p>
-                    </div>
-                </Draggable>
+            <div className="main_body link_body_mobile insta_body"  onClick={handleClick} style={style.main_body}>
+                <div className="home_insta" >
+                    <img src={insta} className='home_insta_img' />
+                    <p style={style.p} className='home_insta_title'>@cookie_dicon_2021</p>
+                </div>
             </div>
         </>
     )

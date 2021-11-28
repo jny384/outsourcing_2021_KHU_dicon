@@ -22,13 +22,11 @@ export default function YoutubeLink() {
                     </div>
                 </Draggable>
             </div>
-            <div className="main_body link_body_mobile" style={style.main_body}>
-                <Draggable onDrag={(e, data) => trackPos(data)} >
-                    <div className="home_youtube"  onClick={handleClick} >
-                        <img src={youtube} className='home_youtube_img'/>
-                        <p style={style.p} className='home_youtube_title'>Youtube.url</p>
-                    </div>
-                </Draggable>
+            <div className="main_body link_body_mobile"  onClick={handleClick} style={style.main_body}>
+                <div className="home_youtube"  onClick={handleClick} >
+                    <img src={youtube} className='home_youtube_img'/>
+                    <p style={style.p} className='home_youtube_title'>Youtube.url</p>
+                </div>
             </div>
         </>
 
