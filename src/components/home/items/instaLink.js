@@ -9,7 +9,8 @@ export default function InstaLink() {
         setPosition({ x: data.x, y: data.y });
     };
     const handleClick = (e) => {
-        window.location.href = 'https://instagram.com/cookie_dicon_2021?utm_medium=copy_link'; //이동할 링크
+        // window.location.href = 'https://instagram.com/cookie_dicon_2021?utm_medium=copy_link'; //이동할 링크
+        window.location.href = 'https://instagram.com/cookie_dicon_2021?utm_medium=copy_link';
     };
 
     return(
@@ -18,7 +19,6 @@ export default function InstaLink() {
                 <div className="home_insta"  onDoubleClick={handleClick} onTouchStart={handleClick}>
                     <img src={insta} className='home_insta_img'/>
                     <p style={style.p} className='home_insta_title'>@cookie_dicon_2021</p>
-
                 </div>
             </Draggable>
         </div>
