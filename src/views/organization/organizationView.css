@@ -1,0 +1,394 @@
+.organization_main{
+    color: white;
+    display: flex;
+    /*text-align: left;*/
+}
+
+.org_left{
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+}
+.org_footer{
+    z-index: 1;
+}
+.org_detail{
+    word-break: break-word;
+    width: 330px;
+    margin: 20px;
+}
+.org_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video_title{
+    font-weight: bold;
+}
+
+.people{
+    font-weight: bold;
+}
+
+.people_detail{
+}
+
+.poster_title{
+    font-weight: bold;
+}
+.poster_imgs{
+    display: flex;
+    flex-direction: row;
+}
+.poster_image{
+    /*background-color: blue;*/
+}
+
+.graduate_title{
+    font-weight: bold;
+}
+
+.graduate_img{
+    /*background-color: blue;*/
+}
+
+
+.graduate{
+    margin-bottom: 100px;
+}
+
+#video_people{
+    margin: 10px 0 0 0;
+}
+
+@media (min-width: 1440px) {
+    .organization_main{
+        flex-direction: row;
+    }
+    .org_left{
+        top: 35px;
+        width: 378px;
+    }
+    .org_top{
+        display: none;
+    }
+    .org_title{
+        width: 330px;
+        height: auto;
+        margin: 20px 20px 30px 20px;
+        /*margin-left: 10px;*/
+    }
+    .org_cookie{
+        width: 358px;
+    }
+    .org_right{
+        left: 378px;
+        width: calc(100vw - 378px);
+    }
+    .video_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .people{
+        font-size: 18px;
+    }
+
+    .people_detail{
+        font-size: 18px;
+    }
+    .poster_title{
+        font-size: 36px;
+        margin: 100px 0 50px 0;
+    }
+    .poster_image{
+        width: 448px;
+        height: 629px;
+        margin-right: 24px;
+    }
+
+    .graduate_title{
+        font-size: 36px;
+        margin: 100px 0 50px 0;
+    }
+    .graduate_2021{
+        font-size: 18px;
+    }
+    .graduate_img{
+        width: 920px;
+        height: 518px;
+    }
+    .graduate{
+        margin-bottom: 400px;
+    }
+    .SmallVideo, .TabVideo, .MidVideo{
+        display: none;
+    }
+    .organization_main{
+        /*padding-bottom: 400px;*/
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px){
+    .organization_main{
+        flex-direction: row;
+    }
+    .org_left{
+        top: 25px;
+        width: 280px;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+    }
+    .org_top{
+        display: none;
+    }
+    .org_title{
+        width: 260px;
+        height: auto;
+        margin: 20px 20px 30px 20px;
+        /*margin-left: 10px;*/
+    }
+    .org_cookie{
+        width: 280px;
+    }
+    .org_detail{
+        width: 260px;
+    }
+    .org_right{
+        left: 260px;
+        width: calc(100vw - 260px);
+    }
+    .video_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .people{
+        font-size: 16px;
+    }
+
+    .people_detail{
+        font-size: 16px;
+        /*margin-bottom: 100px;*/
+    }
+
+    .poster_title{
+        font-size: 36px;
+        margin: 100px 0 50px 0;
+    }
+    .poster_image{
+        width: 321px;
+        height: 450px;
+        margin-right: 24px;
+    }
+
+    .graduate_title{
+        font-size: 36px;
+        margin: 100px 0 50px 0;
+    }
+    .graduate_2021{
+        font-size: 16px;
+    }
+    .graduate_img{
+        width: 658px;
+        height: 370px;
+    }
+
+    .graduate{
+        margin-bottom: 200px;
+    }
+    .SmallVideo, .TabVideo, .BigVideo{
+        display: none;
+    }
+    .organization_main{
+        /*padding-bottom: 200px;*/
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .organization_main{
+        flex-direction: row;
+    }
+    .org_left{
+        top: 25px;
+        width: 196px;
+    }
+    .org_top{
+        display: none;
+    }
+    .org_title{
+        width: 180px;
+        margin: 15px;
+    }
+    .org_cookie{
+        width: 196px;
+    }
+    .org_detail{
+        width: 180px;
+        font-size: 11px;
+    }
+    .org_right{
+        left: 196px;
+        width: calc(100vw - 196px);
+    }
+    .video_title{
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .people{
+        font-size: 14px;
+    }
+
+    .people_detail{
+        font-size: 14px;
+        /*margin-bottom: 100px;*/
+    }
+
+    .poster_title{
+        font-size: 24px;
+        margin: 60px 0 30px 0;
+    }
+    .poster_image{
+        width: 244px;
+        height: 342px;
+        margin-right: 24px;
+    }
+
+    .graduate{
+        margin-bottom: 100px;
+    }
+    .graduate_title{
+        font-size: 30px;
+        margin: 60px 0;
+    }
+    .graduate_2021{
+        font-size: 14px;
+    }
+    .graduate_img{
+        width: 500px;
+        height: 282px;
+    }
+    .SmallVideo, .MidVideo, .BigVideo{
+        display: none;
+    }
+    .organization_main{
+        /*padding-bottom: 100px;*/
+    }
+}
+@media (max-width: 767px) {
+    .organization_main{
+        flex-direction: column;
+    }
+    .org_top{
+        width: 100vw;
+        height: 640px;
+        font-size: 14px;
+        /*background-color: orange;*/
+    }
+    .org_left{
+        top: 25px;
+        display: none;
+    }
+    .org_right{
+
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        min-height: 95vh;
+        /*justify-content: center;*/
+        flex-direction: column;
+        /*text-align: center;*/
+    }
+    .video_title{
+        font-size: 24px;
+        margin: 30px 0;
+        text-align: center;
+    }
+    .video{
+        width: 328px;
+    }
+
+    .people{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .people_detail{
+        font-size: 14px;
+    }
+
+    .poster_title{
+        font-size: 24px;
+        margin:30px 0;
+        text-align: center;
+    }
+    .poster_image{
+        width: 158px;
+        height: 222px;
+        margin-right: 10px;
+    }
+
+    .graduate_title{
+        font-size: 24px;
+        margin: 30px 0;
+    }
+
+    .graduate_img{
+        width: 328px;
+        height: 185px;
+    }
+
+    .graduate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*text-align: center;*/
+        /*margin: 0;*/
+        text-align: left;
+        margin-bottom: 200px;
+    }
+
+    .MidVideo, .TabVideo, .BigVideo{
+        display: none;
+    }
+    .org_top{
+        width: 100vw;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*background-color: orange;*/
+    }
+    .organization_main{
+        /*padding-bottom: 200px;*/
+        height: fit-content;
+    }
+    .poster{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 328px;
+    }
+    .SmallVideo{
+        display: flex;
+    }
+    .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .org_title{
+        width:90vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .org_detail{
+        width: 90vw;
+        margin: 30px 0;
+    }
+    .graduate_2021 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}

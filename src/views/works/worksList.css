@@ -1,0 +1,143 @@
+.list_main{
+    min-height: 87vh;
+    display: grid;
+    grid-column-gap: 23px;
+    grid-row-gap: 50px;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    place-items: center;
+}
+.list_title{
+    color: white;
+    font-weight: bold;
+}
+.workListMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workListMain{
+    position: relative;
+    /*margin-top: 35px;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width: 1440px){
+    .list_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .list_main{
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 23px;
+        grid-row-gap: 50px;
+        margin: 24px 0 400px 0;
+    }
+    .thumbNail{
+        width: 330px;
+        height: 440px;
+    }
+    .thumb_under{
+        font-size: 14px;
+    }
+}
+@media (min-width: 1024px)  and (max-width: 1439px){
+    .list_title{
+        font-size: 36px;
+        margin: 40px 0;
+    }
+    .list_main{
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 40px;
+        margin: 24px 0 200px 0;
+    }
+    .thumbNail{
+        width: 226px;
+        height: 301px;
+        margin-bottom: 20px;
+    }
+    .thumb_title{
+        font-size: 24px;
+    }
+    .thumb_name{
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .workListMain{
+        /*padding-bottom: 400px;*/
+    }
+    .list_title{
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .list_main{
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 30px;
+        margin: 24px 0 100px 0;
+    }
+    .thumbNail{
+        width: 154px;
+        height: 205px;
+    }
+    .thumb_under{
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+
+    .list_title{
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    .list_main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 14px;
+        grid-row-gap: 25px;
+        margin: 16px 0 200px 0;
+
+    }
+    .thumbNail{
+        width: 156px;
+        height: 208px;
+    }
+    .thumb_under{
+        font-size: 16px;
+    }
+    .workListMain{
+        /*margin-bottom: 200px;*/
+    }
+}
+
+/*.list_title{*/
+/*    font-size: 36px;*/
+/*    margin: 50px 0;*/
+/*}*/
+.thumb_list{
+    /*width: 330px;*/
+    /*height: 500px;*/
+    text-align: center;
+    color: white !important;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 330px;*/
+    /*grid-auto-columns: minmax(330px, auto);*/
+}
+
+.thumbNail{
+    /*width: 330px;*/
+    /*height: 440px;*/
+}
+.thumb_under{
+    display: flex;
+    flex-direction: column;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,45 @@
+/*body {*/
+/*    !*height: 100vh;*!*/
+/*}*/
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
+.mainBody {
+    background-color: black;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    /*overflow: scroll;*/
+    position: relative;
+    top: 5vh;
+    /*grid-template-rows: max-content max-content 1fr;*/
+}
+
+.mainBody::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+/*.footer {*/
+/*    !*height: 50px;*!*/
+/*}*/
+
+.mainComponent{
+    margin: 0;
+    z-index: 1;
+}
+
+@media (min-width: 1440px) {
+    .mainBody{
+        top:35px
+    }
+    .mainComponent{
+        min-height: calc(100vh - 35px);
+    }
+}
+
+@media (max-width: 1439px){
+    .mainBody{
+        top:25px
+    }
+    .mainComponent{
+        min-height: calc(100vh - 25px);
+    }
+}

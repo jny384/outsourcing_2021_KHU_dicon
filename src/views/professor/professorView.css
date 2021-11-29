@@ -1,0 +1,317 @@
+.professor_main{
+    display: flex;
+    flex-direction: column;
+}
+.major{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    /*background-color: red;*/
+}
+.major_title{
+    font-weight: bold;
+}
+.major_detail{
+    word-break: break-word;
+    /*width: 825px;*/
+    margin-top: 0;
+}
+.professor_title{
+    font-weight: bold;
+    /*margin-top: 100px;*/
+}
+.professor_list{
+    min-height: 95vh;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.professor{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    position: relative;
+}
+.professor_img{
+    /*background-color: red;*/
+    z-index: 1;
+}
+
+.professor_detail{
+    color: #7B7B7B;
+    word-break: break-word;
+}
+#professor_detail_r{
+    color: #7B7B7B;
+    /*background-color: red;*/
+    word-break: break-word;
+    position: absolute;
+    bottom: 0;
+
+    margin-bottom: 0;
+}
+.professor_title{
+    width: 300px;
+    /*갤탭이슈*/
+}
+
+@media (min-width: 1440px) {
+    .major_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .major_detail{
+        font-size: 18px;
+        margin-bottom: 100px;
+        width: 825px;
+    }
+    .professor_title{
+        font-size: 36px;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+    .professor_img{
+        width: 330px;
+        height: 440px;
+        margin-right: 24px;
+    }
+    .professor_list{
+        grid-column-gap: 105px;
+        grid-row-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .professor{
+        display: flex;
+        flex-direction: column;
+    }
+    .professor_place{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .professor_email{
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .professor_right{
+        display: flex;
+        flex-direction: row;
+    }
+    .professor_detail{
+        display: none;
+    }
+    .professor_info{
+        width: 270px;
+    }
+    #professor_name{
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .professor_main{
+        padding-bottom: 400px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px){
+    .major_title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+    .major_detail{
+        font-size: 18px;
+        margin-bottom: 100px;
+        width: 825px;
+    }
+    .professor_title{
+        font-size: 36px;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+    .professor_img{
+        width: 210px;
+        height: 280px;
+        margin-right: 20px;
+    }
+    .professor_list{
+        margin: 0 20px;
+        grid-column-gap: 50px;
+        grid-row-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .professor{
+        display: flex;
+        flex-direction: column;
+    }
+    .professor_place{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .professor_email{
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .professor_right{
+        display: flex;
+        flex-direction: row;
+    }
+    .professor_detail{
+        display: none;
+    }
+    .professor_info{
+        width: 250px;
+    }
+    #professor_name{
+        margin-top: 0;
+        font-size: 18px;
+        /*color: #E7411C; 1024확인*/
+    }
+    .professor_main{
+        padding-bottom: 200px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .major_title{
+        width: 400px;
+        font-size: 30px;
+        margin: 30px 0;
+        /*color: blue;*/
+    }
+    .major_detail{
+        font-size: 14px;
+        width: 485px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .professor_title{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .professor_img{
+        width: 155px;
+        height: 206px;
+        margin-right: 10px;
+    }
+    .professor_right{
+        display: flex;
+        /*align-items: center;*/
+        flex-direction: row;
+    }
+    .professor_place{
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .professor_email{
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .professor_list{
+        /*grid-column-gap: 10px;*/
+        /*grid-row-gap: 30px;*/
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 16px 0 0;
+        /*place-items: center;*/
+    }
+    #professor_detail_r{
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .professor_detail{
+        display: none;
+    }
+
+    .professor{
+        display: flex;
+        /*width: 90vw;*/
+        justify-content: left;
+        flex-direction: column;
+    }
+    .professor_info{
+        /*width: 245px;*/
+    }
+    #professor_name{
+         margin-top: 0;
+         font-size: 12px;
+     }
+    .professor_main{
+        padding-bottom: 200px;
+    }
+}
+@media (max-width: 767px) {
+    .major_title{
+        font-size: 24px;
+        margin: 30px 0;
+    }
+    .major_detail{
+        font-size: 14px;
+        margin-bottom: 60px;
+        width: 90vw;
+    }
+    .professor_title{
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .professor_img{
+        width: 139px;
+        height: 186px;
+        /*margin-right: 24px;*/
+    }
+
+    .professor_place{
+        margin-bottom: 0;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .professor_email{
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .professor_list{
+        /*grid-column-gap: 105px;*/
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .professor_detail{
+        font-size: 14px;
+        margin-top: 10px;
+        width: 90vw;
+        word-break: break-word;
+        color: #7B7B7B;
+        /*margin-left: 16px;*/
+    }
+    .professor_right{
+        display: flex;
+        /*align-items: center;*/
+        flex-direction: row;
+    }
+    #professor_detail_r{
+        display: none;
+    }
+    .professor{
+        width: 90vw;
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+    }
+    #professor_name{
+        margin-left: 10px;
+    }
+    #professor_name{
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .professor_main{
+        padding-bottom: 200px;
+    }
+    .major_detail{
+        line-height: 2;
+    }
+}
