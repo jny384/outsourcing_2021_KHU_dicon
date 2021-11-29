@@ -3,3 +3,4 @@
 
 ### frontend : html, css, react.js
 ### backend : firebase
+### deploy with Netlify
