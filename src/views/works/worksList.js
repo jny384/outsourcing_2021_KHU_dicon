@@ -5,14 +5,18 @@ import './worksList.css'
 export default function WorksList({match}) {
     const [inputData, setInputData] = useState([]);
     useEffect(() => {
-        exec();
+        initial();
         console.log('iP : ',inputData);
     }, [])
 
-    async function exec(){
+
+    async function initial(){
+        // await console.log(match.params.teamName);
+        console.log('data : ');
         const data =  await GetThumbNail(match.params.teamName);
         await setInputData(data);
     }
+
     const getTitle = () => {
         if (match.params.teamName === 'VFX_SFX') {
             return 'VFX / SFX'

@@ -7,9 +7,15 @@ const firebaseConfig = {
     projectId: "dicon-2021",
     storageBucket: "dicon-2021.appspot.com",
     messagingSenderId: "803278416729",
-    appId: "1:990599483882:web:2e3ef5a3da9342ced66293"
+    appId: "1:803278416729:web:0bcb7a84af024cfd843a48",
+    measurementId: "G-1KGPTBSW83"
 };
 
+// if (!firebase.apps.length) {
+//     firebase.initializeApp(firebaseConfig);
+// } else {
+//     firebase.app();
+// }
 firebase.initializeApp(firebaseConfig);
 
 const storage = firebase.storage();
